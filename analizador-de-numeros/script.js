@@ -36,7 +36,7 @@ function adicionar() {
 
 function finalizar() {
   if (valores.length == 0) {
-    window.alert('Adicione valores antes de finalizar')
+    window.alert('Adicione valores antes de finalizar.')
   } else {/*o primeiro innerHtmnl VAI COM AS DUAS ASPAS VAZIAS PARA ZERAR O VALOR DO RESULTADO*/
     let tot = valores.length
     let maior = valores[0]
