@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Desafio 1</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+  
+    body {
+      font normal 2em Arial Sans serif;
+      background-color: #a2a2f0;
+    }
+    
+    div {
+      background-color: white;
+      border-radius: 10px 0px 10px 0px;
+      min-width: 300px;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      word-wrap: break-word;
+      box-shadow: 3px 3px 6px black;
+      text-align: center;
+      
+    }/
+    
+      
+    
+    p {
+      margin: 15px 0px;
+      text-align: justify;
+      text-indent: 20px;
+      font-size: 1em;
+      line-height: 2em;
+      white-space: nowrap;
+      text-indent: 15px;
+      
+    }
+    
+    .principal {
+      color: white;
+      text-align: center;
+      background-color: #1515d6a0;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 20px;
+      border-top: 20px;
+      border-bottom: 30px;
+    }
+    
+    footer {
+      background-color: #ff00009d;
+      text-align: center;
+      padding: 10px;
+      margin: auto;
+      margin-top: 10px;
+      border-top: 15px;
+    
+    }
+    
+    div#res {
+      background: white;
+      text-align: center;
+      margin-top: 10px;
+      padding: 20px;
+      box-shadow: 3px 3px 6px black;
+    }
+    
+    select {
+      height: 150px;
+      width: 150px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class='principal'>Tabuada</h1>
+  </header>
+  <section>  
+    <div>
+      <p>numero: <input type="number" name="num" id="txtn">
+      <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
+         
+         
+    </div> 
+    <div id='res'>
+      <select name="tabuada" id="seltab" >
+        <option>Digite um numero acima</option>
+      </select>
+       <!--para criar opcoes--> 
+     
+        
+      
+      
+    </div>
+  </section> 
+  <footer>
+    <p><strong>Testando...</strong></p>
+  </footer>
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
