@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="device-widthh=device-width,initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon" />
+    <title>Primeiros passos com DOM.</title>
+    <style>
+      div#area {
+        font: 20pt normal Arial;
+        background-color: #22e855;
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+      }
+      
+      
+    </style>
+  
+    
+  </head>
+  <body>
+    <div id='area' onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+      intejava...
+    </div >
+    
+  
+    <script>
+    // onclick: para clicar
+    // onmouseenter: para entrar 
+    // onmouseout: para sair
+    // .style.background para acessar o estilo/cor de fundo pelo script
+    
+      var a = window.document.getElementById('area')
+      a.addEventListener('click', clicar)
+      a.addEventListener('mouseenter', entrar)
+      a.addEventListener('mouseout', sair)
+      
+      function clicar() {
+        
+        a.innerText = 'clicou!'
+        a.style.background = 'red'
+      }
+      
+      function entrar() {
+        a.innerText = 'entrou!'
+        a.style.background = 'yellow'
+      }
+      
+      function sair() {
+         a.innerText = 'sair!'
+         a.style.background = 'green'
+      }
+      
+    </script>
+  
+
+ 
+   
+    
+ 
+    
+    
+  </body>
+  
+
+
+
+
+
+
+
+
+
+
+</html>
