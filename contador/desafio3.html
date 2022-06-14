@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Desafio 1</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+  
+    body {
+      font normal 2em Arial Sans serif;
+      background-color: #a2a2f0;
+    }
+    
+    div {
+      background-color: white;
+      border-radius: 10px 0px 10px 0px;
+      min-width: 300px;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      word-wrap: break-word;
+      box-shadow: 3px 3px 6px black;
+      text-align: center;
+      
+    }/
+    
+      
+    
+     p {
+      margin: 15px;
+      border: 15px;
+      padding: 15px;
+      text-align: left;
+      text-indent: 20px;
+      font-size: 1em;
+      line-height: 2em;
+      text-align: justify;
+      
+      
+    }
+    
+    
+    
+    .principal {
+      color: white;
+      text-align: center;
+      background-color: #1515d6a0;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 20px;
+      border-top: 20px;
+      border-bottom: 30px;
+    }
+    
+    
+    
+    footer {
+      background-color: #ff00009d;
+      text-align: center;
+      padding: 10px;
+      margin: auto;
+      margin-top: 10px;
+      border-top: 15px;
+    
+    }
+    
+    div#res {
+      background: white;
+      
+      text-align: justify;
+      margin-top: 10px;
+      padding: 20px;
+      box-shadow: 3px 3px 6px black;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class='principal'>Vamos Contar</h1>
+  </header>
+  <section>  
+    <div id='dados'>
+      <p>Inicio:<input type="number" name="inicio" id="txti"></p>  
+      <p>Fim:<input type="number" name="fim" id="txtf"></p>
+      <p>Passo:<input type="number" name="passo" id="txtp"></p>
+      <p><input type="button" value="contar" onclick="contar()"></p>
+    </div> 
+       
+      
+      
+      
+      
+         
+    <div id='res'>
+      <p><mark>O resultado vai aparecer aqui aguarde...</mark></p>
+      
+    </div>
+  </section> 
+  <footer>
+    <p><strong>Testando...</strong></p>
+  </footer>
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
