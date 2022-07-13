@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="assets/logo.png" alt="gerador de senhas" class="logo">
+    <main class="container-input">
+        <span>Tamanho <span id="valor"></span>caracteres</span>
+        <!--type range para ser input de arrastar-->
+        <input id="slider" class="slider" type="range" min="5" max="25" value="15">
+        <button id="button" class="button-cta">Gerar senha</button>
+    </main>
+        <!--hide na class para a div iniciar oculta-->
+    <div id="container-password" class="container-password hide">
+        <span class="title">Sua senha gerada foi:</span>
+        <span id="password" class="password">132352456346</span>
+        <span class="tooltip">Clique na senha para copiar</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
