@@ -1,0 +1,14 @@
+
+*.ts
+*.js
+*.json
+*.map
+*.md
+bootcamp-dio/typeScript/node_modules/engine.io/node_modules/debug/LICENSE
+*.mjs
+*.flow
+*.yml
+*.lock
+*.txt
+*.png
+*.lcl
