@@ -1,7 +1,7 @@
 
 *.ts
+node_modules
 
-*.json
 *.map
 *.md
 bootcamp-dio/typeScript/node_modules/engine.io/node_modules/debug/LICENSE
