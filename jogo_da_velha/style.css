@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg,
+     rgba(65, 185, 131, 1) 0%,
+     rgba(0, 212, 255, 1) 100%);
+}
+
+.board {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+/*conf efeito de X e circle antes de clicar no local*/
+/*!important para passar por cima do background colocado na celula*/
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+/*celula*/
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /*para fazer o X*/ 
+}
+/*para o cursor ficar com simbolo de proibido*/
+.cell.x, .cell.circle {
+    cursor: not-allowed;
+}
+/*serve para tirar a borda da parte de cima, esqueda, direita e baixo do quadrado*/
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7) {
+    border-left: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+    border-bottom: none;
+}
+
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+    border-right: none;
+}
+
+/* X */
+/* height calc(100px * 0.15) para ficar 15% o tamanho da celular*/
+/*width calc(100px * 0.9) para ficar 90% o tamanho da celular*/
+/*not(.x) e not(.circle) para ele ignorar os espaços que já contem o X e o circulo*/
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.x .cell:not(.x):not(.circle):hover::before {
+    content: "";
+    height: calc(100px * 0.15);
+    width: calc(100px * 0.9);
+    background: #fff;
+    position: absolute;
+}
+/*para fazer uma das pernas do X girar e ficar na posição*/
+.cell.cell.x::before,
+.board.x .cell:not(.x):not(.circle):hover::before {
+    transform: rotate(45deg);
+}
+/*para fazer uma das pernas do X girar e ficar na posição*/
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::after {
+    transform: rotate(-45deg);
+}
+
+/* circle */
+/* height calc(100px * 0.9) para ficar 90% o tamanho da celular*/
+/*width calc(100px * 0.9) para ficar 90% o tamanho da celular*/
+.cell.circle::before,
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before {
+    content: "";
+    height: calc(100px * 0.9);
+    width: calc(100px * 0.9);
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+/*mensagem de vitoria*/
+.winning-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+}
+
+.winning-message-button {
+    font-size: 2.5em;
+    background-color: rgba(65, 185, 131, 1);
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin-top: 16px;
+    color: #fff;
+}
+
+.winning-message-button:hover {
+    color: rgba(65, 185, 131, 1);
+    background: #fff;
+}
+
+.winning-message-text {
+    color: #fff;
+    font-size: 5em;
+}
+
+.show-winning-message {
+    display: flex;
+}
+
