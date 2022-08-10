@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body {
+    /*centraliza a imagem nop centro da tela*/
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
+
+main {
+    /*para o background não ficar em toda tela*/
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.pokedex {
+    /*para ajudar na responsividade*/
+    width: 100%;
+    max-width: 425px;
+}
+
+.pokemon__image {
+    /*bottom e etc.. é em relação a div main*/
+    position: absolute;
+    left: 40%;
+    bottom: 55%;
+    /*referente ao tamanho da img para centralizar*/
+    transform: translate(-23%, 20%);
+    /*para definir um tamanho padrao para todos*/
+    height: 15%;
+    
+}
+
+.pokemon__data {
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 55%;
+    left: 45%;
+    /*clamp vai fazer a fonte ter um tamanh. min, medio, e max*/
+    font-size: clamp(8px, 5vw, 18px);
+}
+
+.pokemon__name {
+    color: rgb(86, 84, 84);
+    /*para deixar a primeira letra maiuscula*/
+    text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    width: 60%;
+    top: 65%;
+    right: 23%;
+}
+
+.input__search {
+    width: 100%;
+    text-align: center;
+    padding: 3.5%;
+    border: 2px solid rgb(91, 91, 91);
+    border-radius: 5px;
+    font-weight: 500;   
+    font-size: clamp(6px, 5vw, 14px);
+    /*duas sombras em uma*/
+    box-shadow: -3px 3px 0px gray, -5px 5px 0 rgb(70, 70, 70);
+}
+
+.buttons {
+    position:absolute;
+    width: 65%;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-55%, 0);
+    /*se não tiver o flex fica um button a baixo do outro*/
+    display: flex;
+    /*para separar os buttons*/
+    gap: 15px;
+}
+
+.button {
+    cursor: pointer;
+    width: 50%;
+    padding: 3%;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: -3px 3px 0 rgb(24, 23, 23), -5px 5px 0 black;
+    font-size: clamp(6px, 5vw, 14px);
+    color: #fff;
+    background-color: rgb(39, 39, 39);
+}
+/*efeito de quando clica no botão*/
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9em;
+}
