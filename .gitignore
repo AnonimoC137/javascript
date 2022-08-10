@@ -10,5 +10,5 @@ bootcamp-dio/typeScript/node_modules/engine.io/node_modules/debug/LICENSE
 *.yml
 *.lock
 *.txt
-*.png
+
 *.lcl
