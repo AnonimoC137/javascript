@@ -24,7 +24,9 @@ header h1 {
 
 header img {
     position: absolute;
-    width: 5rem;
+    width: 100%;
+    max-width: 5rem;
+    min-width: 2rem;
     left: 1.5rem;
     top: 0.5rem;
 }
