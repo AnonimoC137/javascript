@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2? family= Silkscreen & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Silkscreen', cursiva;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(90deg, rgb(119, 206, 243), rgb(134, 25, 230));
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid #fff;
+    padding: 30px 40px;
+    width: 90%;
+    min-width: 375px;
+}
+
+.new-task-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 7px 10px rgb(35, 34, 34);
+    display: flex;  
+    width: 100%;
+}
+
+.new-task-container input {
+    /*vai ajustar auto a largura do input*/
+    flex: 3;
+    font-size: 1rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+.new-task-container input:focus {
+    /*para a bordar brilhas quando clicada*/
+    outline: none;
+    border-color: rgb(25, 157, 117);
+}
+
+.new-task-button {
+    background-color: rgb(25, 157, 117);
+    color: #fff;
+    flex: 1;
+    border-radius: 5px;
+    height: 100%;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    margin-left: 10px;
+    
+}
+
+.tasks-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 5px;
+    box-shadow: 0 7px 10px rgb(35, 34, 34);
+    width: 100%;
+}
+
+.error {
+    /*!important para sobre escrever se não não acontecer*/
+    border: 1px solid red !important;
+}
+
+.error::placeholder {
+    /*a cor do texto de referencia dentro do input*/
+    color: red;
+}
