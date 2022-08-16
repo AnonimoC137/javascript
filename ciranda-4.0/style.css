@@ -107,11 +107,10 @@ body {
 .produtos img {
     padding: 20px;
     display: inline-block;
+    width: 50%;
     min-width: 200px;
     height: 375px;
 }
 
-img {
-    width: 100%;
-}
+
 
