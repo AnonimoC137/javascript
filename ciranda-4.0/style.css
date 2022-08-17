@@ -12,7 +12,7 @@ header {
     width: 100%;
     height: 100px;
     min-width: 375px;
-    background-color: rgb(201, 123, 22);
+    background-color: rgb(247, 144, 10);
 
 }
 .logo-texto {
@@ -43,6 +43,15 @@ body {
     font-family: 'DynaPuff';
 }
 
+footer {
+    background-color: rgb(247, 144, 10);
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
 .container-flex {
     display: flex;
 }
@@ -51,6 +60,7 @@ body {
     width: 100%;
     min-width: 375px;
     height: 300px;
+    border: 1px solid black;
     
 }
 
@@ -65,7 +75,6 @@ body {
     width: 100%;
     min-width: 375px;
     min-height: 300px;
-    
     background: rgb(240, 172, 46);
     padding: 20px;
     
@@ -104,7 +113,7 @@ body {
 }
 
 .produtos {
-    background: rgb(201, 123, 22);
+    
 }
 
 .produtos p {
