@@ -37,8 +37,8 @@ header img {
 }
 
 body {
-    
-    background: rgb(197, 191, 182);
+    background-color: rgb(247, 144, 10);
+    /*background: rgb(197, 191, 182);*/
     text-align: center;
     font-size: 18px;
     font-family: 'DynaPuff';
@@ -76,7 +76,8 @@ footer p {
     width: 100%;
     min-width: 375px;
     min-height: 300px;
-    background: rgb(240, 172, 46);
+    /*background: rgb(240, 172, 46);*/
+    background-color: #fff;
     padding: 20px;
     
 }
@@ -91,8 +92,9 @@ footer p {
 
 .sobre h1 {
     display: flex;
-    color: #fff;
-    border: 2px #fff solid;
+    color: rgb(6, 6, 6);
+    border: 2px rgb(10, 10, 10) solid;
+    background-color: rgb(247, 144, 10);
     border-radius: 5px;
     align-items: center;
     padding: 5px;
@@ -102,7 +104,13 @@ footer p {
     width: 100%;
     min-width: 375px;
     min-height: 500px;
+    background-color: #fff;
     
+}
+
+.titulo-produtos {
+    padding: 10px;
+    margin-top: 20px;
 }
 
 
@@ -110,6 +118,7 @@ footer p {
     margin: 20px auto;
     border: 2px solid black;
     width: 50%;
+    background:rgb(247, 144, 10)
 }
 
 .produtos {
@@ -125,7 +134,7 @@ footer p {
 svg {
     display: flex;
 	width: 100%;
-	height: 150px;
+	height: 100px;
     
 }
 
@@ -139,9 +148,14 @@ svg {
 }
 
 
-@media (max-width:475px) {
+@media (max-width:749px) {
     .produtos img {
         width: 100%;
+    }
+
+    .logo-texto {
+        top: 0px;
+        font-size: 0.9rem;
     }
 }
 
@@ -150,7 +164,14 @@ svg {
         width: 50%;
         margin: auto;
     }
+    .logo-texto {
+        top: 0px;
+        font-size: 0.9rem;
+    }
+
+
 }
+
 
 
 
