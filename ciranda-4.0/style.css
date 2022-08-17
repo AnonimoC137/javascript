@@ -113,7 +113,9 @@ footer p {
 }
 
 .produtos {
-    
+    display: flex;
+    flex-direction: column;
+   
 }
 
 .produtos p {
@@ -123,9 +125,17 @@ footer p {
 .produtos img {
     padding: 20px;
     display: inline-block;
-    width: 85%;
+    width: 50%;
     min-width: 200px;
     height: 375px;
+    margin: auto;
+}
+
+
+@media (min-width:375px) {
+    .produtos img {
+        width: 100%;
+    }
 }
 
 
