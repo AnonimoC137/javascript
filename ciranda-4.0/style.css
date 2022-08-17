@@ -94,7 +94,7 @@ footer p {
     display: flex;
     color: rgb(6, 6, 6);
     border: 2px rgb(10, 10, 10) solid;
-    background-color: rgb(247, 144, 10);
+    background: linear-gradient(to left, rgb(244, 92, 92),orange);
     border-radius: 5px;
     align-items: center;
     padding: 5px;
@@ -118,7 +118,7 @@ footer p {
     margin: 20px auto;
     border: 2px solid black;
     width: 50%;
-    background:rgb(247, 144, 10)
+    background: linear-gradient(to left, rgb(244, 92, 92),orange);
 }
 
 .produtos {
