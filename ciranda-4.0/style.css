@@ -117,13 +117,13 @@ footer p {
 }
 
 .produtos p {
-    color: #fff;
+    color: rgb(8, 7, 7);
 }
 
 .produtos img {
     padding: 20px;
     display: inline-block;
-    width: 50%;
+    width: 85%;
     min-width: 200px;
     height: 375px;
 }
