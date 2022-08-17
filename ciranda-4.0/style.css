@@ -92,7 +92,7 @@ footer p {
 
 .sobre h1 {
     display: flex;
-    color: rgb(6, 6, 6);
+    color: rgb(255, 253, 253);
     border: 2px rgb(10, 10, 10) solid;
     background: linear-gradient(to left, rgb(244, 92, 92),orange);
     border-radius: 5px;
@@ -119,6 +119,8 @@ footer p {
     border: 2px solid black;
     width: 50%;
     background: linear-gradient(to left, rgb(244, 92, 92),orange);
+    color: #fff;
+    border-radius: 5px;
 }
 
 .produtos {
