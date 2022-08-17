@@ -9,30 +9,24 @@
 }
 
 header {
-    /*display: flex;
-    width: 100%;
+    width: 100vw;
+    margin: auto;
     height: 100px;
     min-width: 375px;
-    background-color: rgb(247, 144, 10);*/
+    
 
 }
-.logo-texto {
-    position: absolute;
-    width: 50%;
-    min-width: 1rem;
-    right: 0.1rem;
-    top: 1rem;
-    font-family:'Times New Roman', Times, serif;
-    color: #fff;
-    font-size: 1rem;
-}
 
-header img {
+
+
+
+.logo {
     position: absolute;
-    width: 100%;
-    max-width: 5rem;
-    left: 1.5rem;
-    top: 0.5rem;
+    width: 5%;
+    max-width: 1rem;
+    left: 45%;
+    top: 20%;
+    transform: translate(-55%,0);
     
 }
 
@@ -154,6 +148,11 @@ svg {
     .produtos img {
         width: 100%;
     }
+    .logo {
+        top: 11%;
+        left: 30%;
+        transform: translate(-55%,20%);
+    }
 
     .logo-texto {
         top: 0px;
@@ -169,6 +168,11 @@ svg {
     .logo-texto {
         top: 0px;
         font-size: 0.9rem;
+    }
+    .logo {
+        top: 13%;
+        left: 39%;
+        transform: translate(-55%);
     }
 
 
