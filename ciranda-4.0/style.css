@@ -32,8 +32,10 @@ nav a {
     
 }
 
-
-
+nav a:hover {
+    background-color: #fff;
+    color: rgb(247, 144, 10);
+}
 
 .logo {
     position: absolute;
@@ -76,13 +78,14 @@ footer p {
     display: flex;
     width: 100%;
     min-width: 375px;
-    height: 300px;
-    border: 1px solid black;
+    height: 350px;
     margin: auto;
+    
 }
 
 .container-flex img {
     width: 100%;
+    
     
 }
 
@@ -100,6 +103,7 @@ footer p {
     /*background: rgb(240, 172, 46);*/
     background-color: #fff;
     padding: 20px;
+    
     
 }
 
@@ -147,11 +151,20 @@ footer p {
 .produtos {
     display: flex;
     flex-direction: column;
+    
    
 }
 
 .produtos p {
     color: rgb(8, 7, 7);
+    background-color: rgb(247, 144, 10);
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 3px 3px black;
+    font-weight: 700;
+
 }
 
 svg {
@@ -199,7 +212,7 @@ svg {
     .logo {
         top: 33%;
         left: 43%;
-        transform: translate(-55%);
+        transform: translate(-55%, -10%);
     }
 
 
