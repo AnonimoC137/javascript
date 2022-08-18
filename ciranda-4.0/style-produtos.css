@@ -32,6 +32,10 @@ svg {
 	height: 100px;
 }
 
+main {
+    background-color: #fff;
+}
+
 nav {
     background: none;
     display: block;
@@ -54,12 +58,40 @@ nav a:hover {
 }
 
 .container-produtos {
+    width: 100%;
     display: block;
-    margin-top: 20px;
+    min-width: 300px;
 }
 
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content:space-evenly;
+}
+
+.botao {
+    cursor: pointer;
+    width: 28%;
+    padding: 3%;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: -3px 3px 0 rgb(248, 90, 90), -5px 5px 0 rgb(112, 3, 3);
+    font-size: clamp(6px, 5vw, 14px);
+    color: #fff;
+    background-color: rgb(189, 49, 49);
+    
+}
+
+.botao::active {
+    box-shadow: inset -4px 4px 0 #222;
+}
+
+
+
 .titulo {
-    width: 50%;
+    width: 60%;
     display: block;
     margin-top: 100px;
     margin-bottom: 50px;
@@ -71,8 +103,19 @@ nav a:hover {
 }
 
 .produtos {
-    border: 2px solid rgb(10, 10, 10);
+    width: 100%;
+    min-width: 300px;
+    display: flex;
     margin-top: 50px;
     padding: 10px;
+    flex-direction: column;
+    align-items: center;
     
+    
+}
+
+.produtos img {
+    width: 100%;
+    margin: auto;
+    padding: 30px;
 }
