@@ -84,14 +84,14 @@ nav a:hover {
     
 }
 
-.botao::active {
-    box-shadow: inset -4px 4px 0 #222;
-}
-
 .buttons button a {
     text-decoration: none;
     font-size: clamp(6px, 5vw, 14px);
     color: #fff;
+}
+
+.botao::active {
+    box-shadow: inset -4px 4px 0 #222;
 }
 
 
