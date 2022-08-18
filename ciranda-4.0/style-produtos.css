@@ -125,3 +125,18 @@ nav a:hover {
     margin: auto;
     padding: 30px;
 }
+
+@media(min-width: 800px) {
+    .botao {
+        width: 15%;
+        font-size: 1.5rem;
+        padding: 1%;
+    }
+    .buttons .botao a {
+        width: 15%;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+
+    
+}

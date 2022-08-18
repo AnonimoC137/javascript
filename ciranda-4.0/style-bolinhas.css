@@ -110,12 +110,14 @@ nav a:hover {
 
 .produtos {
     width: 100%;
-    min-width: 300px;
+    min-width: 200px;
+    max-width: 600px;
     display: flex;
     margin-top: 50px;
     padding: 10px;
     flex-direction: column;
     align-items: center;
+    margin: auto;
     
     
 }
@@ -124,4 +126,30 @@ nav a:hover {
     width: 100%;
     margin: auto;
     padding: 30px;
+    min-height: 300px;
+    max-height: 450px;
+    
+}
+
+.bolinhas-m {
+   width: 450px;
+}
+/*class criada para conf a img que estava cm tamanho errado*/
+.bolinhas-m img {
+    width: 100%;
+}
+
+@media(min-width: 800px) {
+    .botao {
+        width: 15%;
+        font-size: 1.5rem;
+        padding: 1%;
+    }
+    .buttons .botao a {
+        width: 15%;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+
+    
 }
