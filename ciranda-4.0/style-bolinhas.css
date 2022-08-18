@@ -127,12 +127,16 @@ nav a:hover {
     margin: auto;
     padding: 30px;
     min-height: 300px;
-    max-height: 450px;
+    max-height: 375px;
     
 }
 
+.bolinhas-p {
+    width: 375px;
+}
+
 .bolinhas-m {
-   width: 450px;
+   width: 375px;
 }
 /*class criada para conf a img que estava cm tamanho errado*/
 .bolinhas-m img {
@@ -149,6 +153,18 @@ nav a:hover {
         width: 15%;
         font-size: 1.5rem;
         margin: auto;
+    }
+
+    .produto img {
+        max-height: 450px;
+    }
+
+    .bolinhas-m {
+        width: 450px;
+    }
+
+    .bolinhas-p {
+        width: 450px;
     }
 
     
