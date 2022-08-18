@@ -183,6 +183,14 @@ svg {
     margin: auto;
 }
 
+.videos {
+    margin-top: 30px;
+}
+
+.videos video {
+    width: 100%;
+}
+
 
 @media (max-width:749px) {
     .produtos img {
