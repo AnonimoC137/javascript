@@ -185,6 +185,7 @@ svg {
 
 .videos {
     margin-top: 30px;
+    border: 2px solid black;
 }
 
 .videos video {
