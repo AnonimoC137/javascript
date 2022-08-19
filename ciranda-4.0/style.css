@@ -184,13 +184,15 @@ svg {
 }
 
 .videos {
-    margin-top: 30px;
-    border: 2px solid black;
-    background-color: black;
+    margin: 30px auto 30px;
+    
+    
 }
 
 .videos video {
     width: 100%;
+    margin: 30px auto 30px;
+    background-color: black; 
 }
 
 
