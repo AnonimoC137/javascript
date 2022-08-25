@@ -61,7 +61,7 @@ body {
 }
 
 footer {
-    background-color: #fff;
+    background-color: rgb(247, 144, 10);
     margin: auto;
 }
 
@@ -131,15 +131,24 @@ svg {
 }
 
 .videos {
-    margin: 30px auto 30px;
-    
-    
+    margin: 515px auto 30px; 
 }
 
 .videos video {
     width: 100%;
     margin: 30px auto 30px;
     background-color: black; 
+}
+
+.videos h1 {
+    color: rgb(255, 253, 253);
+    border: 2px rgb(10, 10, 10) solid;
+    background: linear-gradient(to left, rgb(244, 92, 92),orange);
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px;
+    margin: 20px auto;
+    width: 50%;
 }
 /*foto com rolagem*/
 .slider {
@@ -148,6 +157,18 @@ svg {
     overflow: hidden;
     position: absolute;
     border-radius: 10px;
+    
+}
+
+.slider h1 {
+    color: rgb(255, 253, 253);
+    border: 2px rgb(10, 10, 10) solid;
+    background: linear-gradient(to left, rgb(244, 92, 92),orange);
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px;
+    margin: 20px auto;
+    width: 50%;
 }
 
 
@@ -255,6 +276,13 @@ input {
 @media (max-width:749px) {
     .slider {
         width: 100%;
+    }
+
+    .sobre p {
+        background-color: #fff;
+        color: black;
+        margin-left: 10px;
+        border-radius: 10px 5px;
     }
 
     
