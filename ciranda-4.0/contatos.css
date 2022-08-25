@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body {
+    background-color: rgb(250, 248, 246);
+    /*background: rgb(197, 191, 182);*/
+    text-align: center;
+    font-size: 18px;
+    font-family: 'DynaPuff';
+    margin: auto;
+    overflow-x: hidden; 
+    
+}
+
+header {
+    width: 100vw;
+    margin: auto;
+    height: 9rem;
+    min-width: 375px;
+    border: 2px solid rgb(9, 9, 9);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgb(247, 144, 10);
+}
+
+svg {
+    display: flex;
+	width: 100%;
+	height: 100px;
+}
+
+main {
+    
+}
+
+footer {
+    background-color: rgb(247, 144, 10);
+    margin: auto;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+nav {
+    background: none;
+    display: block;
+
+}
+
+nav a {
+    text-decoration: none;
+    float: right;
+    padding: 10px;
+    margin-right: 20px;
+    color: rgb(7, 6, 6);
+
+    
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: rgb(247, 144, 10);
+}
+
+.container-contatos {
+    background-color: rgb(247, 144, 10);
+    padding: 20px;
+    border-radius: 10px 5px;
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 3px 3px 7px black;
+    
+}
+
+.container-contatos p {
+    padding: 10px;
+}
+
+.maps {
+    background-color: #fff;
+    width: 80%;
+    margin: 50px auto;
+    border: 2px solid black;
+}
+
+.maps h1 {
+    padding: 3%;
+    background-color: rgb(247, 144, 10);
+    margin-bottom: 20px;
+
+}
+
+@media(min-width:750px) {
+    .maps {
+        width: 50%;
+        
+    }
+    .maps h1 {
+        background-color: rgb(247, 144, 10);
+    }
+    .container-contatos {
+        background-color: rgb(247, 144, 10);
+        box-shadow: 3px 3px 7px black;
+    }
+
+    iframe {
+        width:100%;
+    }
+    body {
+        background-color: #fff;
+    }
+    nav a {
+        color: black; 
+    }
+    header {
+        border: 2px solid black;
+        background-color: rgb(247, 144, 10);
+
+    }
+}
