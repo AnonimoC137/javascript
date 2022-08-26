@@ -378,6 +378,10 @@ input {
 }
 /*menu hamburguer*/
 @media (max-width:999px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .nav-list {
         position: absolute;
         top: 8vh;
