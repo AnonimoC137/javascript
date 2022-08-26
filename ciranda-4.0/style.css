@@ -64,7 +64,7 @@ nav {
 }
 
 footer {
-    background-color: rgb(247, 144, 10);
+    background: #EB8344;
     margin: auto;
 }
 
@@ -93,7 +93,7 @@ body {
     min-width: 375px;
     min-height: 300px;
     /*background: rgb(240, 172, 46);*/
-    background-color:  rgb(247, 144, 10);
+    background: #EB8344;
    
     padding: 20px;
     margin: auto;
@@ -130,7 +130,7 @@ body {
 
 .videos {
     width: 100%;
-    background-color:  rgb(247, 144, 10);
+    background: #EB8344;
     margin: 515px auto 30px;
      
     
@@ -317,6 +317,7 @@ input {
 
     .sobre img {
         border-radius: 50%;
+        border: solid 2px black;
     }
 
     .texto {
@@ -330,17 +331,19 @@ input {
        
     }
     .videos {
-        width: 90vw;
+        width: 100vw;
        margin: 600px auto 50px;
+       border-radius: 30px;
        
     }
     .videos video {
         width: 95%;
-        margin-right: 20px;
+        
     }
 
     .logo {
         font-size: 14px;
+        position: absolute;
         
     }
     
