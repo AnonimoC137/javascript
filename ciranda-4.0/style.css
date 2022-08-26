@@ -31,18 +31,22 @@ nav {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #EB8344;
     height: 8vh;
+   
 }
+
+
 
 .nav-list {
     list-style: none;
     display: flex;
     padding: 15px;
+    
 }
 
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
-    color: #fff;
+    
 }
 
 .mobile-menu {
@@ -56,11 +60,6 @@ nav {
     background: #fff;
     margin: 8px;
     transition: 0.3s;
-}
-
-body {
-   overflow-x: hidden; 
-    
 }
 
 footer {
@@ -80,8 +79,7 @@ footer p {
     display: inline-block;
     justify-content: center;
     align-items: center;
-    width: 98vw;
-    margin: auto;
+    
 }
 
 .sobre {
@@ -126,7 +124,7 @@ footer p {
 }
 
 .videos {
-    width: 95vw;
+    width: 100%;
     background-color:  rgb(247, 144, 10);
     margin: 515px auto 30px;
      
@@ -278,7 +276,7 @@ input {
 
 
 
-@media (max-width:749px) {
+@media (max-width:999px) {
     .slider {
         width: 100%;
     }
@@ -295,7 +293,7 @@ input {
         height: 30%;
         text-align: center;
         margin: auto;
-        width: 100vw;
+        
         
         
           
@@ -327,7 +325,7 @@ input {
        
     }
     .videos {
-        width: 100vw;
+        width: 90vw;
        margin: 600px auto 50px;
        
     }
@@ -340,24 +338,21 @@ input {
         font-size: 14px;
         
     }
-    body {
-        overflow-x: hidden;
-    }
+    
 
     
 }
-
-@media (min-width:750px) {
-
-}
-    
 
 /*menu hamburguer*/
 @media (max-width:999px) {
     
-    body {
+    html,body {
         overflow-x: hidden;
     }
+    nav {
+        overflow: hidden;
+    }
+
 
     .nav-list {
         position: absolute;
@@ -371,20 +366,26 @@ input {
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
+        overflow-x: hidden;
+        
 
     }
     .nav-list li {
         margin-left: 0;
         opacity: 0;
+        overflow-x: hidden;
+
     }
 
     .mobile-menu {
         display: block;
         margin-top: 10px;
+        overflow-x: hidden;
     }
 
     .nav-list.active {
         transform: translateX(0);
+        overflow-x: hidden;
     }
 
     @keyframes navLinkFade {
