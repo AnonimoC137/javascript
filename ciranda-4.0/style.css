@@ -7,6 +7,7 @@
     font-size: 18px;
     font-family: 'DynaPuff';
     
+    
 }
 
 a {
@@ -59,7 +60,7 @@ nav {
     height: 2px;
     background: #fff;
     margin: 8px;
-    transition: 0.3s;
+    
 }
 
 footer {
@@ -70,6 +71,10 @@ footer {
 footer p {
     color: black;
     font-size: 1.2rem;
+}
+body {
+    scroll-snap-type: none;
+    
 }
 
 
@@ -350,42 +355,42 @@ input {
         overflow-x: hidden;
     }
     nav {
-        overflow: hidden;
+        
     }
 
 
     .nav-list {
-        position: absolute;
+        position: relative;
         top: 8vh;
         right: 0;
-        width: 40vw;
-        height: 40vh;
+        width: 100vw;
+        height: 100vh;
         background: #EB8344;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        overflow-x: hidden;
+        
         
 
     }
     .nav-list li {
         margin-left: 0;
         opacity: 0;
-        overflow-x: hidden;
+        
 
     }
 
     .mobile-menu {
         display: block;
         margin-top: 10px;
-        overflow-x: hidden;
+        
     }
 
     .nav-list.active {
         transform: translateX(0);
-        overflow-x: hidden;
+        
     }
 
     @keyframes navLinkFade {
