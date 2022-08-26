@@ -62,10 +62,9 @@ nav {
 
 body {
     
-   background: url(imagens/plano-de-fundo2.jpg) no-repeat center center;
+   background: url(imagens/plano-de-fundo2.jpg)  center center;
    background-size: cover;
    height: 92vh;
-   
    overflow-x: hidden; 
     
 }
@@ -378,9 +377,7 @@ Videos
 }
 /*menu hamburguer*/
 @media (max-width:999px) {
-    *{
-        
-    }
+    
     body {
         overflow-x: hidden;
     }
