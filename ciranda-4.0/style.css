@@ -4,59 +4,69 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
-}
-
-header {
-    width: 100vw;
-    margin: auto;
-    height: 100px;
-    min-width: 375px;
-    background-color: rgb(247, 144, 10);
-    
-}
-
-nav {
-    background-color: rgb(247, 144, 10)
-}
-
-nav a {
-    text-decoration: none;
-    float: right;
-    padding: 10px;
-    margin-right: 20px;
-    color: rgb(11, 11, 11);
-
-    
-}
-
-nav a:hover {
-    background-color: #fff;
-    color: rgb(247, 144, 10);
-}
-
-.logo {
-    position: absolute;
-    width: 5%;
-    max-width: 1rem;
-    left: 45%;
-    top: 50%;
-    border-radius: 10px;
-    
-}
-
-.logo img {
-    border-radius: 50%;
-    
-}
-
-body {
-    background-color: rgb(253, 252, 249);
-    /*background: rgb(197, 191, 182);*/
     text-align: center;
     font-size: 18px;
     font-family: 'DynaPuff';
-    margin: auto;
-    overflow-x: hidden; 
+    
+    
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #EB8344;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding: 15px;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    color: #fff;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+body {
+    
+   background: url(imagens/plano-de-fundo2.jpg) no-repeat center center;
+   background-size: cover;
+   height: 92vh;
+   
+   overflow-x: hidden; 
     
 }
 
@@ -70,15 +80,15 @@ footer p {
     font-size: 1.2rem;
 }
 
-svg {
-    display: flex;
-	width: 100%;
-	height: 100px;
+
+
+main {
+    width: 100vw;
     
 }
 
 .container-flex {
-    display: flex;
+    display: inline-block;
     width: 100%;
     min-width: 375px;
     height: 350px;
@@ -95,49 +105,69 @@ svg {
 }
 
 .container-sobre {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
+    width: 98vw;
+    margin: auto;
 }
 
 .sobre {
     display: flex;
-    width: 100%;
+    width: 98%;
     min-width: 375px;
     min-height: 300px;
     /*background: rgb(240, 172, 46);*/
     background-color:  rgb(247, 144, 10);
+   
     padding: 20px;
+    margin: auto;
+    
     
     
 }
 
 .sobre p {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 30px auto;
     padding: 20px;
     line-height: 30px;
+    transform: translate(0, 20%);
+    
+
 
 }
 
-.sobre h1 {
-    display: flex;
+.container-sobre h1 {
+    width: 25%;
     color: rgb(255, 253, 253);
     border: 2px rgb(10, 10, 10) solid;
     background: linear-gradient(to left, rgb(244, 92, 92),orange);
     border-radius: 5px;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.sobre img {
+    padding: 10px;
 }
 
 .videos {
-    margin: 515px auto 30px; 
+    width: 95vw;
+    background-color:  rgb(247, 144, 10);
+    margin: 515px auto 30px;
+     
+    
 }
 
 .videos video {
-    width: 100%;
+    width: 50%;
     margin: 30px auto 30px;
     background-color: black; 
+    border-radius: 30px;
+    padding: 20px;
+    margin: auto;
 }
 
 .videos h1 {
@@ -148,7 +178,7 @@ svg {
     align-items: center;
     padding: 5px;
     margin: 20px auto;
-    width: 50%;
+    width: 27%;
 }
 /*foto com rolagem*/
 .slider {
@@ -157,6 +187,8 @@ svg {
     overflow: hidden;
     position: absolute;
     border-radius: 10px;
+    left: 25%;
+    
     
 }
 
@@ -227,6 +259,7 @@ input {
     display: flex;
     width: 400%;
     height: 100%;
+    
 }
 
 .slide {
@@ -283,28 +316,120 @@ input {
         color: black;
         margin-left: 10px;
         border-radius: 10px 5px;
+        transform: none;
+    }
+    .container-sobre {
+        display: block;
+        height: 30%;
+        text-align: center;
+        margin: auto;
+        width: 100vw;
+        
+        
+          
+    }
+    .sobre {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+       
+
+        
+    }
+    .sobre p {
+        margin: 10px auto;
+    }
+
+    .sobre img {
+        border-radius: 50%;
+    }
+
+    .texto {
+        margin: 20px 10px 100px 0;
+        
+        
+    }
+
+    .slider {
+        left: 0;
+       
+    }
+    .videos {
+        width: 100vw;
+       margin: 600px auto 50px;
+       
+    }
+    .videos video {
+        width: 95%;
+        margin-right: 20px;
+    }
+
+    .logo {
+        font-size: 14px;
+        
     }
 
     
 }
 
 @media (min-width:750px) {
-    main {
-        width: 50%;
-        margin: auto;
-    }
-    .logo-texto {
-        top: 0px;
-        font-size: 0.9rem;
-    }
-    .logo {
-        top: 33%;
-        left: 43%;
-        transform: translate(-55%, -10%);
-    }
-
+    
 
 }
+/*menu hamburguer*/
+@media (max-width:999px) {
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 40vw;
+        height: 92vh;
+        background: #EB8344;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+      }
+      
+      .mobile-menu.active .line2 {
+        opacity: 0;
+      }
+      
+      .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+      }
+}
+
 
 
 
