@@ -5,14 +5,15 @@
     box-sizing: border-box;  
     text-align: center;
     font-size: 18px;
+    
 }
-
+/*
 @font-face {
     font-family: 'Android' ;
     src: url('./fontes/choko.ttf') format('opentype');
     font-weight: normal;
 }
-/*em progresso, pode ajuda na parte final para fazer os textos e decorar os textos*/
+/*em progresso, pode ajuda na parte final para fazer os textos e decorar os textos
 :root {
     --cor0:#c5ebd6;
     --cor1:#83e1ad;
@@ -23,7 +24,7 @@
 
     --fonte-padrao: Arial, sans-serif;
     --font-android:'Android', cursive;
-}
+} */
 
 a {
     color: #fff;
@@ -416,12 +417,13 @@ input {
         padding: 1%;
         border-radius: 10px 5px;
         background: rgb(74, 186, 74);
-        font-family: 'Android', 'Limelight';
+        font-family: 'Fruktur', cursiva;
         box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70);
     }
     
     .nav-list li a {
         color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     }
 
     .mobile-menu {
