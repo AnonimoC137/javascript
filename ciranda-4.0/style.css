@@ -331,6 +331,7 @@ input {
     .sobre img {
         border-radius: 50%;
         border: solid 2px rgb(255, 252, 252);
+        box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70);
     }
 
     .texto {
