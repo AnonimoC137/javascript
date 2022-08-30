@@ -7,6 +7,24 @@
     font-size: 18px;
 }
 
+@font-face {
+    font-family: 'Android' ;
+    src: url('./fontes/choko.ttf') format('opentype');
+    font-weight: normal;
+}
+/*em progresso, pode ajuda na parte final para fazer os textos e decorar os textos*/
+:root {
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#264526;
+
+    --fonte-padrao: Arial, sans-serif;
+    --font-android:'Android', cursive;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -379,7 +397,7 @@ input {
         top: 0vh;
         right: 0;
         width: 100vw;
-        height: 21vh;
+        height: 22vh;
         background: #EB8344;
         flex-direction: column;
         align-items: center;
@@ -398,7 +416,7 @@ input {
         padding: 1%;
         border-radius: 10px 5px;
         background: yellow;
-        font-family: cursive;
+        font-family: Android;
     }
     
     .nav-list li a {
