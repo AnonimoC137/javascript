@@ -96,6 +96,10 @@ nav {
     
 }
 
+.texto {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .maps {
     background-color: #fff;
     width: 85%;
