@@ -333,7 +333,7 @@ input {
 
     .sobre img {
         border-radius: 50%;
-        border: solid 2px black;
+        border: solid 2px rgb(255, 252, 252);
     }
 
     .texto {
@@ -378,10 +378,10 @@ input {
 
     .nav-list {
         position: relative;
-        top: 8vh;
+        top: 0vh;
         right: 0;
         width: 100vw;
-        height: 90vh;
+        height: 20vh;
         background: #EB8344;
         flex-direction: column;
         align-items: center;
@@ -395,6 +395,9 @@ input {
     .nav-list li {
         margin-left: 0;
         opacity: 0;
+        border: solid 1px #fff;
+        margin-bottom: 10px;
+        padding: 1%;
         
 
     }
