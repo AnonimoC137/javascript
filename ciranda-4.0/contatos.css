@@ -159,7 +159,7 @@ nav {
 
 @media(min-width:750px) {
     .maps {
-        width: 50%;
+        width: 85%;
         
     }
     .maps h1 {
@@ -171,7 +171,7 @@ nav {
     }
 
     iframe {
-        width:100%;
+        width:90%;
     }
     body {
         background-color: #fff;
