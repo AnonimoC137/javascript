@@ -5,9 +5,6 @@
     box-sizing: border-box;  
     text-align: center;
     font-size: 18px;
-    font-family: 'DynaPuff';
-    
-    
 }
 
 a {
@@ -398,8 +395,16 @@ input {
         border: solid 1px #fff;
         margin-bottom: 10px;
         padding: 1%;
+        border-radius: 10px 5px;
+        background: yellow;
+        font-family: cursive;
+        
         
 
+    }
+    
+    .nav-list li a {
+        color: black;
     }
 
     .mobile-menu {
