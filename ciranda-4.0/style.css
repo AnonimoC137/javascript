@@ -416,7 +416,7 @@ input {
         padding: 1%;
         border-radius: 10px 5px;
         background: yellow;
-        font-family: Android, 'Limelight';
+        font-family: 'Android', 'Limelight';
         box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70);
     }
     
