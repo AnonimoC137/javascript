@@ -23,7 +23,7 @@ a:hover {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    padding: 15px;
+    padding: 15px; 
 }
 
 nav {
@@ -34,8 +34,6 @@ nav {
     height: 8vh;
    
 }
-
-
 
 .nav-list {
     list-style: none;
@@ -92,9 +90,7 @@ body {
     width: 98%;
     min-width: 375px;
     min-height: 300px;
-    /*background: rgb(240, 172, 46);*/
     background: #EB8344;
-   
     padding: 20px;
     margin: auto;
     
@@ -155,6 +151,27 @@ body {
     margin: 20px auto;
     width: 27%;
 }
+/*icone whatsapp*/
+.icon {
+    position: fixed;
+    bottom: 65px;
+    left: 30px;
+    background-color: #01e675;
+    color: #fff;
+    border-radius: 50%;
+    padding: 17px;
+    width: 54px;
+    height: 53px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 3px 3px 3px grey;
+}
+
+.icon:hover {
+    background-color: #fff;
+    color: #01e675;
+}
 /*foto com rolagem*/
 .slider {
     width: 50%;
@@ -182,7 +199,6 @@ body {
 .navigation-auto {
     position: absolute;
     bottom: 20px;
-
     display: flex;
     left: 50%;
     transform: translate(-50%);
@@ -357,9 +373,7 @@ input {
     html,body {
         overflow-x: hidden;
     }
-    nav {
-        
-    }
+    
 
 
     .nav-list {
@@ -367,7 +381,7 @@ input {
         top: 8vh;
         right: 0;
         width: 100vw;
-        height: 100vh;
+        height: 30vh;
         background: #EB8344;
         flex-direction: column;
         align-items: center;

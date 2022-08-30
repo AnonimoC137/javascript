@@ -6,93 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciranda brinquedos inflaveis</title>
     <link rel="stylesheet" href="contatos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice" viewBox="24 105 156 95" >
-            <defs>
-                <style type="text/css">
-                        @-webkit-keyframes rotate {
-                             0% {
-                                  -webkit-transform: rotate(0);
-                                  transform: rotate(0)
-                             }
-                             100% {
-                                  -webkit-transform: rotate(360deg);
-                                  transform: rotate(360deg)
-                             }
-                        }
-        
-                        @keyframes rotate {
-                             0% {
-                                  -webkit-transform: rotate(0);
-                                  transform: rotate(0)
-                             }
-                             100% {
-                                  -webkit-transform: rotate(360deg);
-                                  transform: rotate(360deg)
-                             }
-                        }
-        
-                        .top-outer {
-                             -webkit-transform-origin: 73px 69px;
-                             transform-origin: 73px 69px;
-                             -webkit-animation: rotate 30s linear infinite;
-                             animation: rotate 30s linear infinite;
-                        }
-        
-                        .top-inner {
-                             -webkit-transform-origin: 73px 69px;
-                             transform-origin: 73px 69px;
-                             -webkit-animation: rotate 20s linear infinite;
-                             animation: rotate 20s linear infinite;
-                        }
-        
-                        .bottom-outer {
-                             -webkit-transform-origin: 134px 222px;
-                             transform-origin: 134px 222px;
-                             -webkit-animation: rotate 30s linear infinite;
-                             animation: rotate 30s linear infinite;
-                        }
-        
-                        .bottom-inner {
-                             -webkit-transform-origin: 134px  222px;
-                                        transform-origin: 134px  222px;
-                             -webkit-animation: rotate 20s linear infinite;
-                                        animation: rotate 20s linear infinite;
-                        }
-                </style>
-            </defs>
-            <rect x="0" y="0" width="300" height="300" fill="#E22227"/>
-            <path class="top-outer" fill="#EF8716" stroke="#371300" stroke-width="1" d="M68 1c23,0 67,17 69,39 4,38 5,52 -5,69 -20,36 -68,46 -120,-9 -27,-28 -7,-101 56,-99z"/>
-            <path class="top-inner" fill="#537571" stroke="#DCB467" stroke-width="1" d="M69 22c33,-7 52,21 54,37 3,26 -1,28 -8,40 -15,25 -48,25 -85,-14 -19,-20 -4,-53 39,-63z"/>
-            <path class="bottom-outer" fill="#DCB467" stroke="#371300" stroke-width="1" d="M158 158c30,13 56,50 44,75 -9,18 -22,46 -42,55 -20,10 -48,2 -73,-19 -29,-25 -27,-55 -9,-79 17,-22 43,-48 80,-32z"/>
-            <path class="bottom-inner" fill="#263D56" stroke="#537571" stroke-width="1" d="M136 180c32,-9 45,13 46,29 3,27 8,29 0,42 -14,25 -52,24 -79,0 -21,-18 -2,-61 33,-71z"/>
-        </svg>
         <nav>
-            <ul>
-              
-                <a href="produtos.html">Produtos</a>
-              
-                <a href="index.html">Home</a>
-              
+            <a href="#" class="logo">Ciranda B.I.P.L</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contatos.html">Nossa Localização</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="container-contatos">
-            <h1 class="titulo-contatos">Nosso contatos</h1>
+            <h1 class="titulo-contatos">Contatos</h1>
             <p>Celular:(51984175782) Rogerio Nunes</p>
         </div>
         <div class="maps">
             <h1>Nossa localização</h1>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55294.06806338503!2d-51.15613265089398!3d-29.982899921871923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951976ee2a574e7f%3A0xe472b1c1bb5229b7!2sSarandi%2C%20Porto%20Alegre%20-%20RS!5e0!3m2!1spt-BR!2sbr!4v1661378516700!5m2!1spt-BR!2sbr" width="300px" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <div class="icone-whats">
+            <a href="https://api.whatsapp.com/send?phone=5551984175782&text=gostaria%20de%20receber%20mais%20informações?" class="icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
         
     </main>
     <footer>
         <p>Criado por Alexandre Coimbra @coimbra.dev</p>
     </footer>
-    
+    <script src="contatos.js"></script>
 </body>
 </html>
