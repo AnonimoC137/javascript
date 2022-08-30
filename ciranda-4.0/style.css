@@ -7,24 +7,7 @@
     font-size: 18px;
     
 }
-/*
-@font-face {
-    font-family: 'Android' ;
-    src: url('./fontes/choko.ttf') format('opentype');
-    font-weight: normal;
-}
-/*em progresso, pode ajuda na parte final para fazer os textos e decorar os textos
-:root {
-    --cor0:#c5ebd6;
-    --cor1:#83e1ad;
-    --cor2:#3ddc84;
-    --cor3:#2fa866;
-    --cor4:#1a5c37;
-    --cor5:#264526;
 
-    --fonte-padrao: Arial, sans-serif;
-    --font-android:'Android', cursive;
-} */
 
 a {
     color: #fff;
@@ -95,31 +78,32 @@ body {
 
 
 .container-sobre {
-    display: inline-block;
+    display: block;
     justify-content: center;
     align-items: center;
     
 }
 
 .sobre {
-    display: flex;
-    width: 98%;
+    display: block;
+    width: 100%;
     min-width: 375px;
-    min-height: 300px;
+    min-height: 450px;
     background: #EB8344;
     padding: 20px;
-    margin: auto;
+    margin: 0 auto;
     
     
     
 }
 
 .sobre p {
-    text-align: center;
+    text-align: center, justify;
     margin-top: 30px auto;
     padding: 20px;
     line-height: 30px;
-    transform: translate(0, 20%);
+    text-indent: 10px;
+    
     
 
 
@@ -138,6 +122,14 @@ body {
 
 .sobre img {
     padding: 10px;
+    border-radius: 50%;
+    border: solid 2px rgb(255, 252, 252);
+    box-shadow: 20px 0px 14px rgba(35, 35, 35, 0.635), -10px 5px 0 rgba(35, 35, 35, 0.635);
+    
+}
+
+.texto {
+    margin: 10px auto;
 }
 
 .videos {
@@ -339,23 +331,25 @@ input {
         width: 100%;
         display: block;
         margin: 0 auto;
+        min-height: 300px;
        
 
         
     }
     .sobre p {
         margin: 10px auto;
+        text-align: left, justify;
+        font-size: 20px;
     }
 
     .sobre img {
         border-radius: 50%;
         border: solid 2px rgb(255, 252, 252);
-        box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70);
+        box-shadow: 20px 0px 14px rgba(35, 35, 35, 0.635), -10px 5px 0 rgba(35, 35, 35, 0.635);
     }
 
     .texto {
-        margin: 20px 10px 100px 0;
-        
+         
         
     }
 
@@ -423,12 +417,14 @@ input {
     
     .nav-list li a {
         color: black;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
     .mobile-menu {
         display: block;
         margin-top: 10px;
+        top: 10%;
+        left: 10px;
         
     }
 
@@ -449,7 +445,7 @@ input {
     }
 
     .mobile-menu.active .line1 {
-        transform: rotate(-45deg) translate(-8px, 8px);
+        transform: rotate(-45deg), translate(-8px, 8px);
       }
       
       .mobile-menu.active .line2 {
@@ -457,6 +453,6 @@ input {
       }
       
       .mobile-menu.active .line3 {
-        transform: rotate(45deg) translate(-5px, -7px);
+        transform: rotate(45deg), translate(-5px, -7px);
       }
 }
