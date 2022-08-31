@@ -311,13 +311,6 @@ input {
         width: 100%;
     }
 
-    .sobre p {
-        background-color: #fff;
-        color: black;
-        margin-left: 10px;
-        border-radius: 10px 5px;
-        transform: none;
-    }
     .container-sobre {
         display: block;
         height: 30%;
@@ -339,9 +332,14 @@ input {
     }
     .sobre p {
         margin: 10px auto;
-        text-align: left, justify;
+        text-align: justify;
         font-size: 20px;
         font-weight: 600;
+        background-color: #fff;
+        color: black;
+        margin-left: 10px;
+        border-radius: 10px 5px;
+        transform: none;
     }
 
     .sobre img {
