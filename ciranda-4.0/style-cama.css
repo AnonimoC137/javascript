@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(247, 144, 10);
+    
     /*background: rgb(197, 191, 182);*/
     text-align: center;
     font-size: 18px;
@@ -13,6 +13,16 @@ body {
     margin: auto;
     overflow-x: hidden; 
     
+}
+
+footer {
+    background: #EB8344;
+    margin: auto;
+}
+
+footer p {
+    color: black;
+    font-size: 1.2rem;
 }
 
 a {
@@ -78,6 +88,8 @@ main {
     min-width: 300px;
 }
 
+
+
 .buttons {
     margin-top: 30px;
     display: flex;
@@ -123,22 +135,65 @@ main {
     
 }
 
-.produtos {
+.produtos-1 {
     width: 100%;
     min-width: 300px;
     display: flex;
-    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px auto;
     padding: 10px;
-    flex-direction: column;
     align-items: center;
-    
+    background: #EB8344;
     
 }
 
-.produtos img {
-    width: 100%;
+.cama-1 {
     margin: auto;
-    padding: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.texto-1 {
+    background: #EB8344;
+}
+
+.texto-1 h1 {
+    color: #fff;
+}
+
+.texto-1 {
+    padding: 20px;
+}
+
+.produtos-2 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    padding: 10px;
+    align-items: center;
+    background: #FFF;
+}
+
+.cama-2 {
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.texto-2 {
+    background: #EB8344;
+}
+
+.texto-2 h1 {
+    color: #fff;
 }
 
 /*icone whatsapp*/
