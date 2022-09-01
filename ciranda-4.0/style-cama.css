@@ -196,6 +196,34 @@ main {
     color: #fff;
 }
 
+.produtos-3 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    padding: 10px;
+    align-items: center;
+    background: #EB8344;
+}
+
+.cama-3 {
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.texto-3 {
+    background: #EB8344;
+}
+
+.texto-3 h1 {
+    color: #fff;
+}
+
 /*icone whatsapp*/
 .icon {
     position: fixed;
@@ -238,13 +266,19 @@ main {
     html,body {
         overflow-x: hidden;
     }
-
+    /*tamanhos img dos produtos*/
     .cama-1 img {
         width: 85%;
+        margin-bottom: 10px;
     }
 
     .cama-2 img {
         width: 85%;
+        margin-bottom: 10px;
+    }
+    .cama-3 img {
+        width: 85%;
+        margin-bottom: 10px;
     }
     
 
