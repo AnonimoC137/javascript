@@ -314,7 +314,8 @@ main {
         margin-bottom: 10px;
     }
     .produtos-2 {
-        width: 100vw;  
+        width: 100vw;
+        background: #EB8344;  
     }
     .produtos-2 .cama-2 {
         box-shadow: none;
@@ -335,7 +336,8 @@ main {
         margin-bottom: 10px;
     }
     .produtos-4 {
-        width: 100vw;  
+        width: 100vw;
+        background: #EB8344;  
     }
     .produtos-4 .cama-4 {
         box-shadow: none;
