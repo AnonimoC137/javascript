@@ -302,18 +302,43 @@ main {
         overflow-x: hidden;
     }
     /*tamanhos img dos produtos*/
+    /*tirar a sombra e tela cheia*/
+    .produtos-1 {
+        width: 100vw;  
+    }
+    .produtos-1 .cama-1 {
+        box-shadow: none;
+    }
     .cama-1 img {
         width: 85%;
         margin-bottom: 10px;
+    }
+    .produtos-2 {
+        width: 100vw;  
+    }
+    .produtos-2 .cama-2 {
+        box-shadow: none;
     }
 
     .cama-2 img {
         width: 85%;
         margin-bottom: 10px;
     }
+    .produtos-3 {
+        width: 100vw;  
+    }
+    .produtos-3 .cama-3 {
+        box-shadow: none;
+    }
     .cama-3 img {
         width: 85%;
         margin-bottom: 10px;
+    }
+    .produtos-4 {
+        width: 100vw;  
+    }
+    .produtos-4 .cama-4 {
+        box-shadow: none;
     }
     .cama-4 img {
         width: 85%;
