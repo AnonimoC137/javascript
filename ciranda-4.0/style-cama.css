@@ -76,7 +76,7 @@ nav {
 }
 
 main {
-    background: rgb(205, 199, 199);
+    background: #fff;
 }
 
 
@@ -178,7 +178,7 @@ main {
     margin: 50px auto;
     padding: 10px;
     align-items: center;
-    background: rgb(205, 199, 199);
+    background: #fff;
 }
 
 .cama-2 {
@@ -238,7 +238,7 @@ main {
     margin: 50px auto 15px;
     padding: 10px;
     align-items: center;
-    background: rgb(205, 199, 199);
+    background: #fff;
 }
 
 .cama-4 {
