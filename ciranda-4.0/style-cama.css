@@ -12,7 +12,6 @@ body {
     font-family: 'DynaPuff';
     margin: auto;
     overflow-x: hidden; 
-    
 }
 
 footer {
@@ -77,7 +76,7 @@ nav {
 }
 
 main {
-    background-color: #fff;
+    background: rgb(205, 199, 199);
 }
 
 
@@ -157,7 +156,9 @@ main {
 }
 
 .texto-1 {
-    background: #EB8344;
+    background: rgb(74, 186, 74);
+    border-radius: 55px 5px;
+    margin-top: 10px;
 }
 
 .texto-1 h1 {
@@ -177,7 +178,7 @@ main {
     margin: 50px auto;
     padding: 10px;
     align-items: center;
-    background: #FFF;
+    background: rgb(205, 199, 199);
 }
 
 .cama-2 {
@@ -189,7 +190,9 @@ main {
 }
 
 .texto-2 {
-    background: #EB8344;
+    background: rgb(74, 186, 74);
+    border-radius: 5px 55px;
+    margin-top: 10px;
 }
 
 .texto-2 h1 {
@@ -217,10 +220,42 @@ main {
 }
 
 .texto-3 {
-    background: #EB8344;
+    background: rgb(74, 186, 74);
+    border-radius: 55px 5px;
+    margin-top: 10px;
 }
 
 .texto-3 h1 {
+    color: #fff;
+}
+
+.produtos-4 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px auto 15px;
+    padding: 10px;
+    align-items: center;
+    background: rgb(205, 199, 199);
+}
+
+.cama-4 {
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.texto-4 {
+    background: rgb(74, 186, 74);
+    border-radius: 5px 55px;
+    margin-top: 10px;
+}
+
+.texto-4 h1 {
     color: #fff;
 }
 
@@ -277,6 +312,10 @@ main {
         margin-bottom: 10px;
     }
     .cama-3 img {
+        width: 85%;
+        margin-bottom: 10px;
+    }
+    .cama-4 img {
         width: 85%;
         margin-bottom: 10px;
     }
