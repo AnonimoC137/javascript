@@ -19,6 +19,7 @@ footer {
     background: #EB8344;
     margin: auto;
     border-top: 2px solid #fff;
+    padding: 10px;
 }
 
 footer p {
@@ -169,7 +170,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto;
+    margin: 50px auto 0;
     padding: 10px;
     align-items: center;
     background: #fff;
@@ -229,7 +230,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto 15px;
+    margin: 50px auto 0px;
     padding: 10px;
     align-items: center;
     background: #fff;
@@ -287,21 +288,7 @@ nav {
         width: 15%;
         font-size: 1.5rem;
         margin: auto;
-    }
-
-    .produto img {
-        max-height: 500px;
-    }
-
-    .bolinhas-m {
-        width: 450px;
-    }
-
-    .bolinhas-p {
-        width: 450px;
-    }
-
-    
+    } 
 }
 
 @media (max-width:999px) {
@@ -354,6 +341,10 @@ nav {
     .cama-4 img {
         width: 85%;
         margin-bottom: 10px;
+    }
+
+    .container-produtos {
+        background: #EB8344;
     }
     
     .nav-list {
