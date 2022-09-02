@@ -17,10 +17,11 @@ body {
 footer {
     background: #EB8344;
     margin: auto;
+    border-top: 2px solid #fff;
 }
 
 footer p {
-    color: black;
+    color: #fff;
     font-size: 1.2rem;
 }
 

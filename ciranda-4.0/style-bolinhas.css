@@ -18,6 +18,7 @@ body {
 footer {
     background: #EB8344;
     margin: auto;
+    border-top: 2px solid #fff;
 }
 
 footer p {
