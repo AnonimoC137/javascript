@@ -355,8 +355,13 @@ input {
     }
 
     .fotos img {
+        width: 45%;
+        margin: 15px auto 10px;
+        background-color: black;
+        border-radius: 30px;
         padding: 1px;
     }
+        
     
 
     
