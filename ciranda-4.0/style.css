@@ -344,7 +344,7 @@ input {
     }
     .videos {
         width: 100vw;
-       margin: 20px auto 50px;
+       margin: 20px auto 0;
     }
     .videos video {
         width: 95%;
