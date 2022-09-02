@@ -5,7 +5,6 @@
     box-sizing: border-box;  
     text-align: center;
     font-size: 18px;
-    
 }
 
 .fotos {
@@ -16,10 +15,6 @@
     background: #f6f3f1;
     margin: auto auto;
     padding: 5px;
-    
-    
-
-    
 }
 
 .fotos img {
@@ -28,7 +23,6 @@
     background-color: black; 
     border-radius: 30px;
     padding: 20px;
-    
 }
 
 
@@ -55,20 +49,17 @@ nav {
     background: #EB8344;
     height: 10vh;
     border-bottom: 1px solid #fff;
-   
 }
 
 .nav-list {
     list-style: none;
     display: flex;
     padding: 15px;
-    
 }
 
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
-    
 }
 
 .mobile-menu {
@@ -81,7 +72,6 @@ nav {
     height: 2px;
     background: #fff;
     margin: 8px;
-    
 }
 
 footer {
@@ -95,17 +85,12 @@ footer p {
 }
 body {
     scroll-snap-type: none;
-    
 }
-
-
-
 
 .container-sobre {
     display: block;
     justify-content: center;
     align-items: center;
-    
 }
 
 .sobre {
@@ -116,9 +101,6 @@ body {
     background: #EB8344;
     padding: 20px;
     margin: 0 auto;
-    
-    
-    
 }
 
 .sobre p {
@@ -127,10 +109,6 @@ body {
     padding: 20px;
     line-height: 30px;
     text-indent: 10px;
-    
-    
-
-
 }
 
 .container-sobre h1 {
@@ -149,7 +127,6 @@ body {
     border-radius: 50%;
     border: solid 2px rgb(255, 252, 252);
     box-shadow: 20px 0px 14px rgba(35, 35, 35, 0.635), -10px 5px 0 rgba(35, 35, 35, 0.635);
-    
 }
 
 .texto {
@@ -164,8 +141,6 @@ body {
     background: #EB8344;
     margin: auto auto;
     padding: 20px;
-     
-    
 }
 
 .videos video {
@@ -214,9 +189,7 @@ body {
     overflow: hidden;
     position: absolute;
     border-radius: 10px;
-    left: 25%;
-    
-    
+    left: 25%;  
 }
 
 .slider h1 {
@@ -230,7 +203,6 @@ body {
     width: 50%;
 }
 
-
 .navigation-auto {
     position: absolute;
     bottom: 20px;
@@ -241,7 +213,6 @@ body {
 
 .navigation-auto div {
     border: 2px solid #fff;
-
     padding: 10px;
     border-radius: 20px;
     cursor: pointer;
@@ -254,7 +225,6 @@ body {
 .navigation-bar {
     position: absolute;
     bottom: 20px;
-
     display: flex;
     left: 50%;
     transform: translate(-50%);
@@ -341,20 +311,13 @@ input {
         display: block;
         height: 30%;
         text-align: center;
-        margin: auto;
-        
-        
-        
-          
+        margin: auto;    
     }
     .sobre {
         width: 100%;
         display: block;
         margin: 0 auto;
-        min-height: 300px;
-       
-
-        
+        min-height: 300px;  
     }
     .sobre p {
         margin: 10px auto;
@@ -374,11 +337,6 @@ input {
         box-shadow: 20px 0px 14px rgba(35, 35, 35, 0.635), -10px 5px 0 rgba(35, 35, 35, 0.635);
     }
 
-    .texto {
-         
-        
-    }
-
     .slider {
         left: 0;
        
@@ -386,18 +344,14 @@ input {
     .videos {
         width: 100vw;
        margin: 20px auto 50px;
-       border-radius: 30px;
-       
     }
     .videos video {
         width: 95%;
-        
     }
 
     .logo {
         font-size: 14px;
         position: absolute;
-        
     }
 
     .fotos img {
@@ -415,8 +369,6 @@ input {
         overflow-x: hidden;
     }
     
-
-
     .nav-list {
         position: relative;
         top: 0vh;
@@ -429,10 +381,8 @@ input {
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        
-        
-
     }
+
     .nav-list li {
         margin-left: 0;
         opacity: 0;
@@ -460,7 +410,6 @@ input {
 
     .nav-list.active {
         transform: translateX(0);
-        
     }
 
     @keyframes navLinkFade {
