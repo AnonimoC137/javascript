@@ -18,6 +18,7 @@ footer {
     background: #EB8344;
     margin: auto;
     border-top: 2px solid #fff;
+    padding: 10px;
 }
 
 footer p {
@@ -236,7 +237,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto 15px;
+    margin: 50px auto 0px;
     padding: 10px;
     align-items: center;
     background: #fff;
@@ -346,6 +347,10 @@ main {
     .cama-4 img {
         width: 85%;
         margin-bottom: 10px;
+    }
+
+    .container-produtos {
+        background: #EB8344;
     }
     
 
