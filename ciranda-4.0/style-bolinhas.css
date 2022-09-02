@@ -15,6 +15,16 @@ body {
     
 }
 
+footer {
+    background: #EB8344;
+    margin: auto;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -117,41 +127,132 @@ nav {
     
 }
 
-.produtos {
+.produtos-1 {
     width: 100%;
-    min-width: 200px;
-    max-width: 600px;
+    min-width: 300px;
     display: flex;
-    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px auto;
     padding: 10px;
-    flex-direction: column;
     align-items: center;
+    background: #EB8344;
+    
+}
+
+.bolinha-1 {
     margin: auto;
-    
-    
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
 }
 
-.produtos img {
+.texto-1 {
+    background: rgb(74, 186, 74);
+    border-radius: 55px 5px;
+    margin-top: 10px;
+}
+
+.texto-1 h1 {
+    color: #fff;
+}
+
+.texto-1 {
+    padding: 20px;
+}
+
+.produtos-2 {
     width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    padding: 10px;
+    align-items: center;
+    background: #fff;
+}
+
+.bolinha-2 {
     margin: auto;
-    padding: 30px;
-    min-height: 300px;
-    max-height: 375px;
-    
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
 }
 
-.bolinhas-p {
-    width: 375px;
+.texto-2 {
+    background: rgb(74, 186, 74);
+    border-radius: 5px 55px;
+    margin-top: 10px;
 }
 
-.bolinhas-m {
-   width: 375px;
-   height: 450px;
+.texto-2 h1 {
+    color: #fff;
 }
-/*class criada para conf a img que estava cm tamanho errado*/
-.bolinhas-m img {
+
+.produtos-3 {
     width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    padding: 10px;
+    align-items: center;
+    background: #EB8344;
 }
+
+.cama-3 {
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.texto-3 {
+    background: rgb(74, 186, 74);
+    border-radius: 55px 5px;
+    margin-top: 10px;
+}
+
+.texto-3 h1 {
+    color: #fff;
+}
+
+.produtos-4 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px auto 15px;
+    padding: 10px;
+    align-items: center;
+    background: #fff;
+}
+
+.cama-4 {
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.texto-4 {
+    background: rgb(74, 186, 74);
+    border-radius: 5px 55px;
+    margin-top: 10px;
+}
+
+.texto-4 h1 {
+    color: #fff;
+}
+
+
 
 /*icone whatsapp*/
 .icon {
@@ -207,9 +308,53 @@ nav {
     html,body {
         overflow-x: hidden;
     }
+
+    /*tamanhos img dos produtos*/
+    /*tirar a sombra e tela cheia*/
+    .produtos-1 {
+        width: 100vw;  
+    }
+    .produtos-1 .bolinha-1 {
+        box-shadow: none;
+    }
+    .bolinha-1 img {
+        width: 85%;
+        margin-bottom: 10px;
+    }
+    .produtos-2 {
+        width: 100vw;
+        background: #EB8344;  
+    }
+    .produtos-2 .bolinha-2 {
+        box-shadow: none;
+    }
+
+    .bolinha-2 img {
+        width: 85%;
+        margin-bottom: 10px;
+    }
+    .produtos-3 {
+        width: 100vw;  
+    }
+    .produtos-3 .cama-3 {
+        box-shadow: none;
+    }
+    .cama-3 img {
+        width: 85%;
+        margin-bottom: 10px;
+    }
+    .produtos-4 {
+        width: 100vw;
+        background: #EB8344;  
+    }
+    .produtos-4 .cama-4 {
+        box-shadow: none;
+    }
+    .cama-4 img {
+        width: 85%;
+        margin-bottom: 10px;
+    }
     
-
-
     .nav-list {
         position: relative;
         top: 0vh;
@@ -222,9 +367,6 @@ nav {
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        
-        
-
     }
     .nav-list li {
         margin-left: 0;
@@ -246,18 +388,15 @@ nav {
     .mobile-menu {
         display: block;
         margin-top: 10px;
-        
     }
 
     .nav-list.active {
-        transform: translateX(0);
-        
+        transform: translateX(0);   
     }
 
     .logo {
         font-size: 14px;
-        position: absolute;
-        
+        position: absolute;  
     }
 
     @keyframes navLinkFade {
