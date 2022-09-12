@@ -8,7 +8,6 @@
 
 body {
     background-color: rgb(247, 144, 10);
-    /*background: rgb(197, 191, 182);*/
     text-align: center;
     font-size: 18px;
     font-family: 'DynaPuff';
@@ -145,10 +144,10 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto;
+    margin: 30px auto 0;
     padding: 10px;
     align-items: center;
-    background: #EB8344;
+    background-image: url(imagens/fundoo3.jpg);
     
 }
 
@@ -180,10 +179,11 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto;
-    padding: 10px;
+    margin: auto;
+    padding: 40px;
     align-items: center;
-    background: #fff;
+    background: #EB8344;
+    
 }
 
 .inflavel-2 {
@@ -210,10 +210,10 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto;
-    padding: 10px;
+    margin: auto 0px;
+    padding: 40px;
     align-items: center;
-    background: #EB8344;
+    background-image: url(imagens/fundoo3.jpg);
 }
 
 .inflavel-3 {
@@ -240,10 +240,10 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto 0px;
-    padding: 10px;
+    margin: auto;
+    padding: 40px;
     align-items: center;
-    background: #fff;
+    background: #EB8344;
 }
 
 .cama-4 {
@@ -312,13 +312,14 @@ main {
     }
     .produtos-1 .inflavel-1 {
         box-shadow: none;
+        width: 85%;
     }
     .inflavel-1 img {
-        width: 85%;
+        width: 90%;
         margin-bottom: 10px;
     }
     .produtos-2 {
-        width: 100vw;
+        width: 100%;
         background: #EB8344;  
     }
     .produtos-2 .inflavel-2 {
@@ -326,7 +327,7 @@ main {
     }
 
     .inflavel-2 img {
-        width: 85%;
+        width: 90%;
         margin-bottom: 10px;
     }
     .produtos-3 {
@@ -336,7 +337,7 @@ main {
         box-shadow: none;
     }
     .inflavel-3 img {
-        width: 85%;
+        width: 90%;
         margin-bottom: 10px;
     }
     .produtos-4 {
