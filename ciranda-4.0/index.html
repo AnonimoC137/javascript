@@ -6,108 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <style>
+        /*efeito escrita no texto*/
+        .texto {
+            margin: 0 auto;
+        }
+        .sobre p  {
+          max-width: 750px;
+          text-align: center;
+          margin:  20px auto;
+          font-family: 'Courier New', Courier, monospace !important;
+          color: rgb(8, 8, 8);
+          padding: 20px;
+          font-weight: 600 !important;
+          text-align: justify;
+        }
+      
+         p::after {
+          content: '|';
+          opacity: 1;
+          margin-left: 0 auto;
+          display: inline-block;
+          animation: blink .7s infinite;
+        }
+      
+        @keyframes blink {
+          0%, 100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+        }
+      </style>
 </head>
 <body>
     
     <header>
-        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice" viewBox="24 105 156 95" >
-            <defs>
-                <style type="text/css">
-                        @-webkit-keyframes rotate {
-                             0% {
-                                  -webkit-transform: rotate(0);
-                                  transform: rotate(0)
-                             }
-                             100% {
-                                  -webkit-transform: rotate(360deg);
-                                  transform: rotate(360deg)
-                             }
-                        }
-        
-                        @keyframes rotate {
-                             0% {
-                                  -webkit-transform: rotate(0);
-                                  transform: rotate(0)
-                             }
-                             100% {
-                                  -webkit-transform: rotate(360deg);
-                                  transform: rotate(360deg)
-                             }
-                        }
-        
-                        .top-outer {
-                             -webkit-transform-origin: 73px 69px;
-                             transform-origin: 73px 69px;
-                             -webkit-animation: rotate 30s linear infinite;
-                             animation: rotate 30s linear infinite;
-                        }
-        
-                        .top-inner {
-                             -webkit-transform-origin: 73px 69px;
-                             transform-origin: 73px 69px;
-                             -webkit-animation: rotate 20s linear infinite;
-                             animation: rotate 20s linear infinite;
-                        }
-        
-                        .bottom-outer {
-                             -webkit-transform-origin: 134px 222px;
-                             transform-origin: 134px 222px;
-                             -webkit-animation: rotate 30s linear infinite;
-                             animation: rotate 30s linear infinite;
-                        }
-        
-                        .bottom-inner {
-                             -webkit-transform-origin: 134px  222px;
-                                        transform-origin: 134px  222px;
-                             -webkit-animation: rotate 20s linear infinite;
-                                        animation: rotate 20s linear infinite;
-                        }
-                </style>
-            </defs>
-            <rect x="0" y="0" width="300" height="300" fill="#E22227"/>
-            <path class="top-outer" fill="#EF8716" stroke="#371300" stroke-width="1" d="M68 1c23,0 67,17 69,39 4,38 5,52 -5,69 -20,36 -68,46 -120,-9 -27,-28 -7,-101 56,-99z"/>
-            <path class="top-inner" fill="#537571" stroke="#DCB467" stroke-width="1" d="M69 22c33,-7 52,21 54,37 3,26 -1,28 -8,40 -15,25 -48,25 -85,-14 -19,-20 -4,-53 39,-63z"/>
-            <path class="bottom-outer" fill="#DCB467" stroke="#371300" stroke-width="1" d="M158 158c30,13 56,50 44,75 -9,18 -22,46 -42,55 -20,10 -48,2 -73,-19 -29,-25 -27,-55 -9,-79 17,-22 43,-48 80,-32z"/>
-            <path class="bottom-inner" fill="#263D56" stroke="#537571" stroke-width="1" d="M136 180c32,-9 45,13 46,29 3,27 8,29 0,42 -14,25 -52,24 -79,0 -21,-18 -2,-61 33,-71z"/>
-        </svg>
         <nav>
-            <ul>
-              <a href="#">Contato</a>
-              <a href="produtos.html">Produtos</a>
-              
+            <a href="#" class="logo"></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contatos.html">Nossa Localização</a></li>
             </ul>
         </nav>
+       
         
     </header>
     <main>
-        <div class="container-flex">
-            <!--<img src="imagens/banner.jpg" alt="capa">-->
-            <img src="imagens/logo.jpg" alt="logo">
-        </div>
-        <div class="logo">
-            
-        </div>
+        
         <div class="container-sobre">
+            
             <div class="sobre">
-                <h1>Sobre nós</h1>
-                <p>Somos uma Empresa de locação de brinquedos infantis atuante desde 2010 , aprendemos muito com os nossos clientes no decorrer deste período e uma das coisas que mais achamos relevante é a qualidade dos brinquedos junto com o compromisso de entrega  no horário combinado . Assim alcançamos uma excelência de serviços condizentes as exigências de nossos clientes, pois a nossa visão é de alcançar o melhor fatia do mercado de entretenimento sem medir esforços com a missão de alegrar o máximo de lares a cada ano .</p>
+                <img src="imagens/logo.jpg" width="300px" alt="logo">
+                
+                <div class="texto">
+                    
+                    <p>Somos uma Empresa de locação de brinquedos infantis atuante desde 2010,aprendemos muito com os nossos clientes no decorrer deste período e uma das coisas que mais achamos relevante é a qualidade dos brinquedos junto com o compromisso de entrega  no horário combinado . Assim alcançamos uma excelência de serviços condizentes as exigências de nossos clientes, pois a nossa visão é de alcançar o melhor fatia do mercado de entretenimento sem medir esforços com a missão de alegrar o máximo de lares a cada ano .</p>
+                </div>
             </div>
         </div>
-        <div class="container-produtos">
-            <div class="titulo-produtos">
-                <h1>Fotos</h1>
-            </div>
-            <div class="produtos">
-                <img src="imagens/cama-elastica1.jpg" alt="1">
-                <img src="imagens/cama-tuboga.jpg" alt="1">
-                <img src="imagens/mini-tuboga.jpg" alt="1">
-                <img src="imagens/foto-brinquedo-3.jpg" alt="1">
-                <img src="imagens/foto-brinquedo-1.jpg"   alt="1">
+    
+            <h1>Fotos</h1>
+            <div class="fotos" >
+    
+                    <img src="imagens/cama-elastica1.jpg" alt="">
+        
+                    <img src="imagens/cama-tuboga.jpg" alt="">
+        
+                    <img src="imagens/castelo-batman.jpg" alt="">
                 
-                <img src="imagens/foto-brinquedo-2.jpg" alt="1">
-                
-                <h1>Videos</h1>
+                    <img src="imagens/foto-brinquedo-1.jpg" alt="">
+
+            </div>       
+        
+
+
+        <h1>Videos</h1>
                 <div class="videos">
                     
                     <video width="375" height="300"controls="controls" >
@@ -138,12 +122,36 @@
                            </object>
                     </video>
                 </div>
-            </div>
-            
-        </div>
+                <div class="icone-whats">
+                    <a href="https://api.whatsapp.com/send?phone=5551984175782&text=gostaria%20de%20receber%20mais%20informações?" class="icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                
+        
     </main>
     <footer>
         <p>Criado por Alexandre Coimbra @coimbra.dev</p>
     </footer>
+    <script src="mobile.js"></script>
+    <script>
+        function typeWriter(elemento) {
+          const textoArray = elemento.innerHTML.split('');
+          elemento.innerHTML = '';
+          textoArray.forEach((letra, i) => {
+            setTimeout(() => elemento.innerHTML += letra, 75 * i);
+          });
+        }
+      
+        // Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
+        // function typeWriter(elemento) {
+        //   const textoArray = elemento.innerHTML.split('');
+        //   elemento.innerHTML = '';
+        //   for(let i = 0; i < textoArray.length; i++) {
+        //     setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
+        //   }
+        // }
+      
+        const titulo = document.querySelector('p');
+        typeWriter(titulo);
+      </script>
 </body>
 </html>

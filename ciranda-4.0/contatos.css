@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body {
+    background-color: rgb(250, 248, 246);
+    text-align: center;
+    font-size: 18px;
+    font-family: 'DynaPuff';
+    margin: auto;
+    overflow-x: hidden; 
+    
+}
+
+footer {
+    background: #EB8344;
+    margin: auto;
+    border-top: 2px solid #fff;
+    padding: 10px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 15px; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #EB8344;
+    height: 8vh;
+   
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding: 15px;
+    
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    
+}
+
+.container-contatos {
+    background: #EB8344;
+    padding: 20px;
+    border-radius: 10px 5px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 3px 3px 7px black;
+    
+}
+
+.container-contatos h1 {
+    color: #fff;
+    
+}
+
+.container-contatos p {
+    padding: 10px;
+    font-family: 'DynaPuff';
+    
+}
+
+.texto {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.maps {
+    background-color: #fff;
+    width: 85%;
+    margin: 50px auto;
+    border: 2px solid black;
+    box-shadow: 30px 0px 14px gray, -10px 5px 0 rgb(5, 5, 5);
+}
+
+.maps h1 {
+    padding: 3%;
+    background: #EB8344;
+    margin-bottom: 20px;
+    color: #fff;
+
+}
+
+.redes {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.facebook {
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram {
+    
+    display: flex;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*icone whatsapp*/
+.icon {
+    position: fixed;
+    bottom: 65px;
+    left: 30px;
+    background-color: #01e675;
+    color: #fff;
+    border-radius: 50%;
+    padding: 17px;
+    width: 54px;
+    height: 53px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 3px 3px 3px grey;
+}
+
+.icon:hover {
+    background-color: #fff;
+    color: #01e675;
+}
+
+@media(min-width:750px) {
+    .maps {
+        width: 95%;
+        
+    }
+    .maps h1 {
+        background-color: rgb(247, 144, 10);
+    }
+    .container-contatos {
+        background-color: rgb(247, 144, 10);
+        box-shadow: 3px 3px 7px black;
+    }
+
+    iframe {
+        width:90%;
+    }
+    body {
+        background-color: #fff;
+    }
+    nav a {
+        color: black; 
+    }
+    header {
+        border: 2px solid black;
+        background-color: rgb(247, 144, 10);
+
+    }
+}
+
+@media (max-width:999px) {
+    
+    html,body {
+        overflow-x: hidden;
+    }
+    
+
+
+    .nav-list {
+        position: relative;
+        top: 0vh;
+        right: 0;
+        width: 100vw;
+        height: 30vh;
+        background: #EB8344;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        
+        
+
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+        border: solid 1px #fff;
+        margin-bottom: 10px;
+        padding: 1%;
+        border-radius: 10px 5px;
+        background: rgb(74, 186, 74);
+        box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70);
+    }
+    
+    .nav-list li a {
+        color: black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .mobile-menu {
+        display: block;
+        margin-top: 10px;
+        
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+        
+    }
+
+    .logo {
+        font-size: 14px;
+        position: absolute;
+        
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+      }
+      
+      .mobile-menu.active .line2 {
+        opacity: 0;
+      }
+      
+      .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+      }
+}

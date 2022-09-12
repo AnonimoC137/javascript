@@ -1,14 +1,6 @@
 
-*.ts
-node_modules
 
-*.map
-*.md
+
+
 bootcamp-dio/typeScript/node_modules/engine.io/node_modules/debug/LICENSE
-*.mjs
-*.flow
-*.yml
-*.lock
-*.txt
 
-*.lcl
