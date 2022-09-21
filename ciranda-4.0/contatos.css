@@ -272,3 +272,9 @@ nav {
         transform: rotate(45deg) translate(-5px, -7px);
       }
 }
+
+@media (max-width:450px) {
+    .mobile-menu {
+        margin-top: 5px;
+    }
+}
