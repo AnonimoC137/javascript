@@ -287,7 +287,7 @@ main {
 
 @media(min-width: 800px) {
     .botao {
-        width: 15%;
+        width: 20%;
         font-size: 1.5rem;
         padding: 1%;
     }
@@ -428,4 +428,14 @@ main {
       .mobile-menu.active .line3 {
         transform: rotate(45deg) translate(-5px, -7px);
       }
+}
+
+@media (max-width:450px) {
+    .botao {
+        width: 30%;
+    }
+
+    .buttons button a {
+        font-size: clamp(5px, 4vw, 20px);
+    }
 }
