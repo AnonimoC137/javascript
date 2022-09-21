@@ -110,7 +110,7 @@ main {
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: -3px 3px 0 rgb(62, 156, 62), -5px 5px 0 rgb(33, 83, 33);
-    font-size: clamp(6px, 5vw, 14px);
+    font-size: clamp(10px, 7vw, 20px);
     color: #fff;
     background-color: rgb(53, 145, 53);
 }
