@@ -1,27 +1,19 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'DynaPuff';  
 }
 
 body {
+    background-color: rgb(247, 144, 10);
     text-align: center;
     font-size: 18px;
     font-family: 'DynaPuff';
     margin: auto;
     overflow-x: hidden; 
-}
-
-footer {
-    background: #EB8344;
-    margin: auto;
-    border-top: 2px solid #fff;
-    padding: 10px;
-}
-
-footer p {
-    color: #fff;
-    font-size: 1.2rem;
+    
 }
 
 a {
@@ -37,17 +29,32 @@ a:hover {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    padding: 15px; 
+    padding: 15px;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #EB8344;
     height: 8vh;
     border-bottom: 2px solid #fff;
+   
 }
+
+footer {
+    background: #EB8344;
+    margin: auto;
+    border-top: 2px solid #fff;
+    padding: 10px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
 
 .nav-list {
     list-style: none;
@@ -75,19 +82,18 @@ nav {
     
 }
 
+
+
+
 main {
-    background: #EB8344;
+    background-color: #EB8344;
 }
-
-
 
 .container-produtos {
     width: 100%;
     display: block;
     min-width: 300px;
 }
-
-
 
 .buttons {
     margin-top: 30px;
@@ -100,7 +106,7 @@ main {
 .botao {
     cursor: pointer;
     width: 28%;
-    padding: 3%;
+    padding: 1%;
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: -3px 3px 0 rgb(62, 156, 62), -5px 5px 0 rgb(33, 83, 33);
@@ -109,14 +115,14 @@ main {
     background-color: rgb(53, 145, 53);
 }
 
-.buttons button a {
-    text-decoration: none;
-    font-size: clamp(6px, 5vw, 14px);
-    color: #fff;
-}
-
 .botao::active {
     box-shadow: inset -4px 4px 0 #222;
+}
+
+.buttons button a {
+    text-decoration: none;
+    font-size: clamp(10px, 7vw, 20px);
+    color: #fff;
 }
 
 
@@ -128,7 +134,8 @@ main {
     background-color: #fff;
     margin: 15px auto;
     border-radius: 15px;
-    box-shadow: 0px 3px 3px black;   
+    box-shadow: 0px 3px 3px black;
+    
 }
 
 .produtos-1 {
@@ -137,10 +144,10 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto;
+    margin: 30px auto 0;
     padding: 10px;
     align-items: center;
-    background: #EB8344;
+    background-image: url(imagens/fundoo3.jpg);
     
 }
 
@@ -172,10 +179,11 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto;
-    padding: 10px;
+    margin: auto;
+    padding: 40px;
     align-items: center;
-    background: #fff;
+    background: #EB8344;
+    
 }
 
 .cama-2 {
@@ -202,10 +210,10 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto;
-    padding: 10px;
+    margin: auto 0px;
+    padding: 40px;
     align-items: center;
-    background: #EB8344;
+    background-image: url(imagens/fundoo3.jpg);
 }
 
 .cama-3 {
@@ -232,10 +240,10 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto 0px;
-    padding: 10px;
+    margin: auto;
+    padding: 40px;
     align-items: center;
-    background: #fff;
+    background: #EB8344;
 }
 
 .cama-4 {
@@ -255,7 +263,6 @@ main {
 .texto-4 h1 {
     color: #fff;
 }
-
 /*icone whatsapp*/
 .icon {
     position: fixed;
@@ -293,25 +300,26 @@ main {
     
 }
 
+
+/*menu hamburguer*/
 @media (max-width:999px) {
     
     html,body {
         overflow-x: hidden;
     }
-    /*tamanhos img dos produtos*/
-    /*tirar a sombra e tela cheia*/
     .produtos-1 {
         width: 100vw;  
     }
     .produtos-1 .cama-1 {
         box-shadow: none;
+        width: 85%;
     }
     .cama-1 img {
-        width: 85%;
+        width: 90%;
         margin-bottom: 10px;
     }
     .produtos-2 {
-        width: 100vw;
+        width: 100%;
         background: #EB8344;  
     }
     .produtos-2 .cama-2 {
@@ -319,7 +327,7 @@ main {
     }
 
     .cama-2 img {
-        width: 85%;
+        width: 90%;
         margin-bottom: 10px;
     }
     .produtos-3 {
@@ -329,7 +337,7 @@ main {
         box-shadow: none;
     }
     .cama-3 img {
-        width: 85%;
+        width: 90%;
         margin-bottom: 10px;
     }
     .produtos-4 {
@@ -384,7 +392,7 @@ main {
     
     .nav-list li a {
         color: black;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
     .mobile-menu {
@@ -395,12 +403,6 @@ main {
 
     .nav-list.active {
         transform: translateX(0);
-        
-    }
-
-    .logo {
-        font-size: 14px;
-        position: absolute;
         
     }
 
