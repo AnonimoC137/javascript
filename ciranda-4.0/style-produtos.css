@@ -430,6 +430,12 @@ main {
       }
 }
 
+@media (width:768px) {
+    .mobile-menu {
+        margin-top: 5px;
+    }
+}
+
 @media (max-width:450px) {
     .botao {
         width: 30%;
@@ -437,5 +443,9 @@ main {
 
     .buttons button a {
         font-size: clamp(5px, 4vw, 20px);
+    }
+
+    .mobile-menu {
+        margin-top: 5px;
     }
 }
