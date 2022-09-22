@@ -382,7 +382,8 @@ main {
         margin-bottom: 10px;
     }
     .produtos-5 {
-        width: 100vw;  
+        width: 100vw; 
+        padding: 8px; 
     }
     .produtos-5 .inflavel-5 {
         box-shadow: none;
