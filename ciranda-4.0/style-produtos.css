@@ -163,15 +163,32 @@ main {
     background: rgb(74, 186, 74);
     border-radius: 55px 5px;
     margin-top: 10px;
+    padding: 20px;
+    
 }
 
 .texto-1 h1 {
     color: #fff;
+    
 }
 
-.texto-1 {
-    padding: 20px;
+.texto-1 h2 {
+    color: black;
+    font-weight: 600;
+    
 }
+
+
+.texto-1 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+    
+}
+
+
+
+
 
 .produtos-2 {
     width: 100%;
@@ -204,6 +221,13 @@ main {
     color: #fff;
 }
 
+.texto-2 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+    
+}
+
 .produtos-3 {
     width: 100%;
     min-width: 300px;
@@ -232,6 +256,13 @@ main {
 
 .texto-3 h1 {
     color: #fff;
+}
+
+.texto-3 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+    
 }
 
 .produtos-4 {
@@ -264,6 +295,13 @@ main {
     color: #fff;
 }
 
+.texto-4 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+    
+}
+
 .produtos-5 {
     width: 100%;
     min-width: 300px;
@@ -286,11 +324,23 @@ main {
 
 .texto-5 {
     background: rgb(74, 186, 74);
-    border-radius: 5px 55px;
+    border-radius: 55px 5px;
     margin-top: 10px;
 }
 
 .texto-5 h1 {
+    color: #fff;
+}
+
+.texto-5 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+    
+}
+
+span {
+    text-align: center;
     color: #fff;
 }
 /*icone whatsapp*/
