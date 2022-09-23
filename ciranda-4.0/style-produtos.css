@@ -639,9 +639,12 @@ span {
     .botao {
         width: 30%;
     }
+    .botao-3 {
+        width: 30%;
+    }
 
     .buttons button a {
-        font-size: clamp(5px, 4vw, 20px);
+        font-size: clamp(5px, 3vw, 20px);
     }
 
     .mobile-menu {
