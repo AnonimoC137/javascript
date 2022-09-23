@@ -520,7 +520,7 @@ span {
     }
 
     .buttons button a {
-        font-size: clamp(5px, 3vw, 20px);
+        font-size: clamp(5px, 4vw, 20px);
     }
 
     .titulo {
