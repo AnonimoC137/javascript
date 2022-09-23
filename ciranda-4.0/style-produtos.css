@@ -521,6 +521,9 @@ span {
         box-shadow: none;
         width: 85%;
     }
+    .inflavel-6 {
+        padding: 25px;
+    }
     .inflavel-6 img {
         width: 90%;
         margin-bottom: 10px;
