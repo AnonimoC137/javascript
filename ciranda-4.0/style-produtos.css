@@ -160,6 +160,9 @@ main {
     padding: 10px;
     align-items: center;
     background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     
 }
 
@@ -196,10 +199,6 @@ main {
     line-height: 35px;
     text-align: center;
 }
-
-
-
-
 
 .produtos-2 {
     width: 100%;
@@ -255,6 +254,9 @@ main {
     padding: 40px;
     align-items: center;
     background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 .inflavel-3 {
@@ -343,6 +345,9 @@ main {
     padding: 40px;
     align-items: center;
     background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 .inflavel-5 {

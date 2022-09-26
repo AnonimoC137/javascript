@@ -160,6 +160,9 @@ main {
     padding: 10px;
     align-items: center;
     background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     
 }
 
@@ -250,6 +253,9 @@ main {
     padding: 40px;
     align-items: center;
     background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 .cama-3 {
