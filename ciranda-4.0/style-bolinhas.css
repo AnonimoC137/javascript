@@ -278,7 +278,7 @@ main {
 }
 
 .bolinha-4 {
-    width: 90%;
+    width: 65%;
     margin: auto;
     padding: 20px;
     border: 2px solid black;
@@ -313,7 +313,7 @@ main {
 }
 
 .bolinha-5 {
-    width: 90%;
+    width: 65%;
     margin: auto;
     padding: 30px;
     border: 2px solid black;
@@ -365,7 +365,7 @@ span {
 
 @media(min-width: 800px) {
     .botao {
-        width: 20%;
+        width: 22%;
         font-size: 1.5rem;
         padding: 1%;
     }
@@ -390,6 +390,15 @@ span {
 
 
 /*menu hamburguer*/
+@media (min-width:1440px) {
+    .bolinha-4 {
+        width: 63%;
+    }
+    .bolinha-5 {
+        width: 63%;
+    }
+}
+
 @media (max-width:999px) {
     
     html,body {
@@ -435,6 +444,9 @@ span {
     .produtos-4 .bolinha-4 {
         box-shadow: none;
     }
+    .bolinha-4 {
+        width: 100%;
+    }
     .bolinha-4 img {
         width: 85%;
         margin-bottom: 10px;
@@ -445,6 +457,9 @@ span {
     }
     .produtos-5 .bolinha-5 {
         box-shadow: none;
+    }
+    .bolinha-5 {
+        width: 100%;
     }
     .bolinha-5 img {
         width: 85%;
@@ -552,12 +567,5 @@ span {
     }
 }
 
-@media (min-width:1440px) {
-    .bolinha-4 {
-        width: 63%;
-    }
-    .bolinha-5 {
-        width: 63%;
-    }
-}
+
 
