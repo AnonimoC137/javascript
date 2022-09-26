@@ -297,7 +297,21 @@ main {
 }
 
 .texto-4 h1 {
+    border-bottom: 2px solid #fff;
     color: #fff;
+}
+
+.texto-4 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-4 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
 }
 
 .produtos-5 {
@@ -443,6 +457,7 @@ span {
     }
     .produtos-4 .bolinha-4 {
         box-shadow: none;
+        padding: 15px;
     }
     .bolinha-4 {
         width: 100%;
@@ -457,6 +472,7 @@ span {
     }
     .produtos-5 .bolinha-5 {
         box-shadow: none;
+        padding: 15px;
     }
     .bolinha-5 {
         width: 100%;
