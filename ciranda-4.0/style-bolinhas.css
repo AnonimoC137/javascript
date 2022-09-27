@@ -165,11 +165,13 @@ main {
 
 .bolinha-1 {
     margin: auto;
-    padding: 20px;
     border: 2px solid black;
     background: #fff;
-    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70);
+    padding: 10px;
 }
+
+
 
 .texto-1 {
     background: rgb(74, 186, 74);
@@ -838,6 +840,7 @@ span {
     .bolinha-1 img {
         width: 90%;
         margin-bottom: 10px;
+        
     }
     .produtos-2 {
         width: 100%;
