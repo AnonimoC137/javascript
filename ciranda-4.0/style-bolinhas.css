@@ -642,6 +642,108 @@ main {
     text-align: center;
 }
 
+.produtos-11 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px auto 0;
+    padding: 10px;
+    align-items: center;
+    background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    
+}
+
+.bolinha-11 {
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.bolinha-11 img {
+    width: 100%;
+}
+
+.texto-11 {
+    background: rgb(74, 186, 74);
+    border-radius: 55px 5px;
+    margin-top: 10px;
+}
+
+.texto-11 h1 {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.texto-11 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-11 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.produtos-12 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px auto 0;
+    padding: 10px;
+    align-items: center;
+    background: #EB8344;
+}
+
+.bolinha-12 {
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.bolinha-12 img {
+    width: 100%;
+}
+
+.texto-12 {
+    background: rgb(74, 186, 74);
+    border-radius: 55px 5px;
+    margin-top: 10px;
+}
+
+.texto-12 h1 {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.texto-12 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-12 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
 
 
 span {
@@ -850,6 +952,28 @@ span {
         width: 85%;
     }
     .bolinha-10 img {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .produtos-11 {
+        width: 100vw;  
+    }
+    .produtos-11 .bolinha-11 {
+        box-shadow: none;
+        width: 85%;
+    }
+    .bolinha-11 img {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .produtos-12 {
+        width: 100vw;  
+    }
+    .produtos-12 .bolinha-12 {
+        box-shadow: none;
+        width: 85%;
+    }
+    .bolinha-12 img {
         width: 90%;
         margin-bottom: 10px;
     }
