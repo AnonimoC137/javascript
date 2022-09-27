@@ -150,7 +150,7 @@ main {
 }
 
 .titulo img {
-    width: 50%;
+    width: 60%;
 }
 
 .produtos-1 {
@@ -535,9 +535,6 @@ span {
         font-size: clamp(5px, 3vw, 20px);
     }
 
-    .titulo {
-        width: 60%;
-    }
 
     .mobile-menu {
         margin-top: 5px;
