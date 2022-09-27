@@ -271,6 +271,19 @@ main {
     color: #fff;
 }
 
+.texto-3 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-3 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
 .produtos-4 {
     width: 100%;
     min-width: 300px;
@@ -543,11 +556,16 @@ main {
 }
 
 .bolinha-9 {
+    width: 65%;
     margin: auto;
     padding: 20px;
     border: 2px solid black;
     background: #fff;
     box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.bolinha-9 img {
+    width: 100%;
 }
 
 .texto-9 {
@@ -588,11 +606,16 @@ main {
 }
 
 .bolinha-10 {
+    width: 65%;
     margin: auto;
     padding: 20px;
     border: 2px solid black;
     background: #fff;
     box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.bolinha-10 img {
+    width: 100%;
 }
 
 .texto-10 {
@@ -683,6 +706,9 @@ span {
     }
 
     .bolinha-9 {
+        width: 63%;
+    }
+    .bolinha-9 img {
         width: 100%;
     }
 }
