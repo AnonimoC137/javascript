@@ -139,11 +139,12 @@ main {
     width: 30%;
     display: inline-block;
     margin-bottom: 50px;
-    background-color: #fff;
     margin: 15px auto;
     border-radius: 15px;
-    box-shadow: 0px 3px 3px black;
-    
+}
+
+.titulo img {
+    width: 50%;
 }
 
 .produtos-1 {
@@ -750,6 +751,8 @@ span {
     text-align: center;
     color: #fff;
 }
+
+
 /*icone whatsapp*/
 .icon {
     position: fixed;
