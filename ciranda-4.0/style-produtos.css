@@ -51,7 +51,7 @@ footer {
 
 footer p {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -96,7 +96,7 @@ main {
 }
 
 .buttons {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -106,13 +106,25 @@ main {
 .botao {
     cursor: pointer;
     width: 28%;
-    padding: 3%;
+    padding: 1%;
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: -3px 3px 0 rgb(62, 156, 62), -5px 5px 0 rgb(33, 83, 33);
-    font-size: clamp(6px, 5vw, 14px);
+    font-size: clamp(10px, 7vw, 20px);
     color: #fff;
     background-color: rgb(53, 145, 53);
+}
+
+.botao-3 {
+    cursor: pointer;
+    width: 28%;
+    padding: 1%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(189, 49, 49);
+    box-shadow: -3px 3px 0 rgb(240, 90, 90), -5px 5px 0 rgb(112, 3, 3);
+    font-size: clamp(10px, 7vw, 20px);
+    color: #fff;
 }
 
 .botao::active {
@@ -121,7 +133,7 @@ main {
 
 .buttons button a {
     text-decoration: none;
-    font-size: clamp(6px, 5vw, 14px);
+    font-size: clamp(10px, 7vw, 20px);
     color: #fff;
 }
 
@@ -131,11 +143,12 @@ main {
     width: 30%;
     display: inline-block;
     margin-bottom: 50px;
-    background-color: #fff;
     margin: 15px auto;
     border-radius: 15px;
-    box-shadow: 0px 3px 3px black;
-    
+
+}
+.titulo img {
+    width: 60%;
 }
 
 .produtos-1 {
@@ -148,6 +161,9 @@ main {
     padding: 10px;
     align-items: center;
     background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     
 }
 
@@ -166,11 +182,23 @@ main {
 }
 
 .texto-1 h1 {
+    border-bottom: 2px solid #fff;
     color: #fff;
+    
 }
 
-.texto-1 {
+.texto-1 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+
+.texto-1 p {
     padding: 20px;
+    line-height: 35px;
+    text-align: center;
 }
 
 .produtos-2 {
@@ -183,7 +211,6 @@ main {
     padding: 40px;
     align-items: center;
     background: #EB8344;
-    
 }
 
 .inflavel-2 {
@@ -201,7 +228,21 @@ main {
 }
 
 .texto-2 h1 {
+    border-bottom: 2px solid #fff;
     color: #fff;
+}
+
+.texto-2 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-2 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
 }
 
 .produtos-3 {
@@ -214,6 +255,9 @@ main {
     padding: 40px;
     align-items: center;
     background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 .inflavel-3 {
@@ -231,7 +275,21 @@ main {
 }
 
 .texto-3 h1 {
+    border-bottom: 2px solid #fff;
     color: #fff;
+}
+
+.texto-3 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-3 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
 }
 
 .produtos-4 {
@@ -246,7 +304,7 @@ main {
     background: #EB8344;
 }
 
-.cama-4 {
+.inflavel-4 {
     margin: auto;
     padding: 20px;
     border: 2px solid black;
@@ -261,6 +319,116 @@ main {
 }
 
 .texto-4 h1 {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.texto-4 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-4 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.produtos-5 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 40px;
+    align-items: center;
+    background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.inflavel-5 {
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.texto-5 {
+    background: rgb(74, 186, 74);
+    border-radius: 55px 5px;
+    margin-top: 10px;
+}
+
+.texto-5 h1 {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.texto-5 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-5 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.produtos-6 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 40px;
+    align-items: center;
+    background: #EB8344;
+}
+
+.inflavel-6 {
+    margin: auto;
+    padding: 55px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.texto-6 {
+    background: rgb(74, 186, 74);
+    border-radius: 55px 5px;
+    margin-top: 10px;
+}
+
+.texto-6 h1 {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.texto-6 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-6 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+span {
+    text-align: center;
     color: #fff;
 }
 /*icone whatsapp*/
@@ -287,11 +455,21 @@ main {
 
 @media(min-width: 800px) {
     .botao {
-        width: 15%;
+        width: 20%;
+        font-size: 1.5rem;
+        padding: 1%;
+    }
+    .botao-3 {
+        width: 20%;
         font-size: 1.5rem;
         padding: 1%;
     }
     .buttons .botao a {
+        width: 15%;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    .buttons .botao-3 a {
         width: 15%;
         font-size: 1.5rem;
         margin: auto;
@@ -344,11 +522,38 @@ main {
         width: 100vw;
         background: #EB8344;  
     }
-    .produtos-4 .cama-4 {
+    .produtos-4 .inflavel-4 {
         box-shadow: none;
     }
-    .cama-4 img {
+    .inflavel-4 img {
         width: 85%;
+        margin-bottom: 10px;
+    }
+    .produtos-5 {
+        width: 100vw; 
+        padding: 8px; 
+    }
+    .produtos-5 .inflavel-5 {
+        box-shadow: none;
+        width: 85%;
+    }
+    .inflavel-5 img {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .produtos-6 {
+        width: 100vw; 
+        padding: 8px; 
+    }
+    .produtos-6 .inflavel-6 {
+        box-shadow: none;
+        width: 85%;
+    }
+    .inflavel-6 {
+        padding: 25px;
+    }
+    .inflavel-6 img {
+        width: 90%;
         margin-bottom: 10px;
     }
 
@@ -428,4 +633,27 @@ main {
       .mobile-menu.active .line3 {
         transform: rotate(45deg) translate(-5px, -7px);
       }
+}
+
+@media (width:768px) {
+    .mobile-menu {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width:450px) {
+    .botao {
+        width: 30%;
+    }
+    .botao-3 {
+        width: 30%;
+    }
+
+    .buttons button a {
+        font-size: clamp(5px, 3vw, 20px);
+    }
+
+    .mobile-menu {
+        margin-top: 5px;
+    }
 }

@@ -1,30 +1,19 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'DynaPuff';  
 }
 
 body {
-    background-color: #fff;
-    /*background: rgb(197, 191, 182);*/
+    background-color: rgb(247, 144, 10);
     text-align: center;
     font-size: 18px;
     font-family: 'DynaPuff';
     margin: auto;
     overflow-x: hidden; 
     
-}
-
-footer {
-    background: #EB8344;
-    margin: auto;
-    border-top: 2px solid #fff;
-    padding: 10px;
-}
-
-footer p {
-    color: #fff;
-    font-size: 1.2rem;
 }
 
 a {
@@ -40,18 +29,32 @@ a:hover {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    padding: 15px; 
+    padding: 15px;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #EB8344;
     height: 8vh;
     border-bottom: 2px solid #fff;
    
 }
+
+footer {
+    background: #EB8344;
+    margin: auto;
+    border-top: 2px solid #fff;
+    padding: 10px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+
 
 .nav-list {
     list-style: none;
@@ -75,8 +78,11 @@ nav {
     width: 32px;
     height: 2px;
     background: #fff;
-    margin: 8px;
-    
+    margin: 8px; 
+}
+
+main {
+    background-color: #EB8344;
 }
 
 .container-produtos {
@@ -86,7 +92,7 @@ nav {
 }
 
 .buttons {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -96,14 +102,25 @@ nav {
 .botao {
     cursor: pointer;
     width: 28%;
-    padding: 3%;
+    padding: 1%;
     border: 2px solid black;
     border-radius: 5px;
-    box-shadow: -3px 3px 0 rgb(248, 90, 90), -5px 5px 0 rgb(112, 3, 3);
-    font-size: clamp(6px, 5vw, 14px);
+    box-shadow: -3px 3px 0 rgb(62, 156, 62), -5px 5px 0 rgb(33, 83, 33);
+    font-size: clamp(10px, 7vw, 20px);
     color: #fff;
+    background-color: rgb(53, 145, 53);
+}
+
+.botao-3 {
+    cursor: pointer;
+    width: 28%;
+    padding: 1%;
+    border: 2px solid black;
+    border-radius: 5px;
     background-color: rgb(189, 49, 49);
-    
+    box-shadow: -3px 3px 0 rgb(240, 90, 90), -5px 5px 0 rgb(112, 3, 3);
+    font-size: clamp(10px, 7vw, 20px);
+    color: #fff;
 }
 
 .botao::active {
@@ -112,20 +129,22 @@ nav {
 
 .buttons button a {
     text-decoration: none;
-    font-size: clamp(6px, 5vw, 14px);
+    font-size: clamp(10px, 7vw, 20px);
     color: #fff;
 }
 
 
 
 .titulo {
-    width: 50%;
+    width: 30%;
     display: inline-block;
     margin-bottom: 50px;
-    background-color: #fff;
     margin: 15px auto;
     border-radius: 15px;
-    box-shadow: 0px 3px 3px black; 
+}
+
+.titulo img {
+    width: 60%;
 }
 
 .produtos-1 {
@@ -134,20 +153,25 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto;
+    margin: 30px auto 0;
     padding: 10px;
     align-items: center;
-    background: #EB8344;
+    background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     
 }
 
 .bolinha-1 {
     margin: auto;
-    padding: 20px;
     border: 2px solid black;
     background: #fff;
-    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70);
+    padding: 10px;
 }
+
+
 
 .texto-1 {
     background: rgb(74, 186, 74);
@@ -156,11 +180,21 @@ nav {
 }
 
 .texto-1 h1 {
+    border-bottom: 2px solid #fff;
     color: #fff;
 }
 
-.texto-1 {
+.texto-1 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-1 p {
     padding: 20px;
+    line-height: 35px;
+    text-align: center;
 }
 
 .produtos-2 {
@@ -169,10 +203,10 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto 0;
-    padding: 10px;
+    margin: auto;
+    padding: 40px;
     align-items: center;
-    background: #fff;
+    background: #EB8344; 
 }
 
 .bolinha-2 {
@@ -190,7 +224,21 @@ nav {
 }
 
 .texto-2 h1 {
+    border-bottom: 2px solid #fff;
     color: #fff;
+}
+
+.texto-2 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-2 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
 }
 
 .produtos-3 {
@@ -199,13 +247,16 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto;
-    padding: 10px;
+    margin: auto 0px;
+    padding: 40px;
     align-items: center;
-    background: #EB8344;
+    background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
-.cama-3 {
+.bolinha-3 {
     margin: auto;
     padding: 20px;
     border: 2px solid black;
@@ -220,7 +271,21 @@ nav {
 }
 
 .texto-3 h1 {
+    border-bottom: 2px solid #fff;
     color: #fff;
+}
+
+.texto-3 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-3 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
 }
 
 .produtos-4 {
@@ -229,18 +294,23 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto 0px;
-    padding: 10px;
+    margin: auto;
+    padding: 40px;
     align-items: center;
-    background: #fff;
+    background: #EB8344;
 }
 
-.cama-4 {
+.bolinha-4 {
+    width: 65%;
     margin: auto;
     padding: 20px;
     border: 2px solid black;
     background: #fff;
     box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.bolinha-4 img {
+    width: 100%;
 }
 
 .texto-4 {
@@ -250,9 +320,440 @@ nav {
 }
 
 .texto-4 h1 {
+    border-bottom: 2px solid #fff;
     color: #fff;
 }
 
+.texto-4 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-4 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.produtos-5 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 40px;
+    align-items: center;
+    background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.bolinha-5 {
+    width: 65%;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.bolinha-5 img {
+    width: 100%;
+}
+
+.texto-5 {
+    background: rgb(74, 186, 74);
+    border-radius: 5px 55px;
+    margin-top: 10px;
+}
+
+.texto-5 h1 {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.texto-5 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-5 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+
+
+.produtos-6 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 40px;
+    align-items: center;
+    background: #EB8344;
+}
+
+.bolinha-6 {
+    width: 65%;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.bolinha-6 img {
+    width: 100%;
+}
+
+.texto-6 {
+    background: rgb(74, 186, 74);
+    border-radius: 5px 55px;
+    margin-top: 10px;
+}
+
+.texto-6 h1 {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.texto-6 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-6 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.produtos-7 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 40px;
+    align-items: center;
+    background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    
+}
+
+.bolinha-7 {
+    width: 65%;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.bolinha-7 img {
+    width: 100%;
+}
+
+.texto-7 {
+    background: rgb(74, 186, 74);
+    border-radius: 5px 55px;
+    margin-top: 10px;
+}
+
+.texto-7 h1 {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.texto-7 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-7 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+
+.produtos-8 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 40px;
+    align-items: center;
+    background: #EB8344;
+}
+
+.bolinha-8 {
+    width: 65%;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.bolinha-8 img {
+    width: 100%;
+}
+
+.texto-8 {
+    background: rgb(74, 186, 74);
+    border-radius: 5px 55px;
+    margin-top: 10px;
+}
+
+.texto-8 h1 {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.texto-8 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-8 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.produtos-9 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px auto 0;
+    padding: 10px;
+    align-items: center;
+    background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    
+}
+
+.bolinha-9 {
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.bolinha-9 img {
+    width: 100%;
+}
+
+.texto-9 {
+    background: rgb(74, 186, 74);
+    border-radius: 55px 5px;
+    margin-top: 10px;
+}
+
+.texto-9 h1 {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.texto-9 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-9 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.produtos-10 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px auto 0;
+    padding: 10px;
+    align-items: center;
+    background: #EB8344;
+    
+}
+
+.bolinha-10 {
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.bolinha-10 img {
+    width: 100%;
+}
+
+.texto-10 {
+    background: rgb(74, 186, 74);
+    border-radius: 55px 5px;
+    margin-top: 10px;
+}
+
+.texto-10 h1 {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.texto-10 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-10 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.produtos-11 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px auto 0;
+    padding: 10px;
+    align-items: center;
+    background-image: url(imagens/fundoo3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    
+}
+
+.bolinha-11 {
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.bolinha-11 img {
+    width: 100%;
+}
+
+.texto-11 {
+    background: rgb(74, 186, 74);
+    border-radius: 55px 5px;
+    margin-top: 10px;
+}
+
+.texto-11 h1 {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.texto-11 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-11 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.produtos-12 {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px auto 0;
+    padding: 10px;
+    align-items: center;
+    background: #EB8344;
+}
+
+.bolinha-12 {
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.bolinha-12 img {
+    width: 100%;
+}
+
+.texto-12 {
+    background: rgb(74, 186, 74);
+    border-radius: 55px 5px;
+    margin-top: 10px;
+}
+
+.texto-12 h1 {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.texto-12 h2 {
+    color: black;
+    font-weight: 600;
+    width: 75%;
+    margin: 10px auto 0;
+}
+
+.texto-12 p {
+    padding: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+
+
+span {
+    text-align: center;
+    color: #fff;
+}
 
 
 /*icone whatsapp*/
@@ -279,7 +780,12 @@ nav {
 
 @media(min-width: 800px) {
     .botao {
-        width: 15%;
+        width: 22%;
+        font-size: 1.5rem;
+        padding: 1%;
+    }
+    .botao-3 {
+        width: 20%;
         font-size: 1.5rem;
         padding: 1%;
     }
@@ -287,7 +793,37 @@ nav {
         width: 15%;
         font-size: 1.5rem;
         margin: auto;
-    } 
+    }
+    .buttons .botao-3 a {
+        width: 15%;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+
+    
+}
+
+
+/*menu hamburguer*/
+@media (min-width:1440px) {
+    .bolinha-4 {
+        width: 63%;
+    }
+    .bolinha-5 {
+        width: 63%;
+    }
+
+    .bolinha-9 {
+        width: 63%;
+    }
+    .bolinha-9 img {
+        width: 100%;
+    }
+    .bolinha-7 img {
+        width: 50%;
+        max-height: 400px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width:999px) {
@@ -295,21 +831,20 @@ nav {
     html,body {
         overflow-x: hidden;
     }
-
-    /*tamanhos img dos produtos*/
-    /*tirar a sombra e tela cheia*/
     .produtos-1 {
         width: 100vw;  
     }
     .produtos-1 .bolinha-1 {
         box-shadow: none;
+        width: 85%;
     }
     .bolinha-1 img {
-        width: 85%;
+        width: 90%;
         margin-bottom: 10px;
+        
     }
     .produtos-2 {
-        width: 100vw;
+        width: 100%;
         background: #EB8344;  
     }
     .produtos-2 .bolinha-2 {
@@ -317,35 +852,149 @@ nav {
     }
 
     .bolinha-2 img {
-        width: 85%;
+        width: 90%;
         margin-bottom: 10px;
     }
     .produtos-3 {
         width: 100vw;  
     }
-    .produtos-3 .cama-3 {
+    .produtos-3 .bolinha-3 {
         box-shadow: none;
     }
-    .cama-3 img {
-        width: 85%;
+    .bolinha-3 img {
+        width: 90%;
         margin-bottom: 10px;
     }
     .produtos-4 {
         width: 100vw;
         background: #EB8344;  
     }
-    .produtos-4 .cama-4 {
+    .produtos-4 .bolinha-4 {
         box-shadow: none;
+        padding: 15px;
     }
-    .cama-4 img {
+    .bolinha-4 {
+        width: 100%;
+    }
+    .bolinha-4 img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .produtos-5 {
+        width: 100vw;
+        background: #EB8344;  
+    }
+    .produtos-5 .bolinha-5 {
+        box-shadow: none;
+        padding: 15px;
+    }
+    .bolinha-5 {
+        width: 100%;
+    }
+    .bolinha-5 img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .produtos-6 {
+        width: 100vw;
+        background: #EB8344;  
+    }
+    .produtos-6 .bolinha-6 {
+        box-shadow: none;
+        padding: 15px;
+    }
+    .bolinha-6 {
+        width: 100%;
+    }
+    .bolinha-6 img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .produtos-7 {
+        width: 100vw;
+        background: #EB8344;  
+    }
+    .produtos-7 .bolinha-7 {
+        box-shadow: none;
+        padding: 15px;
+    }
+    .bolinha-7 {
+        width: 100%;
+    }
+    .bolinha-7 img {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    .produtos-8 {
+        width: 100vw;
+        background: #EB8344;  
+    }
+    .produtos-8 .bolinha-8 {
+        box-shadow: none;
+        padding: 15px;
+    }
+    .bolinha-8 {
+        width: 100%;
+    }
+    .bolinha-8 img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .produtos-9 {
+        width: 100vw;  
+    }
+    .produtos-9 .bolinha-9 {
+        box-shadow: none;
         width: 85%;
+    }
+    .bolinha-9 img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .produtos-10 {
+        width: 100vw;  
+    }
+    .produtos-10 .bolinha-10 {
+        box-shadow: none;
+        width: 85%;
+    }
+    .bolinha-10 img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .produtos-11 {
+        width: 100vw;  
+    }
+    .produtos-11 .bolinha-11 {
+        box-shadow: none;
+        width: 85%;
+    }
+    .bolinha-11 img {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .produtos-12 {
+        width: 100vw;  
+    }
+    .produtos-12 .bolinha-12 {
+        box-shadow: none;
+        width: 85%;
+    }
+    .bolinha-12 img {
+        width: 100%;
         margin-bottom: 10px;
     }
 
     .container-produtos {
         background: #EB8344;
     }
+
+    .titulo {
+        width: 55%;
+    }
     
+
+
     .nav-list {
         position: relative;
         top: 0vh;
@@ -358,6 +1007,9 @@ nav {
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
+        
+        
+
     }
     .nav-list li {
         margin-left: 0;
@@ -373,21 +1025,18 @@ nav {
     
     .nav-list li a {
         color: black;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
     .mobile-menu {
         display: block;
         margin-top: 10px;
+        
     }
 
     .nav-list.active {
-        transform: translateX(0);   
-    }
-
-    .logo {
-        font-size: 14px;
-        position: absolute;  
+        transform: translateX(0);
+        
     }
 
     @keyframes navLinkFade {
@@ -413,3 +1062,29 @@ nav {
         transform: rotate(45deg) translate(-5px, -7px);
       }
 }
+
+@media (width:768px) {
+    .mobile-menu {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width:450px) {
+    .botao {
+        width: 30%;
+    }
+    .botao-3 {
+        width: 30%;
+    }
+
+    .buttons button a {
+        font-size: clamp(5px, 3vw, 20px);
+    }
+
+    .mobile-menu {
+        margin-top: 5px;
+    }
+}
+
+
+
