@@ -11,7 +11,7 @@
 
 ## parametros do forEach ##
 o primeiro parametro é o callback, ou seja, a funçaõ que está ativada a cada item, essa função pode receber trem parametros
-# valoratual, index, array; #
+# valorAtual, index, array; #
 
 
 # const imgs = document.querySelectorAll('img');
