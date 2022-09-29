@@ -2,11 +2,14 @@
  Constantemente vamos selecionar uma lista de itens do dom. a melhor forma para interagirmos com os mesmos é utilizando o metodo FOREACH
  
  //OU SEJA o forEach é bom para verificar varios elementos e listas do seu site por exemplo.
+@exemplo
+```bash
+# const imgs = document.querySelectorAll('img');
 
-## const imgs = document.querySelectorAll('img');
-## imgs.forEach(function(){
-  console.log(item);  
-## });
+# imgs.forEach(function(){
+  #   console.log(item);  
+# });
+```
 //////////////////////////////////////////////////////////////////
 
 # parametros do forEach #
@@ -34,16 +37,59 @@ forEach é um metodo de array, alguns objetos array-like possuem este metodo. Ca
 
 @exemplo
 ```bash
- # const titulo = document.getElementsByClassName('titulo');
+ # const titulos = document.getElementsByClassName('titulo');
  # const titulosArray = Array.from(titulos);
 
  # titulosArray.forEach(function(item){
- # console.log(item);
+   # console.log(item, index, array);
  # });
 ```
 
 /////////////////////////////////////////////////////////////////
 
+# Arrow Function #
+
+sintaxe curta em relação a FUNCTION EXPRESSION. basta remover a palavra chave function e adicionar a fat arrow => após os argumentos.
+
+@exemplo
+```bash
+# const imgs = document.querySelector('img');
+
+# imgs.forEach((item) => {
+  #  console.log(item);
+# });
+```
+
+///////////////////////////////////////////////////////////////
+
+# argumentos e Parenteses #
+
+//argumento unico não precisa de parenteses
+```bash
+@exemplo
+# imgs.forEach(item => {
+  #  console.log(item);
+# });
+```
+
+//multiplos argumentos precisam de parenteses
+```bash 
+@exemplo
+# imgs.forEach((item, index) => {
+  #  console.log(item, index);
+# });
+```
+//sem argumentos precis dos parenteses, mesmo vazio
+```bash
+@exemplo
+# let i = 0;
+# imgs.forEach(() => {
+  # console.log(i++); 
+# });
+```
+//A DICA É SEMPRE COLOCAR OS PARENTESES PARA NÃO DAR PROBLEMA!
+
+///////////////////////////////////////////////////////////
 
 
 

@@ -1,7 +1,13 @@
-const imgs = document.querySelectorAll('img');
+//mostre no console cada paragrafo do site
+const paragrafos = document.querySelectorAll('p');
 
-imgs.forEach(function(item, index, array){
-    //console.log(item, index, array); 
+paragrafos.forEach((item) => {
+    console.log(item);
 });
 
+//mostre o texto dos paragrafos no console
+
+paragrafos.forEach((item) => {
+    console.log(item.innerHTML);
+});
 
