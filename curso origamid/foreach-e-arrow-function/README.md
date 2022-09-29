@@ -13,13 +13,16 @@
 o primeiro parametro é o callback, ou seja, a funçaõ que está ativada a cada item, essa função pode receber trem parametros
 ## valorAtual, index, array; 
 
+@exemplo
+```bash
+# const imgs = document.querySelectorAll('img');
 
-## const imgs = document.querySelectorAll('img');
-## imgs.forEach(function(valorAtual, index, array){
-  console.log(item); //o item atual no loop
-  console.log(index); //o numero do index
-  console.log(array); // a array completa
-## });
+# imgs.forEach(function(valorAtual, index, array){
+  # console.log(item);   //o item atual no loop
+  # console.log(index);  //o numero do index
+  # console.log(array);   // a array completa
+# });
+```
 
 //////////////////////////////////////////////////////////////////
 
@@ -27,13 +30,17 @@ o primeiro parametro é o callback, ou seja, a funçaõ que está ativada a cada
 forEach é um metodo de array, alguns objetos array-like possuem este metodo. Caso não possua, o ideal é transforma-los em uma array
 
 //OBS: array-like parece um array mas não é.
+//no exemplo abaixo mostra como fazer um array-like virar um array.
 
-## const titulo = document.getElementsByClassName('titulo');
-## const titulosArray = Array.from(titulos);
+@exemplo
+```bash
+ # const titulo = document.getElementsByClassName('titulo');
+ # const titulosArray = Array.from(titulos);
 
-titulosArray.forEach(function(item){
-  console.log(item);
-## });
+ # titulosArray.forEach(function(item){
+ # console.log(item);
+ # });
+```
 
 /////////////////////////////////////////////////////////////////
 
