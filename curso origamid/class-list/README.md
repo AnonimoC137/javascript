@@ -24,8 +24,36 @@ Retorna uma array-like com os atributos do elemento
 ```bash
 # const animais = document.querySelector('.animais');
 # animais.attributes;  // retorna todos os atributos
-# animais.attributes[0];  // retorna o primeiro atributo 
+# animais.attributes[0];  // retorna o primeiro atributo
+# animais.attributes.id;  // podendo ter variações diversas como id, class e outros 
+# animais.attributes['data-texto'];  // data-texto e um tipo de dado tbm
 ```
+
+//////////////////////////////////////////////////////////////
+
+# getAttribute e setAttribute #
+
+(VAI SER OS DOIS METODOS MAIS USADOS)
+Metodos que retornam ou definem de acordo com o atributo selecionado
+
+OBS: o getAttribute MOSTRA varios atributos, src, alt e outros
+OBS: o setAttribute MUDA/ADICIONA atributos, src, alt, e outros
+
+@exemplo
+```bash
+# const img = document.querySelector('img');
+
+# img.getAttribute('src'); // MOSTRA valor do src que e usado para puxa link, font etc... 
+# img.setAttribute('alt', 'Texto Alternativo');// ele cria ou atualiza o atributo 'texto alternativo' 
+# img.hasAttribute('id');  //  retorna true ou false bom para usar com if ou condições
+# img.removeAttribute('alt');  // remove o alt 
+
+# img.hasAttributes();  // true ou false se tem algum atributo
+```
+
+////////////////////////////////////////////////////////////////
+
+
 
 
 
