@@ -4,13 +4,15 @@
 
 estas são propriedades e metodos dos objetos ELEMENT E HTMLELEMENT, a maioria são read only
 
+OBS: pelo visto o offsetWidth e offsetHeight são bastante usados
+
 @exemplo
 ```bash
 # const section = document.querySlector('.animais');
 
 # section.clientHeight; // height + padding
 # section.offsetHeight; // height + padding + border
-# section.acrollHeight; // height total, mesmo dentro de scroll
+# section.scrollHeight; // height total, mesmo dentro de scroll
 ```
 OBS: mesma coisa para o WIDTH // clientWidth...
 
@@ -31,9 +33,9 @@ metodo que retorna um objeto com valores de width, height, distancia do elemento
 
 @exemplo
 ```bash 
-# const section = document.querySlector('.animais');
+# const section = document.querySelector('.animais');
 
-# const rect = section.getBoundingClientRact();
+# const rect = section.getBoundingClientRect();
 # rect.heght; // height do elemento
 # rect.width; // width do elemento
 # rect.top; // distancia entre o topo do elemento e o scroll
@@ -72,7 +74,7 @@ OBS: opção mais recomentada de se usar
    #console.log('tela maior que 600px);
   #}
 ```
-  
+
   
 
 
