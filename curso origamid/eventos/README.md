@@ -127,6 +127,28 @@ voce pode adicionar atalhos para facilitar a navegação no seu site, atraves de
 #}
 
 # window.addEventListener('keydown', callback);
+```
+
+# forEach e eventos #
+
+O método addEventListener é adicionado á um unico elemento, então é necessário um loop entre elementos de uma lista, para adicionarmos á cada um deles
+
+@exemplo 
+```bash
+const imgs = document.querySelector('img');
+
+function imgSrc(event) {
+  const src = event.currentTarget.getAttribute('src');
+  console.log(src);
+}
+
+imgs.forEach((img) => {
+  img.addEventListener('click', imgSrc);
+});
+
+
+
+```
 
 
 
