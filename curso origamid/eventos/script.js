@@ -1,42 +1,40 @@
-//exemplo 1
-const img = document.querySelector('img');
+//quando o usuário clicar nos links internos do site
+//adicione a classe ativo ao item clicado e remova dos
+//demais itens caso eles possuam a mesma. previna
+//o comportamento padrão desses links
+//@@@@CODIGO IMPORTANTE ESSE@@@@@
+const linksInternos = document.querySelectorAll('a');
 
-function callback(event) {
-    console.log(event);
+function handleLink(e) {
+    e.preventDefault();
+    //forEach para fazer um loop de verif. para remov. os class 'ativo'
+    linksInternos.forEach((links) => {
+        links.classList.remove('ativo');
+    });
+    //(ou) e.currentTarget.classList.add('ativo');
+    // this funciona melhor mas é mesma coisa
+    this.classList.add('ativo');
+    console.log(e);
 }
 
-img.addEventListener('click', callback);
+linksInternos.forEach((e) => {
+    e.addEventListener('click', handleLink);
+});
 
-//exemplo 2
-const animaisLista = document.querySelector('.animais-lista');
 
-function callbackLista(event) {
-    console.log(event.currentTarget);
-    console.log(event.target);
-    console.log(event.type);
+
+//selecione todos os elementos do site começando a partir do body,
+//ao clique mostre exatamente quais elementos estão sendo clicados
+const todosElementos = document.querySelectorAll('body *');
+
+function handleElemento(e) {
+    console.log(e.target);
 }
 
+todosElementos.forEach((e) => {
+    e.addEventListener('click', handleElemento);
+});
 
-animaisLista.addEventListener('click', callbackLista);
 
-//exemplo 3
-const linkExterno = document.querySelector('a[href^="http"]');
 
-function handleLinkExterno(event) {
-    event.preventDefault();
-    //console.log(event);
-    console.log(this); //mesma coisa que o console debaixo
-    console.log(event.currentTarget); //mesma coisa que o this
-}
-
-linkExterno.addEventListener('click', handleLinkExterno);
-
-//exemplo 4 
-function handleKeyboard(event) {
-    if (event.key === 'f') {
-        document.body.classList.toggle('fullscreen')
-    }
-}
-
-window.addEventListener('keydown', handleKeyboard);
 

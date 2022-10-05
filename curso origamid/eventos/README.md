@@ -8,17 +8,17 @@ OBS: o terceiro parametro é opcional
 
 @exemplo 
 ```bash
-# const img = document.querySelector('img');
+ const img = document.querySelector('img');
 
 //elemento.addEventListener(event, callback, options)
-# img.addEventListener('click', function() {
-   #console.log('clicou');
-# });
+ img.addEventListener('click', function() {
+   console.log('clicou');
+ });
 
 //pode ser usada tambem uma arrow function 
-# img.addEventListener('click', () => {
-   #console.log('clicou');
-# });
+ img.addEventListener('click', () => {
+   console.log('clicou');
+ });
 ```
 # callback #
 
@@ -26,13 +26,13 @@ OBS: o terceiro parametro é opcional
 
 @exemplo
 ```bash
-# const img = document.querySelector('img');
+ const img = document.querySelector('img');
 
-# function callback() {
-  #console.log('clicou');
-#}
+ function callback() {
+  console.log('clicou');
+}
 
-# img.addEventListener('click', callback);
+ img.addEventListener('click', callback);
 ```
 
 # event #
@@ -43,28 +43,28 @@ OBS: geralmente utilizam E como nome do parametro.
 
 @exemplo 
 ```bash
-# const img = document.querySelector('img');
+ const img = document.querySelector('img');
 
-# function callback(event) {
-  #console.log(event);
-# }
+ function callback(event) {
+  console.log(event);
+ }
 
-# img.addEventListener('click', callback);
+ img.addEventListener('click', callback);
 ```
 # propriedades do event #
 
 ```bash
-# const animaisLista = document.querySelector('.animais-lista');
+ const animaisLista = document.querySelector('.animais-lista');
 
-# function executarCallback(event) {
-  # const currentTarget = event.currentTarget; // é o item que add o evento
-  # const target = event.target; // onde foi clicado exatamente
-  # const type = event.type // tipo de evento
-  # const path = event.path; //
-  #console.log(currentTrget, target, type, path);
-# }
+ function executarCallback(event) {
+   const currentTarget = event.currentTarget; //alem do elemento os itens que o envolvem
+   const target = event.target; // onde foi clicado exatamente
+   const type = event.type // tipo de evento
+   const path = event.path; //
+  console.log(currentTrget, target, type, path);
+ }
 
-# animaisLista.addEventListener('click', executarCallback);
+ animaisLista.addEventListener('click', executarCallback);
 ```
 
 # event.preventDefault() #
@@ -73,14 +73,14 @@ previne o comportamento padrão do evento no browser. no caso de um link externo
 
 @exemplo
 ```bash
-# const linkExterno = document.querySelector('a[href^="http"]');
+ const linkExterno = document.querySelector('a[href^="http"]');
 
-# function clickNoLink(event) {
-  # event.preventDefault();
-  # console.log(event.currentTarget.href);
-#}
+ function clickNoLink(event) {
+   event.preventDefault();
+   console.log(event.currentTarget.href);
+}
 
-# linkExterno.addEventListener('click', clickNoLink);
+ linkExterno.addEventListener('click', clickNoLink);
 ```
 
 # this #
@@ -91,14 +91,14 @@ OBS: nesse caso o elemento que o THIS vai fazer refencia é o IMG
 
 @exemplo 
 ```bash
-# const img = document.querySelector('img');
+ const img = document.querySelector('img');
 
-# function callback(event) {
-  # console.log(this); // retorna a imagem
-  # console.log(this.getAttribute('src'));
-#}
+ function callback(event) {
+   console.log(this); // retorna a imagem
+   console.log(this.getAttribute('src'));
+}
 
-# img.addEventListener('click', callback);
+ img.addEventListener('click', callback);
 ```
 
 # diferentes eventos # 
@@ -107,10 +107,10 @@ existem varios dentre eles o CLICK, MOUSEENTER, SCROLL, RESIZE, KEYDOWN
 
 @EXEMPLO
 ```bash
-# h1.addEventListener('click', callback);
-# h1.addEventListener('mouseenter', callback);
-# window.addEventListener('scroll', callback);
-# window.addEventListener('keydown', callback);
+ h1.addEventListener('click', callback);
+ h1.addEventListener('mouseenter', callback);
+ window.addEventListener('scroll', callback);
+ window.addEventListener('keydown', callback);
 ```
 
 # evento keyboard #
@@ -119,14 +119,14 @@ voce pode adicionar atalhos para facilitar a navegação no seu site, atraves de
 
 @exemplo
 ```bash
-# function handleKeyboard(event) {
-  # if(event.key === 'a')
-    # document.body.classList.toggle('azul');
-  # else if (event.key === 'v')
-    # document.body.classList.toggle('vermelho');  
-#}
+ function handleKeyboard(event) {
+   if(event.key === 'a')
+     document.body.classList.toggle('azul');
+   else if (event.key === 'v')
+     document.body.classList.toggle('vermelho');  
+}
 
-# window.addEventListener('keydown', callback);
+ window.addEventListener('keydown', callback);
 ```
 
 # forEach e eventos #
@@ -145,8 +145,6 @@ function imgSrc(event) {
 imgs.forEach((img) => {
   img.addEventListener('click', imgSrc);
 });
-
-
 
 ```
 
