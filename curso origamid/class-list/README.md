@@ -44,7 +44,7 @@ Retorna uma array-like com os atributos do elemento
  animais.attributes['data-texto'];  // data-texto e um tipo de dado tbm
 ```
 
-//////////////////////////////////////////////////////////////
+
 
 # getAttribute e setAttribute #
 
@@ -67,7 +67,7 @@ OBS: o setAttribute MUDA/ADICIONA atributos, src, alt, e outros
  img.hasAttributes();  // true ou false se tem algum atributo
 ```
 
-////////////////////////////////////////////////////////////////
+
 
 
 
