@@ -3,6 +3,7 @@
 //demais itens caso eles possuam a mesma. previna
 //o comportamento padrão desses links
 //@@@@CODIGO IMPORTANTE ESSE@@@@@
+
 const linksInternos = document.querySelectorAll('a');
 
 function handleLink(e) {
@@ -25,15 +26,30 @@ linksInternos.forEach((e) => {
 
 //selecione todos os elementos do site começando a partir do body,
 //ao clique mostre exatamente quais elementos estão sendo clicados
+
 const todosElementos = document.querySelectorAll('body *');
 
 function handleElemento(e) {
-    console.log(e.target);
+    //console.log(e.target);
 }
 
 todosElementos.forEach((e) => {
     e.addEventListener('click', handleElemento);
 });
+
+//utilizando o codigo anterior, ao inves de mostrar no console
+//remova o elemento que está sendo clicado
+
+const todoElementos = document.querySelectorAll('body *');
+
+function handleElemento(e) {
+    e.target.remove();
+}
+
+todoElementos.forEach((e) => {
+    e.addEventListener('click', handleElemento);
+});
+
 
 
 
