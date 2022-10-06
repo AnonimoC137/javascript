@@ -94,6 +94,25 @@ animais.appendChild(novoH1);
 
 ```
 
+# Clonar Elementos #
+
+Todo elemento selecionado é único. Para criarmos um novo elemento baseado no anterior, é necessário utilizar o método cloneNode()
+
+OBS: TRUE sinaliza para incluir os filhos, se for FALSE vai trazer somente a tag que envolve ele exemplo um titulo.
+
+@exemplo
+```bash
+const titulo = document.querySelector('h1');
+const titulo2 = document.querySelector('h1');
+const novoTitulo = titulo;
+
+#titulo, titulo2 e novoTitulo são iguais
+
+const cloneTitulo = titulo.cloneNod(true);
+const contato = document.querySelector('.contato');
+contato.appendChild(cloneTitulo);
+```
+
 
 
 
