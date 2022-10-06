@@ -56,8 +56,43 @@ lista.firstChild; // primeiro node child
 lista.childNodes; // todos os node child
 
 ```
+# Manipulando Elementos #
 
+É possivel mover elementos no dom (por exemplo mover um h1 ou um p para outro local) com métodos de Node.
 
+OBS: lembrando que essas const são um exemplo, podendo variar de acordo com seu projeto atual!
+
+OBS: titulo é filho direto de contato, por isso pode ser movido para lá a lista, caso contrario não
+
+OBS: replaceChild(lista, titulo) o primeiro substitui, o segundo é substituido.
+
+@exemplo
+```bash
+const lista = document.querySelector('.animais-lista');
+const contato = document.querySelector('.contato');
+const titulo = contato.querySelector('.titulo');
+
+contato.appendChild(lista); //move lista para dentro de contato só que no final na parte de baixo
+contato.insertBefore(lista, titulo); //lista é o que vai ser movido para dentro de contato,e acima do titulo
+contato.removeChild(titulo); // remove titulo de contato
+contato.replaceChild(lista, titulo); //substitui titulo por lista
+```
+
+# Novos Elementos #
+
+podemos criar novos elementos com o método createElement()
+
+@exemplo 
+```bash
+const animais = document.querySelector('.animais');
+
+const novoH1 = document.createElement('h1');
+novoH1.innerText  = 'Novo Titulo';
+novoH1.classList.add('titulo');
+
+animais.appendChild(novoH1);
+
+```
 
 
 
