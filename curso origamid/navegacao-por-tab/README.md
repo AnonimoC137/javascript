@@ -10,4 +10,4 @@
 -dentro do evento foi criado uma function para poder passar o callback com o index para não dar erro
 -criado em css a conf do tabcontent section com display: none;
 -criado em css a conf do tabcontent section.ativo com display: block; para que suma o conteudo dos texto e apareça somente quando tiver a class ativo nele
--
+```

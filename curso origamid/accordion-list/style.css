@@ -138,6 +138,8 @@ body {
     margin-top: 2rem;
     margin-bottom: .5rem;
     color: #e54;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 
 .faq-lista dt::before {
@@ -242,5 +244,36 @@ body {
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
+    }
+}
+
+.js-accordion dd {
+    display: none;
+}
+/*efeito da cetinha*/
+.js-accordion dt::after {
+    content: '↷';
+    margin-left: 10px;
+}
+
+.js-accordion dt.ativo::after {
+    content: '⤻';
+    margin-left: 10px;
+}
+/*para quando clicar na pergunta aparecer o texto*/
+.js-accordion dd.ativo {
+    display: block;
+    /*dnv o forwards e para manter no efeito final*/
+    animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
     }
 }

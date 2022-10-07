@@ -1,13 +1,14 @@
-# criando uma relação entre imagens e textos #
+# acordion lista do faq #
+
 ```bash
--foi criada duas const tabMenu e tabContent para linkar esses dois locais
--criado um if para verificar se na pagina tem a section solicitada para rodar de fato o codigo, isso é para casos de sites com multiplas paginas por exemplo.
--criado um paramentro para add a class ativo na raposa para iniciar aparecendo o conteudo
--criada função para fazer a ativação dos textos com as imgs chamada activeTAB
--criado um forEach para remover a class ativo constantemente
--essa function vai se basear no index para incluir a class ativo ao item.
--criado outro forEach fora da function para adicionar um evento a cada img
--dentro do evento foi criado uma function para poder passar o callback com o index para não dar erro
--criado em css a conf do tabcontent section com display: none;
--criado em css a conf do tabcontent section.ativo com display: block; para que suma o conteudo dos texto e apareça somente quando tiver a class ativo nele
--
+-foi criada uma function para isolar as aplicaçoes tab
+-criada const para puxar a lista das perguntas de FAQ
+-criado um forEach para add um evento de click para cada pergunta FAQ
+-criada function activeAccordion com this apontando para o item, e com a propriedade para puxar o elemento abaixo e tbm add uma class ativo quando clicado. toggle recomentado para pode clicar e abrir como tbm clicar e fechar.
+
+-assim como no initTabNav que foi isolado por uma function, vai ser criado o initAccirdion para isolar os metodos desse processo das perguntas do FAQ.
+
+--LEMBRANDO sempre no inicio dos processos vai ter uma verificação com if para se certificar que tem as propriedades que estão sendo puxadas nesse caso o accordionList.
+
+-tambem criada uma cont para a palacra ativo, para que no futuro quiser mudar o nome a const não muda.
+```
