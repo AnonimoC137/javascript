@@ -1,5 +1,7 @@
 # acordion lista do faq #
 
+o acordion serve para clicar nas perguntas e aparecer as respostas, se clicar novamente a resposta vai desaparecer para ficar mais dinamico.
+
 ```bash
 -foi criada uma function para isolar as aplicaçoes tab
 -criada const para puxar a lista das perguntas de FAQ
