@@ -38,5 +38,8 @@ li; // HTMLLIElement
 li.click; // Function
 li.value; // Number
 li.hidden; // Boolean
-li.offsetLeft; //
+li.offsetLeft; // Number
+li.click(); // undefined
+
+li.hidden.constructor.name; // fala que é boolean, mas como vem em formato de string é uma string, não se confunda.
 
