@@ -1,153 +1,139 @@
-# Objetos #
+# prototype # 
 
-Criar um objeto é simples, basta definirmos uma variável e iniciar a definição do seu valor com chaves {}, Mas e se precisarmos criar um novo objeto, com as mesmas caracteristicas do anterior?
+A propriedade prototype é um objeto adicionado a uma função quando a mesma é criada.
 
+@exemplo
 ```bash
-const carro = {
-  marca: 'Marca',
-  preco: 0,
+function Pessoa(nome, idade) {
+  this.nome = nome;
+  this.idade = idade;
 }
 
-const honda = carro;
-honda.marca = 'Honda';
-honda.preco = 4000;
+const andre = new Pessoa('andre', 28);
 
-const fiat = carro;
-fiat.marca = 'Fiat';
-fiat.preco = 3000;
+console.log(Pessoa.prototype); // retorna o objeto
+console.log(andre.prototype); // undefined
 ```
 
-# constructor functions #
+# funcao.prototype #
 
-Para isso existe as constructor Functions, ou seja, funções construtoras que são responsáveis por construir novos objetos sempre que chamamos a mesma.
+É possivel adicionar novas propriedades e métodos ao objeto prototype
 
-OBS: a palavra chave NEW é muito importante para isso.
-
-OBS: usa-se o pascal case ou seja a primeira letra é MAIUSCULA depois o resto minusculo pois isso ajuda a identificar que é uma function construtora.
-
-OBS: this sempre vai apontar para o objeto, nesse caso o Carro().
-
-OBS: os valores podem ser passados dentro do proprio () como new Carro('ford', 1000);
-
+@exemplo
 ```bash
-function Carro() {
-  this.marca = 'Marca';
-  this.preco = 0;
+Pessoa.prototype.andar = function() {
+  return this.nome + ' andou';
 }
 
-const honda = new Carro();
-honda.marca = 'Honda';
-honda.preco = 4000;
-
-const fiat = new Carro();
-fiat.marca = 'Fiat';
-fiat.preco = 3000;
-```
-
-# new keyword #
-
-A palavra chave NEW é responsável por criar um novo objeto baseado na função que passarmos a frente dela.
-
-```bash
-const honda= new Carro();
-
-##  1 cria um novo objeto
-honda = {};
-
-## 2 define o protótipo
-honda.prototype = Carro.prototype;
-
-## 3 aponta a variável this para o objeto
-this = honda;
-
-## 4 executa a função, substituindo this pelo objeto
-honda.marca = 'Marca';
-honda.preco = 0;
-
-## 5 retorna o novo objeto 
-return honda = {
-  marca: 'Marca',
-  preco: 0, 
-}
-```
-
-# this keyword #
-
-o THIS faz referência ao próprio objeto construido com a constructor function.
-
-OBS: só bai aparecer nos objetos que usarem o construtor as referencias que estiverem com o this apontando, nesse caso a marca e o preço.
-
-```bash
-function Carro(marca, procoInicial) {
-  const taxa = 1.2;
-  const precoFinal = precoInicial * taxa;
-  this.marca = marca;
-  this.preco = precoFinal;
-  console.log(this);
+Pessoa.prototype.nadar = function() {
+  return this.nome + ' nadou';
 }
 
-const honda new Carro('Honda', 2000);
+console.log(Pessoa.prototype); // retorna o objeto
 ```
 
-# Exemplo real #
+# acesso ao protótipo #
 
-quando mudamos a propriedade seletor, o objeto DOM irá passar a selecionar o novo seletor em seus métodos.
+O objeto criado utilizando o construtor, possui acesso aos métodos e propriedades do protótipo deste construtor. Lembrando, prototype é uma propriedade de funções apenas.
 
-OBS: Nesse caso o element esta fazendo o papel de achar o seletor, ja o ativo, vai ativar algo, fazer algo, no caso add o class 'ativo' ao elemento selecionado.
-
-OBS: Quando usar o querySelector não é necessario passar com '' o nome do elemento junto com o this.
-
+@exemplo
 ```bash
-const Dom = {
-  seletor: 'li',
-  element() {
-    return document.querySelector(this.seletor);
-  },
-  ativo() {
-    this.element().classList.add('ativo');
-  },
+const andre = new Pessoa('andre', 28);
+
+andre.nome;
+andre.idade;
+andre.andar();
+andre.nadar();
+```
+
+# proto #
+O novo objeto acessa os métodos e propriedades do protótipo através da propriedade __proto__. É papel da engine fazer essa busca, não devemos falar com __proto__ diretamente
+
+@exemplo
+```bash
+//acessam o mesmo método
+//mas __proto__ não terá
+//acesso ao this.nome
+andre.andar();
+andre.__proto__.andar();
+```
+
+# Herança de protótipo #
+
+O objeto possui acesso aos métodos e propriedades do protótipo do construtor responsavel por criar este objeto. O objeto abaixo possui acesso a métodos que nunca definimos, mas são herdados do potótipo de object.
+
+@exemplo
+```bash
+object.prototype;
+andre.toString();
+andre.isPrototypeOf();
+andre.valueOf();
+
+```
+
+# Construtores Nativos #
+
+Objetos, funções, números , Strings e outros tipos de dados são criados utilizando construtores. Esses construtores possuem um protótipo com propriedades e métodos, que poderão ser acessadas pelo tipo de dado.
+
+@exemplo
+```bash
+const pais = 'Brasil';
+const cidade = new String('Rio');
+
+pais.charAt(0); // b
+cidade.charAt(0); // r
+
+String.prototype;
+```
+
+# É possivel acessar a função do protótipo #
+
+É comum, principalmente em códigos mais antigos, o uso direto de funções do protótipo do construtor array.
+
+OBS: existe o método Array.from()
+
+@exemplo
+```bash
+const lista = document.querySelectorAll('li');
+
+# transforma em uma array
+const listaArray = array.prototype.slice.call(lista);
+```
+
+# Método do objeto vs Protótipo #
+
+Nos objetos nativos existem métodos linkados diretamente ao objeto e outros linkados ao protótipo
+
+OBS: dado.constructor.name retorna o nome do construtor. no cado dado é um exemplo de nome somente vai do que voce busca no momento
+
+@exemplo 
+```bash
+Array.prototype.slice.call(lista);
+Array.from(lista);
+
+# Retorna uma lista com os métodos / propriedades
+object.getOwnPropertyNames(Array);
+Object.getOwnPropertyNames(Array.prototype);
+```
+# entenda o que está sendo retornado #
+
+Os métodos e propriedades acessando o . são referentes ao tipo de dado que é retornado antes desse .
+
+@exemplo
+```bash
+const Carro = {
+  marca: 'Ford',
+  preco: 2000,
+  acelerar() {
+    return true;
+  }
 }
 
-Dom.ativo(); //adiciona ativo ao li
-Dom.seletor = 'ul';
-Dom.ativo();//adiciona ativo ao ul
+Carro // object
+Carro.marca // String
+Carro.preco // Number
+Carro.acelerar // function
+Carro.acelerar() // boolean
+Carro.marca.charAt // Function
 ```
 
-# constructor function real #
-
-um objeto criado com uma Constructor, não irá influenciar em outro objeto criado com a mesma Constructor
-
-```bash
-function Dom() {
-  this.seletor = 'li';
-  const element = document.querySelector(this.seletor);
-  this.ativo = function() {
-    element.classList.add('ativo');
-  };
-}
-
-const lista = new Dom();
-lista.seletor = 'ul';
-lista.ativo();
-
-const lastLi = new Dom();
-lastLi.seletor = 'li:last-child';
-lastLi.ativo();
-```
-
-# LEMBRE-SE de usar parâmetros #
-
-```bash
-function Dom(seletor) {
-  const element = document.querySelector(seletor);
-  this.ativo = function(classe) {
-    element.classList.add(classe);
-  };
-}
-
-const lista = new Dom('ul');
-lista.ativo('ativo');
-
-const lastLi = new Dom('li:last-child');
-lastLi.ativo('ativo');
-```

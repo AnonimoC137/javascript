@@ -1,47 +1,42 @@
-//Transforme o objeto abaixo em uma Constructor Function
-function Pessoa(nome, idade) {
+//Crie uma função construtora de pessoas
+//Deve conter nome, sobrenome. e idade
+//crie um método no protótipo que retorne
+//o nome completo da pessoa
+
+function Pessoa(nome, sobreNome, idade) {
     this.nome = nome;
-    this.idade = idade;
-    this.andar = function() {
-         console.log(nome + ' andou');
-    }
+    this.sobreNome = sobreNome;
+    this.idade = idade; 
+    
 }
 
-//crie 3 pessoas, joão - 20 anos,
-//Maria - 25 anos, Bruno - 15anos
-
-const pessoa1 = new Pessoa('joão', 20);
-
-
-const pessoa2 = new Pessoa('Maria', 25);
-
-
-const pessoa3 = new Pessoa('Bruno', 15);
-
-
-//crie uma Constructor Function (Dom) para manipulação
-//de listas de elementos do dom. Deve conter as seguites
-//propriedades e métodos:
-
-//elements, retorna NodeList com os elementos selecionados
-//addClass(classe), e removeClass(classe) 
-
-function Dom(seletor) {
-    const elementsList = document.querySelectorAll(seletor);
-    this.elements = elementsList;
-    console.log(elementsList);
-    this.addClass = function(classe) {
-        elementsList.forEach((element) => {
-            element.classList.add(classe)
-        });
-    }
-    this.removeClass = function(classe) {
-        elementsList.forEach((element) => {
-            element.classList.remove(classe);
-        });
-    }
+Pessoa.prototype.nomeCompleto = function() {
+    return `${this.nome} ${this.sobreNome}` 
 }
 
-const listaItens = new Dom('li');
+const andre = new Pessoa('andre', 'silva', 20);
 
-listaItens.addClass('ativar');
+//Lista os métodos acessados por
+//dados criados com NodeList,
+//HTMLCollection, Document
+
+Object.getOwnPropertyNames(NodeList.prototype)
+Object.getOwnPropertyNames(HTMLCollection.prototype)
+Object.getOwnPropertyNames(Document.prototype)
+
+//Liste os construtores dos dados abaixo
+const li = document.querySelector('li');
+
+//nesse caso vai ser usado li.constructor.name 
+//para saber o nome do construtor dele e assim usar
+//no nome do construtor um .prototype para ver todas as
+//propriedades e metodos disponiveis para o prototype
+
+//o mesmo vale para todos os exemplos abaixo
+
+li; // HTMLLIElement
+li.click; // Function
+li.value; // Number
+li.hidden; // Boolean
+li.offsetLeft; //
+
