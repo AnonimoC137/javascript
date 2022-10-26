@@ -158,4 +158,110 @@ carros; // ['fiat', 'vw',];
 const carros = ['ford', 'fiat', 'vw', 'honda'];
 carros.reverse(); // ['honda', 'vw', 'fiat', 'ford'];
 ```
- 
+
+# [].splice() #
+
+[].splice(index, remover, item1, item2, ...) adiciona valores na array a partir do index. Remove a quantidade de itens que for passada no segundo parametro (retorna esses itens).
+
+@exemplo
+```bash
+const carros = ['ford', 'fiat', 'vw', 'honda'];
+carros.splice(1, 0, 'kia', 'mustang'); // []
+carros; // ['ford','kia', 'mustang', 'fiat', 'vw', 'honda'];
+
+
+carros.splice(3, 2, 'ferrari'); // ['fiat', 'vw']
+carros; // ['ford', 'kia', 'mustang', 'ferrari', 'honda']
+```
+
+# [].fill() #
+
+[].fill(valor, inicio, final) preenche a array com o valor, do inicio ate o final.
+
+OBS: podendo deixar bem claro qual posição exatamente vai ser modificada, como tambem colocar de um ponto ate o outro as modificações.
+
+@exemplo
+```bash
+['item1','item2','item3','item4'].fill('banana');
+// ['banana','banana','banana','banana']
+
+
+['item1','item2','item3','item4',].fill('banana', 2);
+// ['item1','item2','banana','banana']
+
+
+['item1','item2','item3','item4',].fill('banana', 2, 3);
+// ['item1','banana','banana','item4']
+```
+
+# Métodos de Acesso [].concat() #
+
+Os métodos abaixo não modificam a array original, apenas retornam uma array modificada. [].concat() irá concatenar a array com o valor passado.
+
+@exemplo
+```bash
+const transporte1 = ['barco', 'aviao'];
+const transporte2 = ['carro', 'moto'];
+const transportes = transporte1.concat(transporte2);
+// ['barco', 'aviao', 'carro', 'moto'];
+
+
+const maisTransportes = [].concat(transporte1, transporte2, 'van');
+// ['barco', 'aviao', 'carro', 'moto', 'van'];
+```
+
+# []includes(), indexOf() e []lastIndexOf() #
+
+[].includes(valor) verifica se a array possui o valor e retorna true ou false. [].indexOf(valor) verifica se a array possui o valor e retorna o index do primeiro valor da array. Já o [].lastIndexOf(valor) retorna o index do ultimo
+
+@exemplo
+```bash
+const linguegens = ['html', 'css', 'js', 'php', 'python', 'js'];
+
+
+linguagens.includes('css'); // true
+linguagens.includes('ruby'); // false
+linguagens.indexOf('python'); // 4
+linguagens.indexOf('js'); // 2
+linguagens.lastIndexOf('js'); // 5
+```
+
+# [].join() #
+
+[].join(separador) junta todos os valores da array e retorna uma string com eles. Se voce passar um valor como parametro, este será utilizado durante a junção de cada item da array.
+
+@exemplo
+```bash
+const linguagens = ['html', 'css', 'js', 'php', 'python'];
+linguagens.join(); // 'html,css,php,python'
+linguagens.join(' '); // 'html css js php python'
+
+
+
+
+let htmlString = '<h2>Titulo Principal</h2>'
+
+htmlString = htmlString.split('h2');
+
+// ['<', '>Titulo Principal</', '>']
+
+htmlString = htmlString.join('h1');
+
+// <h1>Titulo Principal</h1>
+```
+
+# [].slice() #
+
+[].slice(inicio, final) retorna os itens da array começando pelo inicio até o valor final.
+
+@exemplo
+```bash
+const linguagens = ['html', 'css', 'js', 'php', 'python'];
+linguagens.slice(3); // ['php', 'python']
+linguagens.slice(1, 4); // ['css', 'js', 'php']
+
+const cloneLinguagens = linguagens.slice();
+```
+
+
+    
