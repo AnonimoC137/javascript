@@ -67,6 +67,8 @@ newCarros; // ['carro ford', 'carro fiat', 'carro honda']
 
 Se não retornarmos nenhum valor durante a iteração utilizando map, o valor retornado como de qualquer função que nao possui return, será undefined.
 
+OBS: IMPORTENTE lembrar que nesses metodos que são exatamente para retornar um valor nao pode exquecer de colocar o return, vamos começar a criar o habito de usar isso, pois todos os metodos a seguir nesse topico vao precisar dele.
+
 
 @exemplo
 ```bash
@@ -253,6 +255,77 @@ const arrayCheias = frutas.every((fruta) => {
 
 const numeros = [6, 43, 22, 88, 101, 29];
 const maiorQue3 = numeros.every(x => x> 3); // true
+```
+
+# .find() e .indIndex() #
+
+.find() retorna o valor atual da primeira iteração que retornar o valor true, Já o .findIndex() ao inves de retornar o valor, retorna o index deste valor na array.
+
+OBS: Oou seja um find ele vai mostra o primeiro numero que atende a condicao, pois e o primeiro valor true que deu, ja o findIndex e a mesma coisa so que o valor rewtornado vai ser o do index do valor da sua array.
+
+@exemplo 
+```bash
+const frutas = ['banana', 'pera', 'uva', 'maca'];
+const buscaUva = fruntas.findIndex((frunta) => {
+  return fruta === 'uva';
+}); // 2
+
+const numeros = [6, 43, 22, 88, 101, 29];
+const buscaMaior45 = numeros.find(x => x > 45); // 88
+```
+# filter #
+
+.filter() retorna uma array com a lista de valores que durante a sua iteração retornaram um valor true.
+
+OBS: ou seja e bom para pegar varios itens de uma lista que atendam as suas condicoes.
+
+@exemplo
+```bash
+const frutas = ['banana', undefined, null, '', 'uva', 0, 'maca'];
+const arrayLimpa = frunta.filter((fruta) => {
+  return fruta;
+}); // ['banana', 'uva', 'maca']
+
+const numeros = [6, 43, 22, 88, 101, 29];
+
+const buscaMaior45 = numeros.filter(x => x > 45); //[88, 101]
+
+OU
+
+const buscaMaior45 = numeros.filter((x) => {
+  return x > 45;
+});
+```
+comportamento do .filter() em um objeto
+
+@exemplo 2
+```bash
+const aulas = [
+  {
+    nome: 'HTML 1',
+    min: 15
+  },
+  {
+    nome: 'HTML 1',
+    min: 10
+  },
+  {
+    nome: 'HTML 1',
+    min: 20
+  },
+  {
+    nome: 'HTML 1',
+    min: 25
+  },
+]
+
+const maiores15 = aulas.filter((aula) => {
+  return aula.min > 15
+});
+
+//{nome: 'css 1', min: 20}
+  {nome: 'js 1', min: 25}
+
 ```
 
 
