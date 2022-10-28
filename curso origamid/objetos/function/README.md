@@ -13,6 +13,27 @@ OBS: quando se coloca o segundo parametro assim como está no exemplo abaixo, el
   const perimetroQuadrado = new Function('lado', 'return lado * 4');
 ```
 
+# duvidas que podem vir no futuro #
+
+a maneira mais rapida de converter uma NodeList em Array é os exemplos abaixo
+
+OBS: coloquei varios exemplos pois vai do método que voce quer usar no momento, então como não sei já coloquei 3 ai disponiveis.
+
+@exemplo
+```bash
+const li = document.querySelectorAll('li');
+
+const newArray = Array.prototype.reduce.call(li);
+
+ou 
+
+const newArray = Array.prototype.slice.call(li);
+
+ou
+
+const newArray = Array.prototype.map.call(li);
+```
+
 # Propriedades #
 
 Function.length retorna o total de argumentos da função.
@@ -137,4 +158,93 @@ const filtro = Array.prototype.filter.call(li, function(item) {
 
 filtro;
 // retorna os itens que possuem ativo
+
+```
+
+# function.apply() #
+
+O apply(this, [argumento1, argumento2,...]) funciona como o call, a única diferença é que os argumentos da função são passados através de uma array.
+
+OBS: podemos passar null para o valor de this, caso a função não utilize o objeto principal para funcionar.
+
+@exemplo
+```bash
+const numeros = [3, 4, 6, 1, 34, 44, 32];
+Math.max.apply(null, numeros);
+Math.max.call(null, 3, 4, 5, 6, 7, 20);
+```
+
+# Apply vs Call #
+
+Aúnica diferença é a array como segundo argumento.
+
+@exemplo
+```bash
+const li = document.querySelectorAll('li');
+
+function itemPossuiAtivo(item) {
+  return item.classList.contains('ativo');
+}
+
+const filtro1 = Array.prototype.filter.call(li, itemPossuiAtivo);
+const filtro2 = Array.prototype.filter.call(li, [itemPossuiAtivo]);
+```
+
+# function.bind() #
+Diferente de call e apply, bind(this, argumento1, argumento2, ...) não irá executar a função mas sim retornar a mesma com o novo contexto de this.
+
+@exemplo
+```bash
+const li = document.querySelectorAll('li');
+
+const filtrarLi = Array.prototype.filter.bind(li, function(item) {
+  return item.classList.contains('ativo');
+});
+
+
+filtrarLi();
+```
+
+# Argumentos e Bind #
+
+Não precisamos passar todos os argumentos no momento do bind, podemos passar os mesmo na nova função no momento da execução da mesma.
+
+@exemplo
+```bash
+const carro = {
+  marca: 'ford',
+  anos: 2018,
+  acelerar: function(aceleracao, tempo) {
+    return `${this.marca} acelerou ${aceleracao} em ${tempo}`;
+  }
+}
+
+carro.acelerar(100, 20);
+//ford acelerou 100 em 20
+
+const honda = {
+  marca: 'honda',
+}
+
+const acelerarHonda = carro.acelerar.bind(honda);
+acelerarHonda(200, 10);
+//honda acelerou 200 em 10
+```
+
+# Argumentos Comuns #
+
+Podemos passar argumentos padões para uma função e retornar uma nova função.
+
+OBS: foi passado o valor de null, pois a function do exemplo abaixo não tem nenhum objeto sendo referenciado, ou seja não tem nenhuma const ou let ou o que seja passa puxar ela.
+
+@exemplo
+```bash
+function imc(altura, peso) {
+  return peso / (altura * altura);
+}
+
+const imc180 = imc.bind(null, 1.80);
+
+imc(1.80, 70); // 21.6
+imc180(70); // 21,6
 ```
