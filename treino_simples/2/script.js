@@ -1,5 +1,12 @@
-function min(num1, num2) {
-    return Math.min(num1, num2);
+function myFunction(a) {
+    
+    return a.slice(3)   
+    
+    
+    
 }
 
-console.log(min(0, 10));
+//myFunction([1, 2, 3, 4]);
+
+console.log(myFunction([1, 2, 3, 4]))
+
