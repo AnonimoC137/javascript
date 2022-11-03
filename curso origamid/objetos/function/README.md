@@ -34,6 +34,7 @@ ou
 const newArray = Array.prototype.map.call(li);
 ```
 
+
 # Propriedades #
 
 Function.length retorna o total de argumentos da função.
