@@ -155,3 +155,127 @@ Object.values(carro);
 Object.entries(carro);
 //[['marca', 'ford'], ['ano', 2018]]
 ```
+
+# Object.getOwnPropertyNames(obj) #
+
+Retorna uma array com todas as propriedades diretas do objeto (não retorna as do prototipo)
+
+@exemplo
+```bash
+Object.getOnwPropertyNames(Array);
+// ['length', 'name', 'prototype', 'isArray', 'from', 'of']
+
+Object.getOnwPropertyNames(Array.prototype);
+// [...'filter', 'map', 'every', 'some', 'reduce', ...]
+
+Object.getOwnPropertyNames(carro);
+//['marca', 'ano']
+```
+
+# Object.getPrototypeOf() e Object.is() #
+
+Object.getPrototypeOf() retorna o prototipo do objeto.
+Object.is(obj1, obj2) verifica se os objetos são iguais e retorna true ou false
+
+@exemplo
+```bash
+const frutas = ['banana', 'pera']
+Object.getPrototypeOf(frutas);
+Object.getPrototypeOf(''); // String
+
+
+const frutas1 = ['banana', 'pera'];
+const frutas2 = ['banana', 'pera'];
+
+Object.is(frutas1, frutas2); // false
+```
+# Object.freeze(), Object.seal(), Object.preventExtensions() #
+
+Object.freeze() impede qualquer mudança nas propriedades.
+Object.seal() previne a adição de novas propriedades e impede que as atuais sejam deletadas.
+Object.preventExtensions() previne a adição de novas propriedades
+
+@exemplo
+```bash
+const carro = {
+  marca: 'ford',
+  ano: 2018,
+}
+
+Object.freeze(carro);
+Object.seal(carro);
+Object.preventExtensions(carro);
+
+Object.isFrozen(carro) // true
+Object.isSealed(carro) // true
+Object.isExtensible(carro); // true
+```
+
+# Propriedades e métodos do prototipo #
+
+Já que tudo em havascript é objeto, as propriedades abaixo então disponiveis em todos os objetos criados a partir de funções construtoras. {}.constructor retorna a função construtora do objeto.
+
+@exemplo
+```bash
+const frutas = ['banana', 'uva'];
+frutas.constructor; // Array
+
+const frase = 'isso é uma string';
+frase.constructor; // String
+```
+
+# {}.hasOwnProperty('prop') e {}propertyIsEnumerable('prop') #
+
+Verifica se possui a propriedade e retorna true. A propriedade deve ser direta do objeto e não do prototipo. O {}.propertyIsEnumerable() verifica se a propriedade é enumerável.
+
+@exemplo
+```bash
+const frutas = ['banana', 'uva'];
+
+frutas.hasOwnProperty('map'); // false
+Array.hasOwnProperty('map'); // false
+Array.prototype.hasOwnProperty('map'); // true
+
+
+Array.prototype.propertyIsEnumerable('map'); // false
+window.propertyIsEnumerable('innerHeight'); // true
+```
+
+# {}.isPrototypeOf(valor) #
+
+Verifica se é o prototipo do valor passado.
+
+@exemplo
+```bash
+const frutas = ['banana', 'uva'];
+
+Array.prototype.isPrototypeOf(frutas); // true
+```
+
+# real modo de verificar o tipo #
+
+usando Object.prototype.ToString.call(valor)
+
+@exemplo
+```bash
+const frutas = ['banana', 'uva'];
+frutas.toString(); // banana,uva
+typeof frutas // object
+Object.prototype.toString.call(frutas); // [object Array]
+
+const frutas = 'uma string';
+frutas.toString(); // 'uma string'
+typeof frutas // string
+Object.prototype.toString.call(frutas); // [object String]
+
+const carro = {marca: 'ford'};
+carro.toString(); // [object object]
+typeof frutas // object
+Object.prototype.toString.call(frutas); // [object Object]
+
+
+const li - document.querySelectorAll('li');
+typeof li; // object
+Object.prototype.toString.call(li); // [object NodeList]
+```
+
