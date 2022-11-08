@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div data-cor="azul" data-width="500">Uma div</div>
-    <nav class="menu js-menu">
+    <nav class="menu" data-menu="suave">
         <ul>
           <li><a href="#animais">Animais</a></li>
           <li><a href="#faq">Fac</a></li>
@@ -17,9 +16,9 @@
           <li><a href="https//www.origamid.com/">Dev → </a></li>
         </ul>
     </nav>
-    <section class="grid-section animais js-scroll" id="animais">
+    <section class="grid-section animais" data-anime="scroll" id="animais">
         <h1 class="titulo">Animais Fantasticos</h1>
-        <ul class="animais-lista js-tabmenu">
+        <ul class="animais-lista" data-tab="menu">
             <li>
                 <img src="../imagens/imagem1.jpg">
             </li>
@@ -40,42 +39,42 @@
             </li>
             
         </ul>
-        <div class="animais-descricao js-tabcontent">
-            <section>
+        <div class="animais-descricao" data-tab="content">
+            <section data-anime="show-right">
                 <h2>Raposa</h2>
                 <p>são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As raposas têm o crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente arrebitado e uma cauda longa e espessa.
                 Doze espécies pertencem ao grupo monofilético de "raposas verdadeiras" do gênero Vulpes. Aproximadamente outras 25 espécies atuais ou extintas são parte do grupo parafilético das raposas sul-americanas ou do grupo periférico, que consiste na raposa-orelhas-de-morcego, raposa-cinzenta e raposa-das-ilhas.</p>
             </section>
-            <section>
+            <section data-anime="show-right">
                 <h2>Esquilo</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque quam ullam tempore quas doloremque ex hic earum fuga deleniti perferendis nesciunt debitis provident assumenda praesentium, illo voluptatem. Autem, quis!
                 Modi nesciunt error at magni beatae? Sed a adipisci assumenda sequi architecto deleniti repellendus odio ad iusto provident, eos tempore deserunt atque, nihil porro, hic ab. Corporis eum cupiditate eos?</p>
             </section>
-            <section>
+            <section data-anime="show-down">
                 <h2>Urso</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque quam ullam tempore quas doloremque ex hic earum fuga deleniti perferendis nesciunt debitis provident assumenda praesentium, illo voluptatem. Autem, quis!
                 Modi nesciunt error at magni beatae? Sed a adipisci assumenda sequi architecto deleniti repellendus odio ad iusto provident, eos tempore deserunt atque, nihil porro, hic ab. Corporis eum cupiditate eos?</p>
             </section>
-            <section>
+            <section data-anime="show-down">
                 <h2>lobo</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque quam ullam tempore quas doloremque ex hic earum fuga deleniti perferendis nesciunt debitis provident assumenda praesentium, illo voluptatem. Autem, quis!
                 Modi nesciunt error at magni beatae? Sed a adipisci assumenda sequi architecto deleniti repellendus odio ad iusto provident, eos tempore deserunt atque, nihil porro, hic ab. Corporis eum cupiditate eos?</p>
             </section>
-            <section>
+            <section data-anime="show-right">
                 <h2>macaco</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque quam ullam tempore quas doloremque ex hic earum fuga deleniti perferendis nesciunt debitis provident assumenda praesentium, illo voluptatem. Autem, quis!
                 Modi nesciunt error at magni beatae? Sed a adipisci assumenda sequi architecto deleniti repellendus odio ad iusto provident, eos tempore deserunt atque, nihil porro, hic ab. Corporis eum cupiditate eos?</p>
             </section>
-            <section>
+            <section data-anime="show-right">
                 <h2>Leão</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque quam ullam tempore quas doloremque ex hic earum fuga deleniti perferendis nesciunt debitis provident assumenda praesentium, illo voluptatem. Autem, quis!
                 Modi nesciunt error at magni beatae? Sed a adipisci assumenda sequi architecto deleniti repellendus odio ad iusto provident, eos tempore deserunt atque, nihil porro, hic ab. Corporis eum cupiditate eos?</p>
             </section>
         </div>
     </section>
-    <section class="grid-section faq js-scroll" id="faq">
+    <section class="grid-section faq" data-anime="scroll" id="faq">
         <h1 class="titulo">FAC</h1>
-        <dl class="faq-lista js-accordion">
+        <dl class="faq-lista" data-anime="accordion">
             <dt>Qual a idade dos animais?</dt>
 
             <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illo. Dolores aperiam temporibus itaque repellendus at necessitatibus, natus recusandae quia ullam, fugit quidem beatae pariatur, adipisci ad. Dicta, minima expedita.</dd>
@@ -94,7 +93,7 @@
         </dl>
     </section>
 
-    <section class="grid-section contato js-scroll" id="contatos">
+    <section class="grid-section contato" data-anime="scroll" id="contatos">
         <h1 class="titulo">Contato</h1>
         <div class="mapa">
             <img src="../imagens/mapa.png">

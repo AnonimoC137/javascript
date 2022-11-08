@@ -205,6 +205,7 @@ body {
     .grid-section {
         /*1fr ele se expandi o quanto conseguir*/
         grid-template-columns: 100px 1fr;
+
         /*espaço entre os elementos grid*/
         grid-gap: 10px;
     }
@@ -227,16 +228,26 @@ body {
     }
 }
 
-.js-tabcontent section {
+[data-tab="content"] section {
     display: none;
 }
-.js-tabcontent section.ativo {
-    display: block !important;
+[data-tab="content"] section.ativo {
     /*forwards para a animação ficar no estado final de to se não ela zera*/
+    display: block !important;
     animation: show .5s forwards;
 }
 
-@keyframes show {
+[data-tab="content"] section.ativo.show-right {
+    /*forwards para a animação ficar no estado final de to se não ela zera*/
+    animation: show-right .5s forwards;
+}
+
+.js-tabcontent section.ativo.show-down {
+    /*forwards para a animação ficar no estado final de to se não ela zera*/
+    animation: show-down .5s forwards;
+}
+
+@keyframes show-right {
     from {
         opacity: 0;
         transform: translate3d(-30px, 0 ,0);
@@ -247,21 +258,32 @@ body {
     }
 }
 
-.js-accordion dd {
+@keyframes show-down {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+[data-anime="accordion"] dd {
     display: none;
 }
 /*efeito da cetinha*/
-.js-accordion dt::after {
+[data-anime="accordion"] dt::after {
     content: '↷';
     margin-left: 10px;
 }
 
-.js-accordion dt.ativo::after {
+[data-anime="accordion"] dt.ativo::after {
     content: '⤻';
     margin-left: 10px;
 }
 /*para quando clicar na pergunta aparecer o texto*/
-.js-accordion dd.ativo {
+[data-anime="accordion"] dd.ativo {
     display: block;
     /*dnv o forwards e para manter no efeito final*/
     animation: slideDown .5s forwards;
@@ -281,13 +303,13 @@ body {
 /*conf da animação ao passar scroll*/
 /*transition para ocorrer uma leve transição dos elementos*/
 /*transform: translate3d para a transição começar saindo do lado para o meio*/
-.js-scroll {
+[data-anime="scroll"] {
     opacity: 0;
     transition: .3s;
     transform: translate3d(-30px, 0, 0);
 }
 
-.js-scroll.ativo {
+[data-anime="scroll"].ativo {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 

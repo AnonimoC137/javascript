@@ -1,7 +1,9 @@
-const div = document.querySelector('[data-cor]');
+//adicione um atrtibuto data-anime="show-down" e
+//data-anime="show-right" a todos as sections's
+//com descrição dos animais.
 
-div.dataset.height = 1000;
 
-delete div.dataset.width
 
-console.log(div.dataset);
+
+
+
