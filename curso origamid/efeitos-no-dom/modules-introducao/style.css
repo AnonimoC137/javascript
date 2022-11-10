@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: #faf6ed;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    /*conf do layout em grid*/
+    display: grid;
+    /*tem 4 colunas mas na conf é 5*/
+    grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+
+.menu {
+    /*conf das colunas da 3 a ultima que é 5*/
+    grid-column: 3 / 5;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #fb5;
+}
+
+.menu ul {
+    display: flex;
+    /*para caso não caber tudo quebrar linha*/
+    flex-wrap: wrap;
+    padding: 10px;
+
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    margin-right: 10px;
+    color: #222;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: .1em;
+}
+
+.grid-section {
+    /*da coluna 2 até a 4*/
+    grid-column: 2 / 4;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    /* 3 colunas sendo que o 1fr é para o texto ter mais respons.*/
+    grid-template-columns: 90px 300px 1fr;
+    /*distancia de um grid para o outro*/
+    grid-gap: 20px;
+    margin-bottom: 4rem;
+}
+
+.titulo {
+    font-family: georgia;
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    grid-column: 1 / 4;
+}
+
+.animais h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: 1rem;
+    color: #e54;
+}
+
+.animais h2::before {
+    content: '';
+    /*para fazer o objeto que fica ao lado do titulo fica na mesma linha*/
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    margin-right: 10px;
+    background: #fb5;
+}
+
+.animais p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.animais-lista {
+    height: 370px;
+    overflow-y: scroll;
+    grid-column: 2;
+}
+
+.animais-lista li {
+    cursor: pointer;
+}
+/*para estilizar o scroll do crome*/
+.animais-lista::-webkit-scrollbar {
+    width: 18px;
+}
+
+.animais-lista::-webkit-scrollbar-thumb {
+    background: #fb5;
+    border-left: 4px solid #faf6ed;
+    border-right: 4px solid #faf6ed;
+}
+
+.animais-descricao {
+    grid-column: 3;
+}
+
+.animais-descricao section {
+    margin-bottom: 3rem;
+}
+
+.faq-lista {
+    grid-column: 2 / 4;
+}
+
+.faq-lista dt {
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    color: #e54;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.faq-lista dt::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+    background: #fb5;
+}
+
+.faq-lista dd {
+    font-family: helvetica, arial;
+    margin-bottom: .5rem;
+    margin-left: 30px;
+}
+
+.mapa {
+    grid-column: 2;
+}
+
+.dados {
+    grid-column: 3;
+}
+
+.dados li {
+    margin-bottom: 1rem;
+    font-family: helvetica, arial;
+}
+
+.dados li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+    background: #fb5;
+}
+
+.copy {
+    grid-column: 3/5;
+    margin-bottom: 2rem;
+    background: #fb5;
+}
+
+.copy p {
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    body {
+        /*mudando para uma coluna só*/
+        grid-template-columns: 1fr;
+    }
+
+    .menu, .grid-section, .copy {
+        /*orientando para coluna 1*/
+        grid-column: 1;
+    }
+
+    .grid-section {
+        /*1fr ele se expandi o quanto conseguir*/
+        grid-template-columns: 100px 1fr;
+
+        /*espaço entre os elementos grid*/
+        grid-gap: 10px;
+    }
+    .animais-lista {
+        grid-column: 1;
+    }
+    .faq-lista, .dados, .mapa {
+        /*foi definido duas colunas, mas na conf considera 3*/
+        grid-column: 1/3;
+    }
+
+    .grid-section h1 {
+        font-size: 3rem;
+    }
+    .menu {
+        margin-top: 0;
+    }
+    .copy {
+        margin-bottom: 0;
+    }
+}
+
+[data-tab="content"] section {
+    display: none;
+}
+[data-tab="content"] section.ativo {
+    /*forwards para a animação ficar no estado final de to se não ela zera*/
+    display: block !important;
+    animation: show .5s forwards;
+}
+
+[data-tab="content"] section.ativo.show-right {
+    /*forwards para a animação ficar no estado final de to se não ela zera*/
+    animation: show-right .5s forwards;
+}
+
+.js-tabcontent section.ativo.show-down {
+    /*forwards para a animação ficar no estado final de to se não ela zera*/
+    animation: show-down .5s forwards;
+}
+
+@keyframes show-right {
+    from {
+        opacity: 0;
+        transform: translate3d(-30px, 0 ,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes show-down {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+[data-anime="accordion"] dd {
+    display: none;
+}
+/*efeito da cetinha*/
+[data-anime="accordion"] dt::after {
+    content: '↷';
+    margin-left: 10px;
+}
+
+[data-anime="accordion"] dt.ativo::after {
+    content: '⤻';
+    margin-left: 10px;
+}
+/*para quando clicar na pergunta aparecer o texto*/
+[data-anime="accordion"] dd.ativo {
+    display: block;
+    /*dnv o forwards e para manter no efeito final*/
+    animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
+    }
+}
+
+/*conf da animação ao passar scroll*/
+/*transition para ocorrer uma leve transição dos elementos*/
+/*transform: translate3d para a transição começar saindo do lado para o meio*/
+[data-anime="scroll"] {
+    opacity: 0;
+    transition: .3s;
+    transform: translate3d(-30px, 0, 0);
+}
+
+[data-anime="scroll"].ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+
+}
