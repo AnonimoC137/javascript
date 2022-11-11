@@ -62,3 +62,12 @@ scrollSuave();
 scrollAnimacao();
 
 ```
+
+@exemplo como importa sem saber o nome
+```bash
+// importe todos os valores em um objeto
+import * as scroll from './scroll.js';
+
+scroll.scrollSuave();
+scroll.scrollAnimacao();
+```

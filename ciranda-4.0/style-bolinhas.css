@@ -171,7 +171,10 @@ main {
     padding: 10px;
 }
 
-
+.bolinha-1 img {
+    width: 85%;
+    margin-top: 20px;
+}
 
 .texto-1 {
     background: rgb(74, 186, 74);
@@ -215,6 +218,11 @@ main {
     border: 2px solid black;
     background: #fff;
     box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
+}
+
+.bolinha-2 img {
+    width: 85%;
+    margin-top: 20px;
 }
 
 .texto-2 {
@@ -264,6 +272,8 @@ main {
     box-shadow: -3px 3px 0px gray, -10px 5px 0 rgb(70, 70, 70)
 }
 
+
+
 .texto-3 {
     background: rgb(74, 186, 74);
     border-radius: 55px 5px;
@@ -310,7 +320,8 @@ main {
 }
 
 .bolinha-4 img {
-    width: 100%;
+    width: 85%;
+    margin-top: 20px;
 }
 
 .texto-4 {
@@ -619,7 +630,7 @@ main {
 }
 
 .bolinha-10 img {
-    width: 100%;
+    width: 65%;
 }
 
 .texto-10 {
