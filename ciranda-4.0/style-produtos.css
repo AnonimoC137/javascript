@@ -174,10 +174,10 @@ main {
     margin: 30px auto 0;
     padding: 10px;
     align-items: center;
-    background-image: url(imagens/fundoo3.jpg);
+    /*background-image: url(imagens/fundoo3.jpg);
     background-repeat:no-repeat;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center center;*/
     
 }
 
@@ -268,10 +268,10 @@ main {
     margin: auto 0px;
     padding: 40px;
     align-items: center;
-    background-image: url(imagens/fundoo3.jpg);
+    /*background-image: url(imagens/fundoo3.jpg);
     background-repeat:no-repeat;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center center;*/
 }
 
 .inflavel-3 {
@@ -359,10 +359,10 @@ main {
     margin: auto;
     padding: 40px;
     align-items: center;
-    background-image: url(imagens/fundoo3.jpg);
+   /* background-image: url(imagens/fundoo3.jpg);
     background-repeat:no-repeat;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center center;*/
 }
 
 .inflavel-5 {
@@ -743,4 +743,16 @@ span {
     .mobile-menu {
         margin-top: 5px;
     }
+}
+
+[data-anime="scroll"] {
+    opacity: 0;
+    transition: .3s;
+    transform: translate3d(-30px, 0, 0);
+}
+
+[data-anime="scroll"].ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+
 }
