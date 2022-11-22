@@ -21,8 +21,6 @@ export default function initModal() {
     }
 }
 
-//esse modal e o quadrado de login que aparece na tela, clicando em login ele aparece, clicando no x ou fora dele ele some
-
 
 
 
