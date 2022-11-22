@@ -71,3 +71,58 @@ import * as scroll from './scroll.js';
 scroll.scrollSuave();
 scroll.scrollAnimacao();
 ```
+# valores do export #
+
+Podemos exportar objetos, funções, números, strings e mais.
+
+@exemplo 1
+```bash
+// arquivo configuracao.js
+
+export function scrollSuave() {};
+export const ano = 2000;
+export const obj = {nome: 'ford'};
+export const str = 'frase';
+export class Carro {};
+
+```
+
+@exemplo2 
+```bash
+import * as conf from './configuracao.js';
+
+conf.str;
+conf.obj;
+conf.ano;
+```
+
+# Caracteristicas do modules #
+
+STRICT MODE = 'use strict' por padrao em todos os arquivos
+
+VARIAVEIS FICAM NO MODULE APENAS =  não vazam para o global
+
+THIS FORA DE UM OBJETO FAZ REFERENCIA A UNDEFINED = ao inves do window
+
+ASSINCRONO = vai carregando o que der, ate todos carregarem.
+
+# use strict #
+
+O modo estrito previne que algumas ações consideradas erros. Basta adicionarmos 'use strict' no topo de um arquivo, que ele entrará  neste modo.
+
+OBS: por padrao todo module está no modo estrito.
+
+@exemplo
+```bash
+'use strict'
+
+nome = 'ford'; // erro, variavel global
+
+delete Araay.prototype; // erro, não deletavel
+
+window.top = 200; // erro, não pode mudar
+
+const argumets = 3.14; // escrever em palavra reservada
+```
+
+
