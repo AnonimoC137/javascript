@@ -1,4 +1,4 @@
-//para clicar nos links internos do menu e ir direto para sessão correspondente
+
 export default function initTooltip() {
     const tolltips = document.querySelectorAll('[data-tooltip]');
 
@@ -43,6 +43,10 @@ export default function initTooltip() {
         return tooltipBox
     }
 }
+
+// esse tooltip e a mensagem a aparece quando passa o mouse em cima do mapa no site, ele nao e muito usado mas é bom saber
+
+// importante lembrar que ele esta linkado ao tooltip.css e ao script.js atraves do @import
 
 
 
