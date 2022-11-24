@@ -5,8 +5,9 @@ export default function outsideClick(element, events, callback) {
     /*evento so ira ocorrer caso não tenha o atributo outside no elemento*/
     if (!element.hasAttribute(outside)) {
         /*para diferentes tipos de evento como o de toque na tela*/
+        /*vou colocado um set para virar assincrono*/
         events.forEach(userEvent => {
-            html.addEventListener(userEvent, handleOutsideClick)
+            setTimeout(() => {html.addEventListener(userEvent, handleOutsideClick);})
         });
         
         element.setAttribute(outside, '');
@@ -28,5 +29,3 @@ export default function outsideClick(element, events, callback) {
         
     }
 }
-
-//esse script em geral serve para quando voce quer clicar fora da janela seja do menu ou outra coisa a janela fechar, como na do modal tbm
