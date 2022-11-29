@@ -2,6 +2,8 @@
 
 O construtor Date cria um objeto contendo valores como mes, dia, ano, horario e mais, A data é baseada no relogio interno do computador.
 
+OBS: o map no exemplo do codigo vai ser usado com o parametro Number para passar pela array e transformar os numeros que estao em formato de string em tipo numeros.
+
 @exemplo
 ```bash
 const agora = new Date();
@@ -47,5 +49,7 @@ function converterEmDias(timer) {
 
 const diasAgora = converterEmDias(agora);
 const diaPromocao = converterEmDias(promocao);
+
+const faltam = diasPromocao - diasAgora;
 ```
 
