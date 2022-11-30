@@ -43,6 +43,19 @@
             <option value="white">branco</option>
             <option value="blue">azul</option>
         </select>
+
+        <input type="color">
+        <input type="date">
+        <input type="number">
+        <input type="range">
+        <input type="password">
+        
+
+
+    <label for="identidade"> Possui identidade?</label>
+    <input type="checkbox" value="identidade" id="identidade">
+    <label for="casado">Casado?</label>
+    <input type="checkbox" value="casado" id="casado">
     </form>
     
     
@@ -68,13 +81,32 @@
                 target.classList.remove('invalido')
             }
         }*/
-        const form = document.getElementById('contato');
+
+        //exemplo 3
+        /*const form = document.getElementById('contato');
         function handleChange(event) {
             document.body.style.backgroundColor = event.target.value;
         }
 
-        form.addEventListener('change', handleChange);
+        form.addEventListener('change', handleChange);*/
 
+        //exemplo4
+        /*const form = document.getElementById('contato');
+        function handleChange(event) {
+            console.log(event.target.value);
+        }
+
+        form.addEventListener('change', handleChange);*/
+
+        const form = document.getElementById('contato');
+        function handleChange(event) {
+            if(event.target.checked) {
+                console.log(event.target.value);
+            }
+            
+        }
+
+        form.addEventListener('change', handleChange);
     </script>
 </body>
 </html> 

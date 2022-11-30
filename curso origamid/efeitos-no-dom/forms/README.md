@@ -90,3 +90,63 @@ const form = document.getElementById('contato');
 
         form.addEventListener('change', handleChange);
 ```
+
+# Diferentes Inputs #
+
+atraves das propriedades event.target.value, ou seja o evento no local onde esta ocorrendo vai puxar o valor do ocorrido, da cor, data, barra de rolamento lateral, e senha de cada input, sendo mostrado no console.
+
+@exemplo no html
+```bash
+        <input type="color">
+        <input type="date">
+        <input type="number">
+        <input type="range">
+        <input type="password">
+```
+@exemplo no js
+```bash
+const form = document.getElementById('contato');
+        function handleChange(event) {
+            console.log(event.target.value);
+        }
+
+        form.addEventListener('change', handleChange);
+```
+
+# Checkbox & Radio #
+
+Retorna o valor de value, se estiver checada ou não, checked retorna true ou false.
+
+Adiferença entre radio e checkbox é que radio aceita apenas uma seleção por grupo. Radio é agrupado pelo atributo name.
+
+OBS: ou seja no radio se tu ja selecionou um instrumento não pode selecionar outro ja que eles estao ligados pelo grupo que é o name, nesse caso instrumentos.
+
+@exemplo no html- checkbox
+```bash
+    <label for="identidade"> Possui identidade?</label>
+    <input type="checkbox" value="identidade" id="identidade">
+    <label for="casado">Casado?</label>
+    <input type="checkbox" value="casado" id="casado">
+```
+@exemplo no html - Radio
+```bash
+    <input type="radio" id="guitarra" value="guitarra" name="instrumento" >
+    <label for="guitarra">guitarra</label>
+
+    <input type="radio" id="violao" value="violao" name="instrumento" >
+    <label for="violao">violao</label>
+
+```
+
+@exemplo no js 
+```bash
+const form = document.getElementById('contato');
+        function handleChange(event) {
+            if(event.target.checked) {
+                console.log(event.target.value);
+            }
+            
+        }
+
+        form.addEventListener('change', handleChange);
+```
