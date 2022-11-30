@@ -150,3 +150,31 @@ const form = document.getElementById('contato');
 
         form.addEventListener('change', handleChange);
 ```
+
+# Pegando todos os valores #
+
+Ao inves de selecionarmos elemento por elemento, podemos utilizar um objeto para colocarmos todos os dados que o usuario colocar no formulario.
+
+OBS: explicando mais detalhadamente o exemplo em js abaixo, foi criada uma const em forma de objeto, ai utilizamos o nome dado seguido de [event.target.name] que vai mostra exatamente se é nome, email e mensagem, e vamos atribuir a ele o event.target.value, que por sua vez mais mostrar o conteudo que esta sendo digitado nos campos, e tudo isso vai ser colocado dentro do objeto, com nome: email: e mensagem:, já com o seu valor que foi preenchido anteriormente e capturado com o event.target.value
+
+@exemplo no html
+```bash
+    <form name="contato" id="contato">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="mensagem">mensagem</label>
+        <textarea name="mensagem" id="mensagem"></textarea>
+    </form>
+```
+
+@exemplo no js 
+```bash
+cont contato = document.querySelector('#contato');
+const dados = {};
+
+function handleChange(event) {
+  dados[event.target.name] = event.target.value
+}
+```
