@@ -28,3 +28,16 @@ input {
     border-radius: 4px;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .1);
 }
+
+.css {
+    font-family: monospace;
+    color: #333;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.css span {
+    display: block;
+    margin-bottom: .5rem;
+}
