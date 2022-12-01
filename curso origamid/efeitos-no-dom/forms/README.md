@@ -157,6 +157,8 @@ Ao inves de selecionarmos elemento por elemento, podemos utilizar um objeto para
 
 OBS: explicando mais detalhadamente o exemplo em js abaixo, foi criada uma const em forma de objeto, ai utilizamos o nome dado seguido de [event.target.name] que vai mostra exatamente se é nome, email e mensagem, e vamos atribuir a ele o event.target.value, que por sua vez mais mostrar o conteudo que esta sendo digitado nos campos, e tudo isso vai ser colocado dentro do objeto, com nome: email: e mensagem:, já com o seu valor que foi preenchido anteriormente e capturado com o event.target.value
 
+
+
 @exemplo no html
 ```bash
     <form name="contato" id="contato">
