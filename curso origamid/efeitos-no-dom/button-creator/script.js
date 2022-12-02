@@ -43,14 +43,32 @@ function handleChange(event) {
     //usado para acessar o objeto pelo seu nome, e passar o valor
     //como parametro
     handleStyle[name](value);
+    saveValue(name, value);
+    showCss();
+    console.log(localStorage[name])
+}
+
+function saveValue(name, value) {
+    //para salva as alterações no armazenamento do browser
+    localStorage[name] = value;
+}
+
+function preencheAuto() {
+    const propriedades = Object.keys(localStorage);
+    propriedades.forEach((propriedade) => {
+        handleStyle[propriedade](localStorage[propriedade]);
+        controles.elements[propriedade].value = localStorage[propriedade];
+    });
     showCss();
 }
 
+preencheAuto();
+ 
 function showCss() {
     //é necessario esses dois span no join pois
     //se não so o primeiro fica certo e os outros
     //css não
-    cssText.innerHTML = '<span>' + btn.style.cssText.split(';').join(';</span><span>')
+    cssText.innerHTML = '<span>' + btn.style.cssText.split(';').join(';</span><span>');
 }
 
 
