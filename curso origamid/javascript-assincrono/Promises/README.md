@@ -167,4 +167,56 @@ promessa.then(function(resolucao) {
   console.log(reject);
 });
 ```
+# finally() #
+
+finally() executará a função anonima assim que a promessa acabar. A diferença do funally é que ele será executado independente do resultado, se for resolvida ou rejeitada.
+
+@exemplo
+```bash
+const promessa = new Promise((resolve, reject) => {
+  let condicao = false;
+  if(condicao) {
+    resolve('Estou pronto!');
+  } else {
+    reject(Error('Um erro ocorreu'));
+  }
+});
+
+promessa.then(function(resolucao) {
+  console.log(resolucao);
+}, reject => {
+  console.log(reject);
+}).finally(() => {
+  console.log('acabou');
+});
+```
+
+# Promise.all() #
+
+Retornará uma nova promise assim que todas as prmises dentro dela forem resolvidas ou pelo menos uma rejeitada. A resposta é uma array com as respostas de cada promise.
+
+@exemplo
+```bash
+const login = new Promise(resolve => {
+  setTimeout(() => {
+    resolve('login Efetuado');
+  }, 1000);
+});
+
+const dados = new Promise(resolve => {
+  setTimeout(() => {
+    resolve('Dados Carregados');
+  }, 1500);
+});
+
+const tudoCarregado = Promise.all([login, dados]);
+
+tudoCarregado.then(resposta => {
+  console.log(resposta); // Array com ambas respostas
+});
+```
+
+#
+
+
 
