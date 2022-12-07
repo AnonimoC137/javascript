@@ -51,3 +51,20 @@ fetch('./style.css')
   document.body.appendChild(styleElement);
 });
 ```
+
+# HTML e .text() #
+
+Podemos pegar um arquivo inteiro em HTML, transformar o corpo em texto e inserir em uma div com o innerHTML, A partir dai podemos manipular esses dados como um DOM qualquer.
+
+@exemplo
+```bash
+const div = document.createElement('div');
+
+fetch('./sobre.html')
+.then(response => response.text())
+.then(htmlBody => {
+  div.innerHTML = htmlBody;
+  const titulo = div.querySelector('h1');
+  document.querySelector('h1').innerText = titulo.innerText;
+});
+```
