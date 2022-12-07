@@ -216,7 +216,32 @@ tudoCarregado.then(resposta => {
 });
 ```
 
-#
+# Promise.race() #
+
+Retornará uma nova Promise assim que a primeira promise for resolvida ou rejeitada, Essa nova promise terá a resposta da primeira resolvidade.
+
+@exemplo
+```bash
+const login = new Promise(resolve => {
+  setTimeout(() => {
+    resolve('login Efetuado');
+  }, 1000);
+});
+
+const dados = new Promise(resolve => {
+  setTimeout(() => {
+    resolve('Dados Carregados');
+  }, 1500);
+});
+
+const tudoCarregado = Promise.race([login, dados]);
+
+tudoCarregado.then(resposta => {
+  console.log(resposta); // Login Efetuado 
+});
+```
+
+
 
 
 
