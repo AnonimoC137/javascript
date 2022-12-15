@@ -57,7 +57,7 @@ img {
 
 /* criando início */
 #inicio {
-    background: linear-gradient(63.13deg, #352728 51.04%, #8E5D52 51.05%);
+    background: linear-gradient(63.13deg, #000000 51.04%, #3c0891 51.05%);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@ img {
 .linkedin {
     width: 479px;
     height: 85px;
-    background-color:#8E5D52;
+    background-color:#3c0891;
     display: flex;
     justify-content: center;
     align-items: center;
