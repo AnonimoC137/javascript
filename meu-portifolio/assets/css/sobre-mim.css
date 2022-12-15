@@ -30,6 +30,7 @@ h2 {
     transition: ease 1s;
 }
 
+
 .avatar:hover {
     transform: scale(1.05);
 }
