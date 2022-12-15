@@ -158,9 +158,14 @@ img {
 @media (max-width:1200px) {
     
     #inicio{
-        background: #352728;
+        background: #3c0891;
         height: auto;
     }
+
+    .linkedin {
+        background: #0c0c0c;
+    }
+
 
     .ajustador {
         display: flex;
