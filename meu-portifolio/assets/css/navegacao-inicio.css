@@ -198,6 +198,9 @@ img {
     .direita {
         margin-right: 15px;
     }
+    .avatar {
+        height: 0;
+    }
 
 }
 
