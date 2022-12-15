@@ -6,8 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        input {
+            display: block;
+        }
+    </style>
 </head>
 <body>
+    <form id="buscaCep">
+        <label for="cep">CEP</label>
+        <input type="text" name="cep" id="cep">
+        <input type="button" value="Buscar Cep" id="btnCep">
+    </form>
+    <div class="resultadoCep">
+
+    </div>
+
+    <div>
+        <h2>PREÇO BITCOIN</h2>
+        <p class="btc"></p>
+    </div>
+
+    <div>
+        <p class="piada"></p>
+        <button class="proxima">PROXIMA</button>
+    </div>
     <div class="conteudo"></div>
     <script src="script.js"></script>
 </body>
