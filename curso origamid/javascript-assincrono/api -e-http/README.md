@@ -61,5 +61,57 @@ Get irá puxar as informações da URL. Não é necessario informar que o métod
 
 @exemplo
 ```bash
-const
+const url = 'https://jsonplaceholder.typicode.com/posts/';
+
+fetch(url, {
+  method: 'GET'
+})
+.then(r => r.json())
+.then(r => console.log(r))
+```
+
+# HEAD #
+
+HEAD puxa apenas os headers. É uma requisição mais leve pois não puxa o body.
+
+@exemplo
+```bash
+const url = 'https://jsonplaceholder.typicode.com/posts/';
+
+fetch(url, {
+  method: 'HEAD',
+})
+.then(response => {
+  response.headers.forEach(console.log);
+  console.log(response.headers.get('Content-Type'));
+});
+```
+
+# HEADERS #
+
+CACHE-CONTROL = Tempo que o arquivo deve ficar em cache em segundos. Ex:
+ public, max-agr=3600
+
+CONTENT-TYPE = Tipo de conteudo. Ex: text/html:  charset=-utf-8. Indicar o tipo de arquivo principalmente em métodos POST e PUT.
+
+# CORS #
+
+cROSS-oRIGIN rESOURCE sHARING, gerencia como deve ser o compartilhamento de recursos entre diferentes origens.
+
+É definido no servidor se é permitido ou não acesso dos recursos através de scripts por outros sites. Utilizando o Acess-Control-Allow-Origin.
+
+Se o servidor não permitir o acesso, este será bloqueado. É possivel passar por cima do bloqueio utilizando um proxy.
+
+CORS é um acordo entre browser / servidor ou servidor / servidor Ele serve para dar certa proteção ao browser, mas não é inviolável.
+
+@exemplo
+```bash
+const url = 'https://cors-anywhere.herokuapp.com/https://www.google.com/';
+const div = document.createElement('div');
+
+fetch(url)
+.then(r => r.text())
+.then(r => {
+  div.innerHTML = div
+})
 ```
