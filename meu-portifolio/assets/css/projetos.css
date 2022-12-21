@@ -54,7 +54,20 @@ button:hover {
     cursor: pointer;
     overflow: hidden;
     transition: ease-in-out 0.3s;
+    z-index: 50;
+    
 }
+
+.pro img {
+    width: 64%;
+}
+
+.breve {
+    z-index: 100;
+    position: relative;
+}
+
+
 
 .pro div p {
     font-family: 'Fira Sans', sans-serif;
@@ -72,6 +85,7 @@ button:hover {
     text-align: center;
     padding: 5% 0;
     transform: rotate(-50deg);
+    
 }
 
 .escondido {
