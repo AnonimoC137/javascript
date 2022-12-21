@@ -2,7 +2,8 @@ const links = document.querySelectorAll('a')
 
 function handleClick(event) {
     event.preventDefault();
-    fetchPage(event.target.href)
+    fetchPage(event.target.href);
+    window.history.pushState(null, null, event.target.href);
 }
 
 async function fetchPage(url) {
@@ -18,7 +19,14 @@ function replaceContent(newText) {
 
     const oldContent = document.querySelector('.content');
     const newContent = newHtml.querySelector('.content');
+
+    oldContent.innerHTML = newContent.innerHTML;
+    document.title = newHtml.querySelector('title').innerText;
 }
+
+window.addEventListener('popstate', () => {
+    fetchPage(window.location.href);
+});
 
 links.forEach((link) => {
     link.addEventListener('click', handleClick)
