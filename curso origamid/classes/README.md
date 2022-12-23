@@ -166,4 +166,104 @@ class Button {
         return new Button(text, 'blue');
     }
 }
+``` 
+
+# Get e Set #
+
+Podemos definir comportamentos diferentes de get e set para um método. 
+
+@exemplo
+```bash
+const button = {
+    get element() {
+        return this._element;
+    },
+    set element(tipo) {
+        this._element = document.Element(tipo)
+    }
+}
+
+button.element = 'button'; //set
+button.element; //get (<button></button>)
 ```
+
+# Valor estatico #
+
+Se definirmos apenas o get de um método, teremos entao um valor estatico que não será possivel mudarmos.
+
+@exemplo
+```bash
+const matematica = {
+    get PI() {
+        return 3.14;
+    }
+}
+
+matematica.PI // get (3.14)
+matematica.PI = 20; // nada acontece
+```
+
+# Set #
+
+Eu posso ter um método com o set, que modifique outras propriedades do meu objeto. 
+
+@exemplo
+```bash
+const frutas = {
+    lista: [],
+    set nova(fruta) {
+        this.lista.push(fruta);
+    }
+}
+
+frutas.nova = 'banana'
+frutas.nova = 'morango'
+frutas.lista; // ['banana', 'morango']
+```
+
+# Class #
+
+Assim como em um objeto, as classes podem ter métodos de get e set tambem. 
+
+@exemplo
+```bash
+class Button {
+    constructor(text, color) {
+        this.text = text
+        this.color = color
+    }
+    get element() {
+        const elementButton = document.createElement('button');
+        elementButton.innerText = this.text;
+        elementButton.style.color = this.color;
+        
+
+        return elementButton;
+    }
+}
+
+const blueButton = new Button('comprar', 'blue');
+blueButton.element; // retorna o element
+```
+
+# Set e Class #
+
+Com o set podemos modificar parte do elemento de get. É comum definirmos variaveis privadas, utilizando o underscore _privada.
+
+@exemplo
+````bash
+class Button {
+    constructor(text) {
+        this.text = text
+    }
+    get element() {
+        const elementType = this._elementType || 'button';
+        const buttonElement = document.createElement(elementType);
+        buttonElement.innerText = this.text
+        return buttonElement;
+    }
+    set element(type) {
+        this._elementType = type;
+    }
+}
+````
