@@ -129,5 +129,41 @@ Por padrao todos os metodos craidos dentro de classe irao para o prototipo da me
 
 @exemplo
 ```bash
+class Button {
+    constructor(text) {
+        this.text = text
+    }
+    static create(background) {
+        const elementButton = document.createElement('button');
+        elementButton.style.background = background;
+        elementButton.innerText = 'clique';
 
+        return elementButton;
+    }
+}
+
+const blueButton = Button.create('blue');
+```
+# Static #
+
+Voce pode utilizar o metodo static para retornar a propria classe com propriedades ja pre definidas.
+
+@exemplo
+```bash
+class Button {
+    constructor(text, background) {
+        this.text = text;
+        this.background = background;
+    }
+    element() {
+        const elementButton = document.createElement('button');
+        elementButton.innerText = this.text;
+        elementButton.style.background = this.background;
+
+        return elementButton;
+    }
+    static createBlue(text) {
+        return new Button(text, 'blue');
+    }
+}
 ```

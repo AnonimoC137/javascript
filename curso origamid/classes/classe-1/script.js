@@ -85,3 +85,33 @@ const blueOptions = {
 }
 
 const bluuueButton = new Button(blueOptions);
+
+class Button {
+    constructor(text) {
+        this.text = text
+    }
+    static create(background) {
+        const elementButton = document.createElement('button');
+        elementButton.style.background = background;
+        elementButton.innerText = 'clique';
+
+        return elementButton;
+    }
+}
+
+class Button {
+    constructor(text, background) {
+        this.text = text;
+        this.background = background;
+    }
+    element() {
+        const elementButton = document.createElement('button');
+        elementButton.innerText = this.text;
+        elementButton.style.background = this.background;
+
+        return elementButton;
+    }
+    static createBlue(text) {
+        return new Button(text, 'blue');
+    }
+}
