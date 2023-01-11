@@ -33,5 +33,5 @@ class Moto extends Veiculo {
     }
 }
 
-const honda = new Moto(2);
+const honda2 = new Moto(2);
 honda.acelerar();
