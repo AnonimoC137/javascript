@@ -291,3 +291,77 @@ class Moto extends Veiculo {
 const honda = new Moto(2);
 honda.empinar();
 ```
+# Métodos #
+
+Podemos escrever por cima de um método herdado.
+
+OBS: sendo que o acelerar colocado por ultimo vai ser puxado primeiro, mas o acelerar inicial não vai desaparecer.
+
+@exemplo
+```bash
+class Veiculo {
+    constructor(rodas) {
+        this.rodas = rodas;
+    }
+    acelerar() {
+        console.log('Acelerou');
+    }
+}
+
+class Moto extends Veiculo {
+    acelerar() {
+        console.log('acelerou muito')
+    }
+}
+
+const honda = new Moto(2);
+honda.acelerar();
+```
+
+# Super #
+
+É possivel utilizar a palavra chave super para falarmos com a classe pai, e acessarmos os seus métodos e propriedades.
+
+@exemplo
+```bash
+class Veiculo {
+    constructor(rodas) {
+        this.rodas = rodas;
+    }
+    acelerar() {
+        console.log('Acelerou');
+    }
+}
+
+class Moto extends Veiculo {
+    acelerar() {
+        super.acelerar()
+        console.log('acelerou muito')
+    }
+}
+
+
+```
+
+# Super e Constructor #
+
+Podemos utilizar o super para estendermos o método constructor.
+
+@exemplo
+```bash
+class Veiculo {
+    constructor(rodas, combustivel) {
+        this.rodas = rodas;
+        this.combustivel = combustivel;
+    }
+}
+
+class Moto extends Veiculo {
+    constructor(rodas, combustivel, capacete) {
+        super(rodas, combustivel);
+        this.capacete = capacete;
+    }
+}
+
+const honda = new Moto(4, 'Gasolina', true);
+```
