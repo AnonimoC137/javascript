@@ -267,5 +267,27 @@ class Button {
     }
 }
 ````
+# Subclasses #
 
-.
+É possivel criarmos uma subclasse, esta irá ter acesso aos métodos da classe a qual ela estendeu através do seu prototipo.
+
+@exemplo
+```bash
+class Veiculo {
+    constructor(rodas) {
+        this.rodas = rodas;
+    }
+    acelerar() {
+        console.log('Acelerou');
+    }
+}
+
+class Moto extends Veiculo {
+    empinar() {
+        console.log('empinou com ' + this.rodas + ' rodas')
+    }
+}
+
+const honda = new Moto(2);
+honda.empinar();
+```
