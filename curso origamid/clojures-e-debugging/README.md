@@ -78,3 +78,7 @@ function $$(elementosSelecionados) {
   return {hide, show, on, addClass, removeClass}
 }
 ```
+
+# debugging #
+
+Ele mostrou como debugar no browser e no vsCode tbm, não a necessidade de deixar mais que isso anotado aqui nesse momento.
