@@ -110,3 +110,20 @@ const terceiraFruta = frutas[2];
 
 const [primeira, segunda, terceira] = frutas;
 ```
+
+# Declaração de variaveis #
+
+A desestruturação pode servir para reclararmos uma sequencia de variaveis.
+
+OBS: essa tecnica e pouco pratica, mas pode vir a acontecer em alguns codigos.
+
+@exemplo
+```bash
+const primeiro = 'item 1';
+const segundo = 'item 2';
+const terceiro = 'item 3';
+
+// ou 
+
+const [primeiro, segundo ,terceiro] = ['item 1', 'item 2', 'item 3'];
+```
