@@ -127,3 +127,22 @@ const terceiro = 'item 3';
 
 const [primeiro, segundo ,terceiro] = ['item 1', 'item 2', 'item 3'];
 ```
+
+# Argumento Desestruturado #
+
+Se uma função receber como argumento um objeto, podemos desestruturar ele no momento da declaração.
+
+@exemplo
+```bash
+function handleKeyboard(event) {
+  console.log(event.key);
+}
+
+//com destructuring
+
+function handleKeyboard({key}) {
+  console.log(key)
+}
+
+document.addEventListener('keyup', handleKeyboard);
+```
