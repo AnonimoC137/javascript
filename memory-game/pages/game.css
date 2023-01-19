@@ -1,0 +1,55 @@
+.grid {
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    gap: 15px;
+    /*dividido por 5 com tamanho de uma fração*/
+    grid-template-columns: repeat(5, 1fr);
+    margin: 50px auto;
+}
+
+.card {
+    /*propriedade para definir um tamanho padrao fixo*/
+    /*imutavel*/
+    aspect-ratio: 3/4;
+    width: 100%;
+    height: 200px;
+    background-color: #333;
+    border-radius: 5px;
+    /* relative para o absolut da face 
+    respeitar o tamanho do card*/
+    position: relative;
+    /*para o efeito de virar*/
+    transition: all 400ms ease;
+    /*para dar o efeito 3d*/
+    transform-style: preserve-3d;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    /*absolut para as duas faces ficarem juntas*/
+    position: absolute;
+    /*para centralizar a img certinho*/
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgb(20, 167, 51);
+    border-radius: 5px;
+}
+
+.front {
+    background-image: url(../imagens/beth.png);
+    /*para virar a carta mesma coisa do back*/
+    transform: rotateY(180deg);
+}
+
+.back {
+    background-image: url(../imagens/back.png);
+    /*isso faz mostras a parte da frente*/
+    backface-visibility: hidden;
+}
+
+.card:hover {
+    /*para ocorrer a rotação*/
+    transform: rotateY(180deg);
+}
