@@ -25,6 +25,13 @@ const createElement = (tag, className) => {
 let firstCard = '';
 let secondCard = '';
 
+const checkEndGame = () => {
+    const disabledCards = document.querySelectorAll('.disabled-card');
+
+    if(disabledCards.length == 20) {
+        alert('parabens voce ganhou o jogo');
+    }
+}
 
 //funcao que compara os atributos
 //no final zera a first e a second para poder
@@ -39,6 +46,8 @@ const checkCards = () => {
 
         firstCard = '';
         secondCard = ''; //para continuar escolhendo mais duas cards
+
+        checkEndGame()
     } else {
 
         setTimeout(() => {
