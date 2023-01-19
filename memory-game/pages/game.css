@@ -12,9 +12,9 @@
 .card {
     /*propriedade para definir um tamanho padrao fixo*/
     /*imutavel*/
-    aspect-ratio: 3/5;
+    aspect-ratio: 3/4;
     width: 100%;
-    height: 200px;
+    height: 170px;
     background-color: rgb(148, 221, 154);
     border-radius: 5px;
     /* relative para o absolut da face 
