@@ -22,20 +22,56 @@ const createElement = (tag, className) => {
     return element;
 }
 
+let firstCard = '';
+let secondCard = '';
+
+
+//funcao que compara os atributos
+//no final zera a first e a second para poder
+//escolher mais duas cards
+const checkCards = () => {
+    const firstCharacter = firstCard.getAttribute('data-character');
+    const secondCharacter = secondCard.getAttribute('data-character');
+
+    if(firstCharacter == secondCharacter) {
+
+    } else {
+
+        setTimeout(() => {
+            firstCard.classList.remove('revelar-card');
+            secondCard.classList.remove('revelar-card');
+            firstCard = '';
+            secondCard = '';
+        }, 500);
+    }
+}
 
 //parentNode para puxar o 'pai' que é o card
 //pois estava puxando o 'back' propriedade filho 
 //e add a class de virar o card
 //se ja estiver virada nao faz nada
+//criada as duas condicoes para comparar os cads
 const revelarCard = ({target}) => {
     if(target.parentNode.className.includes('revelar-card')) {
         return;
     }
-    target.parentNode.classList.add('revelar-card');
+
+    if(firstCard == '') {
+        target.parentNode.classList.add('revelar-card');
+        firstCard = target.parentNode;
+    } else if (secondCard == '') {
+        target.parentNode.classList.add('revelar-card');
+        secondCard = target.parentNode;
+    }
+
+    checkCards();
+    
 }
 
 //funcao que cria os cards
 //dentro dela tem o codigo para as imagens aleatorias
+//colocado proprie para inserir atributos
+//aos cads com data-character
 const createCard = (character) => {
     const card = createElement('div', 'card');
     const front = createElement('div', 'face front');
@@ -43,7 +79,8 @@ const createCard = (character) => {
 
     front.style.backgroundImage = `url('../imagens/${character}.png')`;
 
-    card.addEventListener('click', revelarCard)
+    card.addEventListener('click', revelarCard);
+    card.setAttribute('data-character', character)
 
     card.appendChild(front);
     card.appendChild(back);
