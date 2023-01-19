@@ -38,7 +38,6 @@
 }
 
 .front {
-    background-image: url(../imagens/beth.png);
     /*para virar a carta mesma coisa do back*/
     transform: rotateY(180deg);
 }
