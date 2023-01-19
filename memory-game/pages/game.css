@@ -6,15 +6,16 @@
     /*dividido por 5 com tamanho de uma fração*/
     grid-template-columns: repeat(5, 1fr);
     margin: 50px auto;
+    
 }
 
 .card {
     /*propriedade para definir um tamanho padrao fixo*/
     /*imutavel*/
-    aspect-ratio: 3/4;
+    aspect-ratio: 3/5;
     width: 100%;
     height: 200px;
-    background-color: #333;
+    background-color: rgb(148, 221, 154);
     border-radius: 5px;
     /* relative para o absolut da face 
     respeitar o tamanho do card*/
@@ -51,4 +52,9 @@
 .revelar-card {
     /*para ocorrer a rotação*/
     transform: rotateY(180deg);
+}
+
+.disabled-card {
+    filter: saturate(0);
+    opacity: 0.5;
 }

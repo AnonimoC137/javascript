@@ -34,7 +34,11 @@ const checkCards = () => {
     const secondCharacter = secondCard.getAttribute('data-character');
 
     if(firstCharacter == secondCharacter) {
+        firstCard.firstChild.classList.add('disabled-card');//add no primeiro filho de card
+        secondCard.firstChild.classList.add('disabled-card');//add no primeiro filho de card
 
+        firstCard = '';
+        secondCard = ''; //para continuar escolhendo mais duas cards
     } else {
 
         setTimeout(() => {
