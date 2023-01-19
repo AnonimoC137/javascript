@@ -23,6 +23,17 @@ const createElement = (tag, className) => {
 }
 
 
+//parentNode para puxar o 'pai' que é o card
+//pois estava puxando o 'back' propriedade filho 
+//e add a class de virar o card
+//se ja estiver virada nao faz nada
+const revelarCard = ({target}) => {
+    if(target.parentNode.className.includes('revelar-card')) {
+        return;
+    }
+    target.parentNode.classList.add('revelar-card');
+}
+
 //funcao que cria os cards
 //dentro dela tem o codigo para as imagens aleatorias
 const createCard = (character) => {
@@ -31,6 +42,8 @@ const createCard = (character) => {
     const back = createElement('div', 'face back');
 
     front.style.backgroundImage = `url('../imagens/${character}.png')`;
+
+    card.addEventListener('click', revelarCard)
 
     card.appendChild(front);
     card.appendChild(back);
