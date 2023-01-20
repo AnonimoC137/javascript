@@ -8,6 +8,17 @@ main {
     padding: 20px 20px 50px;
     overflow-y: hidden;
     background-image: url(../imagens/bg.jpg);
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    padding: 15px;
+    background-color: rgba(148, 221, 154, 0.5);
+    border-radius: 10px;
 }
 
 .grid {

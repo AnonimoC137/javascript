@@ -1,5 +1,5 @@
 const grid = document.querySelector('.grid');
-
+const spanPlayer = document.querySelector('.player')
 const characters = [
     'beth',
     'jerry',
@@ -117,6 +117,16 @@ const loadGame = () => {
     });
 }
 
-loadGame()
+
+//primeiro vai busca o nome do player
+//e carrega o nome no local definido
+//depois que a janela do window for carregada
+//o load do jogo vai carregar e iniciar o game
+window.onload = () => {
+    const playerName = localStorage.getItem('player');
+    spanPlayer.innerHTML = playerName;
+    loadGame()
+}
+
 
 

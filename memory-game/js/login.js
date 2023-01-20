@@ -13,7 +13,7 @@ const handleInput = ({target}) => {
 const handleSubmit = (event) => {
     event.preventDefault();
     //serve para guardar o valor do input na chave player na memoria do browser
-    localStorage.getItem('player', input.value);
+    localStorage.setItem('player', input.value);
 
 
     //serve para redirecionar o usuario para outra page
