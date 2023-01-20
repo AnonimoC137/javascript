@@ -17,4 +17,4 @@ const redButton = createButton();
 const frutas = ['banana', 'uva', 'morango'];
 const comidas = ['pizza', 'batata'];
 
-comidas.push(...frutas)
+comidas.push(...frutas);
