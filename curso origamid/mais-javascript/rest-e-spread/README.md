@@ -99,4 +99,17 @@ const numeroMaximo = Math.max(4, 5, 20, 10, 30, 2, 33, 5); // 33
 const listaNumeros = [1,13,21,12,55,2,3,43];
 const numeroMaximoSpread = Math.max(...listaNumeros);
 ```
+# Transforma em Array #
+
+É possivel transformar itens iteraveis em uma Array real com o spread.
+
+@exemplo
+```bash
+const btns = document.querySelectorAll('button');
+const btnsArray = [...btns];
+
+const frase = 'isso e javascript';
+const fraseArray = [...frase];
+```
+
 
