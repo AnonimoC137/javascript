@@ -1,11 +1,23 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+    overflow-y: hidden;
+    background-image: url(../imagens/bg.jpg);
+}
+
 .grid {
     display: grid;
     width: 100%;
     max-width: 800px;
-    gap: 15px;
+    gap: 10px;
     /*dividido por 5 com tamanho de uma fração*/
     grid-template-columns: repeat(5, 1fr);
-    margin: 50px auto;
+    margin: 0 auto;
     
 }
 
