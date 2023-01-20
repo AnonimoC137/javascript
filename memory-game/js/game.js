@@ -1,5 +1,7 @@
 const grid = document.querySelector('.grid');
-const spanPlayer = document.querySelector('.player')
+const spanPlayer = document.querySelector('.player');
+const timer = document.querySelector('.timer');
+
 const characters = [
     'beth',
     'jerry',
@@ -29,7 +31,8 @@ const checkEndGame = () => {
     const disabledCards = document.querySelectorAll('.disabled-card');
 
     if(disabledCards.length == 20) {
-        alert('parabens voce ganhou o jogo');
+        clearInterval(this.loop);
+        alert(`Parabens ${spanPlayer.innerHTML}! seu tempo foi ${timer.innerHTML}`);
     }
 }
 
@@ -117,6 +120,15 @@ const loadGame = () => {
     });
 }
 
+//inicia o relogio
+const startTimer = () => {
+    this.loop = setInterval(() => {
+        const tempoAtual = +timer.innerHTML
+        const contagem = tempoAtual + 1
+        timer.innerHTML = contagem
+    }, 1000)
+}
+
 
 //primeiro vai busca o nome do player
 //e carrega o nome no local definido
@@ -126,6 +138,7 @@ window.onload = () => {
     const playerName = localStorage.getItem('player');
     spanPlayer.innerHTML = playerName;
     loadGame()
+    startTimer()
 }
 
 
