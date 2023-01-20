@@ -32,7 +32,7 @@ perimetroForma(10); // 40
 
 A palavra chave arguments é um objeto Array-like criado dentro de função. Esse objeto contem os valores dos argumentos.
 
-OBS:  ele não deixou claro, mas o novo jeito de definirmos o valor padrao para o parametro esta aqui nesse exemplo abaixo, alem disso o arguments pega todos os demais valores passados como parametro, caso isso nao tenha ficado claro.
+OBS:  ele não deixou claro, mas o novo jeito de definirmos o valor padrao para o parametro esta aqui nesse exemplo abaixo totalLados = 4, alem disso o arguments pega todos os demais valores passados como parametro, caso isso nao tenha ficado claro.
 
 @exemplo
 ```bash
@@ -88,4 +88,15 @@ const legumes = ['cenoura', 'batata'];
 const comidas = [...frutas, 'pizza', ...legumes];
 ```
 
-# a
+# Spread Argument #
+
+O spread pode ser muito util para funções que recebem uma lista de argumentos ao inves de uma array.
+
+@exemplo
+```bash
+const numeroMaximo = Math.max(4, 5, 20, 10, 30, 2, 33, 5); // 33
+
+const listaNumeros = [1,13,21,12,55,2,3,43];
+const numeroMaximoSpread = Math.max(...listaNumeros);
+```
+
