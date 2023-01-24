@@ -33,3 +33,44 @@ for(const char of frase) {
 Com o for loop podemos manipular um dos elementos do objeto iteravel.
 
 @exemplo
+```bash
+const buttons = document.querySelectorAll('button');
+
+for(const of buttons) {
+  btn.style.background = 'blue'
+}
+
+console.log(...buttons);
+```
+# Apenas Iteraveis #
+
+O for...of não ira funcionar em um objeto comum que não seja iteravel.
+
+@exemplo
+```bash
+const carro = {
+  marca: 'honda',
+  ano: 2018,
+}
+
+//Erro, não é iteravel
+
+for(const propriedade of carro) {
+  console.log(propriedade);
+}
+```
+# For...in #
+
+Este loop ira retornar a chave (key) de todas as propriedades enumeraveis (que não sejam simbolos) de um objeto.
+
+@exemplo
+```bash
+const carro = {
+  marca: 'honda',
+  ano: 2018,
+}
+
+for(const propriedade in carro) {
+  console.log(propriedade);
+}
+```
