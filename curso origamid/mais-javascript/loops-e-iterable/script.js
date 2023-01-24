@@ -16,7 +16,7 @@ for(const novoLi of li) {
 const array =  []
 
 for(const newWindow in window) {
-    
+    console.log(newWindow, window[newWindow])
 }
 
  
