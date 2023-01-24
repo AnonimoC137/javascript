@@ -6,6 +6,8 @@
     font-family: 'DynaPuff';  
 }
 
+
+
 body {
     background: #EB8344;
     text-align: center;
@@ -96,9 +98,6 @@ footer p {
     
 }
 
-
-
-
 main {
     background-color: #EB8344;
 }
@@ -110,7 +109,7 @@ main {
 }
 
 .buttons {
-    margin-top: 20px;
+    margin: 20px;
     display: flex;
     align-items: center;
     justify-items: center;
