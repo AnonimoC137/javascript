@@ -334,6 +334,30 @@ const regex = /java|php/gi;
 //X ou X são linguagens diferentes
 ```
 
-#
+
+# Word Boundary \b #
+
+
+
+O sinal \b ira indicar que pretendemos fazer uma seleção que deve ter inicio e fim de nao caracteres \w.
+
+@exemplo
+```bash
+Procurar: java (case insensitive)
+
+const regex = /java/gi;
+
+'Java não é JavaScript.'.replace(regex, 'X');
+
+//X não é XScript
+
+//Procura: java (case insensitive)
+
+const regexBoundary = /\bjava\b/gi;
+
+'Java não é JavaScript.'.replace(regex, 'X');
+
+// X não é JavaScript.
+```
 
 
