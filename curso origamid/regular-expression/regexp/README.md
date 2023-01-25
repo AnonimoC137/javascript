@@ -205,3 +205,84 @@ const regexp = /\W/g;
 
 //Guarda-chuva-R--23-00-
 ```
+# Digit #
+
+O \d ira selecionar qualquer digito. E a mesma coisa que [0-9].
+
+@exemplo
+```bash
+// Porcurar: todos os digitos
+
+const regexp = /\d/g;
+
+'+55 (21) 2222-2222.'.replace(regexp, 'X');
+
+//+XX (XX) XXXX-XXXX.
+```
+
+# Quantificador #
+
+É possivel selecionar caracteres seguidos, como /bbb/g irá selecionar apenas bbb. Com as chaves podemos indicar a repetição /b{3}/g. Agora ele está fazendo uma seleção completa e não por carater.
+
+@exemplo
+```bash
+//Procurar: 4 a seguidos
+
+const regexp = /a{4}/g;
+
+'Vaaaai ali por favor.'replace(regexp, 'a');
+
+//vai ali por favor.
+```
+
+# Quantificador Min e Max #
+
+Podemos informar o Min e Max do quantificador /a{2,4}/ vai selecionar quando aparecer a duas vezes ou até 4 vezes. /a{2,}/ ira selecionar quando se repetir duas ou mais vezes.
+
+obs: IMPORTANTE lembrar que quando colocado um min por exemplo 2, quando o criterio e atendido e o item for selecionado, na hora de substituir a seleção de varias caracteres juntos vai ser como se fosse um só.
+
+@exemplo
+```bash
+//Procura: digitos seguidos de 2 a 3
+
+const regexp = /\d{2,3}/g;
+
+'222.333.222.42'.replace(regexp, 'X');
+
+//X.X.X.X
+
+//Procura: letras seguidas com 1 caracter ou mais
+
+const regexpLetras = /\w{1,}/g
+
+'A melhor linguagem é JavaScript'.replace(regexpLetras, 'X');
+
+//X X X é X
+```
+
+# Mais + #
+
+O sinal de + significa que devemos selecionar quando existir pelo menos uma ou mais ocorrencias.
+
+@exemplo
+```bash
+//Procurar: digitos em ocorrencia de um ou mais
+
+const regexp = /\d+/
+
+'222.333.222.42'.replace(regexp, 'X');
+
+// X.X.X.X
+
+//Procurar: Começa com d,  seguido por uma ou mais letras
+
+const regexp = /d\w+/g;
+
+'Digitos, dados, desenhos, Dito, d'.replace(regexp, 'X');
+
+// Digitos, X, X, Dito, X
+```
+
+
+
+
