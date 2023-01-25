@@ -176,4 +176,32 @@ const regexpAlternativa = /[.]/g;
 
 # Word #
 
+O \w ira selecionar qualquer caracter alfanumerico e o underline. É a mesma coisa que [A-Za-z0-9_].
 
+@exemplo
+```bash
+//Procura: todos os alfanumericos
+
+const regexp = /\w/g;
+
+'Guarda-chuva R$ 23,00.'.replace(regexp, '-');
+
+//--------- -$ --,--.
+```
+
+# Not Word #
+
+O \W ira selecionar tudo o que nao for caracter alfanumerico e o underline. E a mesma coisa que [^A-Za-z0-9_].
+
+Obs: nesse modo ele vai selecionar os espaços em branco tambem.
+
+@exemplo
+```bash
+// Porcurar: o que nao for caracter alfanumerico
+
+const regexp = /\W/g;
+
+'Guarda-chuva R$ 23,00.'.replace(regexp, '-');
+
+//Guarda-chuva-R--23-00-
+```
