@@ -239,7 +239,7 @@ const regexp = /a{4}/g;
 
 Podemos informar o Min e Max do quantificador /a{2,4}/ vai selecionar quando aparecer a duas vezes ou até 4 vezes. /a{2,}/ ira selecionar quando se repetir duas ou mais vezes.
 
-obs: IMPORTANTE lembrar que quando colocado um min por exemplo 2, quando o criterio e atendido e o item for selecionado, na hora de substituir a seleção de varias caracteres juntos vai ser como se fosse um só.
+obs: IMPORTANTE lembrar que quando colocado um min por exemplo 2, quando o criterio e atendido e o item for selecionado, na hora de substituir a seleção de varias caracteres juntos vai ser como se fosse um só. isso vale para o metodo de + e de * logo abaixo.
 
 @exemplo
 ```bash
@@ -280,9 +280,60 @@ const regexp = /d\w+/g;
 
 'Digitos, dados, desenhos, Dito, d'.replace(regexp, 'X');
 
-// Digitos, X, X, Dito, X
+// Digitos, X, X, Dito, d
+```
+
+# Asterisco * #
+
+O sinal * significa que devemos selecionar quando existe 0 ou mais ocorrencias.
+
+@exemplo
+```bash
+//Procura: começa com d, seguido por zero ou mais letras.
+
+const regexp = /d\w*/g;
+
+'Digitos, dados, desenhos, Dito, d'.replace(regexp, 'X');
+
+//Digitos, X, X, Dito, X
+```
+
+# Opcional ? #
+
+O sinal ? significa que o caracter é opcional, pode ou não existir.
+fazendo com que no exemplo abaixo tanto a palavra regex como a regexp sejam selecionadas.
+
+@exemplo
+```bash
+//Procura: Por regex com p opcional
+
+const regex = /regexp?/g;
+
+'Qual é o certo, regexp ou regex?'.replace(regex, 'Regular Expression');
+
+//Qual é o certo, Regular Expression ou Regular Expression?
 ```
 
 
+
+
+# Alternado | #
+
+O sinal | ira selecionar um ou outro java|php.
+
+Obs: caso ele acha as duas opções as duas vão ser selecionadas, independente da sua ordem na string. alem de tambem serem selecionadas como bloco sendo contabilizadas como uma unidade por isso no exemplo abaixo ela é substituidade apenas por 1 X.
+
+@exemplo
+```bash
+//Procura: java ou php (case insensitive)
+
+const regex = /java|php/gi;
+
+'PHP e Java são linguagens diferentes'.replace(regex, 'X');
+
+//X ou X são linguagens diferentes
+```
+
+#
 
 
