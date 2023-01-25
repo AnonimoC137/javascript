@@ -140,3 +140,40 @@ const regexp = /[^a-z]/g
 
 //B    é   : B    
 ```
+
+# Ponto #
+
+O ponto . ira selecionar qualquer caracter, menos quebras de linha.
+
+OBS: nesse caso ele vai selecionar todos os caracteres.
+
+@exemplo
+```bash
+// Procura: todos os caracteres menos quebra de linha
+
+const regexp = /./g;
+
+'Javascript é a linguagem'.replace(regexp, '0');
+
+//00000000000000000
+```
+
+# Escapar Especiais #
+
+Caracteres especiais como o ponto . podem ser escapados utilizando a barra \, assim este nao tera mais a sua função especial e será tratado como literal. Lista de caracteres especiais: +*?$\.[]{}()|/
+
+@exemplo
+```bash
+// Procura: todos os pontos
+
+const regexp = /\./g;
+const regexpAlternativa = /[.]/g;
+
+'999.222.222.11'.replace(regexp, '-');
+
+//999-222-222-11
+```
+
+# Word #
+
+
