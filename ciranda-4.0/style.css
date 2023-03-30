@@ -130,6 +130,7 @@ body {
     border-radius: 50%;
     border: solid 2px rgb(255, 252, 252);
     box-shadow: 20px 0px 14px rgba(35, 35, 35, 0.635), -10px 5px 0 rgba(35, 35, 35, 0.635);
+    animation: flipLogo 2s;
 }
 
 .texto {
@@ -147,7 +148,7 @@ body {
 }
 
 .videos video {
-    width: 48%;
+    width: 30%;
     margin: 30px auto 30px;
     background-color: black; 
     border-radius: 30px;
@@ -447,5 +448,14 @@ input {
 @media (max-width:450px) {
     .mobile-menu {
         margin-top: 5px;
+    }
+}
+
+@keyframes flipLogo {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
     }
 }
