@@ -93,10 +93,6 @@ h2 {
         text-align: center;
     }
 
-    .avatar {
-        margin-right: 60px;
-    }
-
     h2 {
         font-size: 30px;
     }
@@ -106,6 +102,7 @@ h2 {
     }
     .sobre-mim p {
         text-indent: 0;
+        margin-right: 15px;
     }
 }
 
