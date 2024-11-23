@@ -76,9 +76,6 @@ button:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.avatar .desenho-bg {
-    margin: auto;
-}
 
 .breve:hover {
     transform: scale(1.1); /* Faz o botão crescer 10% */

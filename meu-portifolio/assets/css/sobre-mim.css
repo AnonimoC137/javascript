@@ -5,6 +5,7 @@
 
 .ajustador-2 {
     padding: 144px 0;
+    line-height: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 67px;
@@ -80,6 +81,10 @@ h2 {
     justify-content: center;
 }
 
+.avatar .desenho-bg {
+    margin-left: 3rem
+}
+
 .sobre-mim p {
     text-indent: 30px;
     font-size: 20px;
@@ -112,12 +117,18 @@ h2 {
         display: none;
     }
     .ajustador-2 {
-        max-width: 350px;
+        width: 100%;
+        line-height: 2rem;
         padding: 70px 30px;
+        gap: 0;
     }
 
     .avatar {
         margin-right: 0;
+    }
+
+    .avatar .desenho-bg {
+        margin: 0 0 -1rem 0 ;
     }
 
 }
