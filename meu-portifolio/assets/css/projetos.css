@@ -55,19 +55,34 @@ button:hover {
     overflow: hidden;
     transition: ease-in-out 0.3s;
     z-index: 50;
+    margin-bottom: 1rem;
     
 }
 
 .pro img {
-    width: 64%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem preencher o container sem distorcer */
+  object-position: center;
 }
 
 .breve {
-    z-index: 100;
-    position: relative;
+    background-color: #3c0891;
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.avatar .desenho-bg {
+    margin: auto;
+}
 
+.breve:hover {
+    transform: scale(1.1); /* Faz o botão crescer 10% */
+}
 
 .pro div p {
     font-family: 'Fira Sans', sans-serif;
