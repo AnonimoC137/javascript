@@ -29,6 +29,7 @@ h2 {
     position: relative;
     cursor: pointer;
     transition: ease 1s;
+    margin: 0 0 0 -20px;
 }
 
 
@@ -39,22 +40,22 @@ h2 {
 @keyframes html {
     0% {
         bottom: 0;
-        left: 250px;
+        left: 120px;
     }
     100% {
         bottom: 0;
-        left: 50px;
+        left: 15px;
     }
 }
 
 @keyframes css {
     0% {
         bottom: 0;
-        left: 50px;
+        left: 0px;
     }
     100% {
         bottom: 0;
-        left: 250px;
+        left: 125px;
     }
 }
 
@@ -66,7 +67,7 @@ h2 {
 
 .js {
     bottom: 0;
-    left: 150px;
+    left: 4rem;
 }
 
 .css {
@@ -82,7 +83,7 @@ h2 {
 }
 
 .avatar .desenho-bg {
-    margin-left: 3rem
+    margin-left: -3.7rem;
 }
 
 .sobre-mim p {
@@ -99,7 +100,8 @@ h2 {
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 1.5rem;
+        word-break: break-word;
     }
 
     .ajustador-2 p {
@@ -108,6 +110,7 @@ h2 {
     .sobre-mim p {
         text-indent: 0;
         margin-right: 15px;
+        text-align: justify;
     }
 }
 
@@ -128,7 +131,7 @@ h2 {
     }
 
     .avatar .desenho-bg {
-        margin: 0 0 -1rem 0 ;
+        margin: 0 1rem -1rem ;
     }
 
 }
